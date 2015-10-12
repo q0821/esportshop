@@ -11,6 +11,5 @@ if ( $_POST['payload'] ) {
   var_dump($_POST['payload']);
   die("done " . mktime());
 }
-// test1
 //shell_exec("cd {$LOCAL_REPO_ROOT} && git pull");
 ?>
