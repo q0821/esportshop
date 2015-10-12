@@ -1,0 +1,28 @@
+preset:
+  image: gantry-admin://images/layouts/2-col-right.png
+
+layout:
+  header:
+    container:
+      - [particle-logo 30, position-header 70]
+
+  navigation:
+    container:
+      - particle-menu
+
+  container:
+    1:
+      - main 80:
+          - position-breadcrumbs
+          - system-messages
+          - pagecontent
+      - sidebar 20:
+         - position-sidebar
+
+  footer:
+    container:
+    - position-footer
+    - [particle-copyright 40, spacer 30, particle-branding 30]
+
+  offcanvas:
+    - particle-mobile-menu

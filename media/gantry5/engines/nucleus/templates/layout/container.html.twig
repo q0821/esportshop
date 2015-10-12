@@ -1,0 +1,36 @@
+{% set html %}
+    {% for segment in segments %}
+        {% include '@nucleus/layout/' ~ segment.type ~ '.html.twig' with { 'segments': segment.children } %}
+    {% endfor %}
+{% endset %}
+
+{% if html|trim %}
+    {% set classes = segment.attributes.class ? ' ' ~ segment.attributes.class|e %}
+    {% set attr_extra = '' %}
+
+    {% if segment.attributes.extra %}
+        {% for attributes in segment.attributes.extra %}
+            {% for key, value in attributes %}
+                {% set attr_extra = attr_extra ~ ' ' ~ key|e ~ '="' ~ value|e('html_attr') ~ '"' %}
+            {% endfor %}
+        {% endfor %}
+    {% endif %}
+
+    {% if (segment.attributes.boxed is defined and not segment.attributes.boxed) %}
+        {% set html %}
+        <div class="g-container">{{ html|raw }}</div>
+        {% endset %}
+    {% endif %}
+
+    {% set html %}
+    <section{{ attr_extra|raw }} class="g-wrapper{{ classes }}">
+        {{ html|raw }}
+    </section>
+    {% endset %}
+
+    {% if (segment.attributes.boxed) %}
+        <div class="g-container">{{ html|raw }}</div>
+    {% else %}
+        {{ html|raw }}
+    {% endif %}
+{% endif %}

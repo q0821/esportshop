@@ -1,0 +1,40 @@
+{% set attr_class = segment.attributes.class ? ' class="' ~ segment.attributes.class|e ~ '"' %}
+{% set attr_id = segment.title|lower|replace({' ': '-'}) %}
+{% set attr_extra = '' %}
+{% set tag_type = (attr_id in ['aside', 'footer', 'header', 'main']) ? attr_id : 'section' %}
+
+{% if segment.attributes.extra %}
+    {% for attributes in segment.attributes.extra %}
+        {% for key, value in attributes %}
+        {% set attr_extra = attr_extra ~ ' ' ~ key|e ~ '="' ~ value|e('html_attr') ~ '"' %}
+        {% endfor %}
+    {% endfor %}
+{% endif %}
+
+{% set html %}
+    {% if segment.children %}
+        {% for segment in segments %}
+            {% include '@nucleus/layout/' ~ segment.type ~ '.html.twig' with { 'segments':segment.children } %}
+        {% endfor %}
+    {% endif %}
+{% endset %}
+
+{% if html|trim %}
+    {% if (segment.attributes.boxed is defined and not segment.attributes.boxed) %}
+        {% set html %}
+        <div class="g-container">{{ html|raw }}</div>
+        {% endset %}
+    {% endif %}
+
+    {% set html %}
+    <{{ tag_type }} id="g-{{ attr_id }}" {{ attr_class|raw }}{{ attr_extra|raw }}>
+        {{ html|raw }}
+    </{{ tag_type }}>
+    {% endset %}
+
+    {% if (segment.attributes.boxed) %}
+    <div class="g-container">{{ html|raw }}</div>
+    {% else %}
+    {{ html|raw }}
+    {% endif %}
+{% endif %}

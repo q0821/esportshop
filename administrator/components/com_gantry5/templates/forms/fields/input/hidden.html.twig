@@ -1,0 +1,15 @@
+{% extends default ? "partials/field.html.twig" : 'forms/' ~ layout|default('field') ~ '.html.twig' %}
+
+{% block label %}
+{% endblock %}
+
+{% block input %}
+    <input
+            {# required attribute structures #}
+            type="hidden"
+            name="{{ (scope ~ name)|fieldName|e }}"
+            value="{{ value|join(', ')|e }}"
+            {# global attribute structures #}
+            {{ block('global_attributes') }}
+            />
+{% endblock %}
