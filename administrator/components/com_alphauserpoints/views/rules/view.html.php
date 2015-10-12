@@ -28,10 +28,12 @@ class alphauserpointsViewRules extends JViewLegacy {
 		JToolBarHelper::publishList();
 		JToolBarHelper::unpublishList();
 		JToolBarHelper::divider();
+		/*
 		if (JFactory::getUser()->authorise('core.plugins', 'com_alphauserpoints')) {
 			JToolBarHelper::custom( 'plugins', 'power-cord.png', 'power-cord.png', JText::_('AUP_PLUGINS'), false );
 			JToolBarHelper::divider();
-		}		
+		}
+		*/
 		if (JFactory::getUser()->authorise('core.create', 'com_alphauserpoints')) {
 			JToolBarHelper::addNew( 'editrule' );
 		}
@@ -214,7 +216,8 @@ class alphauserpointsViewRules extends JViewLegacy {
 		
 		}
 		$lists['linkup'] = JHTML::_('select.genericlist', $options, 'linkup', 'class="inputbox" size="1"' ,'value', 'text', $this->row->linkup );
-
+		
+		$lists['displayactivity'] = JHTML::_('select.booleanlist', 'displayactivity', '', $this->row->displayactivity);
 		
 		$this->assignRef( 'row', $this->row );
 		$this->assignRef( 'lists', $lists );				

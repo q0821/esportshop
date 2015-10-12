@@ -69,6 +69,7 @@ class JTableRules extends JTable
 	var $type_expire_date = '';
 	var $chain = '';
 	var $linkup = '';
+	var $displayactivity = '';
 	
 
 	/**

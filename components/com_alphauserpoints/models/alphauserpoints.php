@@ -44,7 +44,7 @@ class alphauserpointsModelalphauserpoints extends JmodelLegacy {
 			// In case limit has been changed, adjust limitstart accordingly
 			$limitstart = ( $limit != 0 ? (floor( $limitstart / $limit ) * $limit) : 0);		
 			$query = "SELECT a.*, r.rule_name, r.plugin_function FROM #__alpha_userpoints_details AS a, #__alpha_userpoints_rules as r "
-					."\nWHERE a.referreid='$referrerid' AND a.rule=r.id"
+					."\nWHERE a.referreid='$referrerid' AND a.rule=r.id AND r.displayactivity='1'"
 					."\nORDER BY a.insert_date DESC";
 			$total = @$this->_getListCount($query);
 			$result = $this->_getList($query, $limitstart, $limit);
@@ -52,7 +52,7 @@ class alphauserpointsModelalphauserpoints extends JmodelLegacy {
 			
 		} elseif ( $limit=='nolimit' ) {		// used for export CSV
 			$query = "SELECT a.*, r.rule_name, r.plugin_function FROM #__alpha_userpoints_details AS a, #__alpha_userpoints_rules as r "
-					."\nWHERE a.referreid='$referrerid' AND a.rule=r.id"
+					."\nWHERE a.referreid='$referrerid' AND a.rule=r.id AND r.displayactivity='1'"
 					."\nORDER BY a.insert_date DESC";
 			$db->setQuery( $query );
 			$rowslastpoints = $db->loadObjectList();
@@ -60,7 +60,7 @@ class alphauserpointsModelalphauserpoints extends JmodelLegacy {
 		} else {		
 			$limit = "LIMIT " . $limit ;
 			$query = "SELECT a.*, r.rule_name, r.plugin_function FROM #__alpha_userpoints_details AS a, #__alpha_userpoints_rules as r "
-					."\nWHERE a.referreid='$referrerid' AND a.rule=r.id"
+					."\nWHERE a.referreid='$referrerid' AND a.rule=r.id AND r.displayactivity='1'"
 					."\nORDER BY a.insert_date DESC $limit";
 			$db->setQuery( $query );
 			$rowslastpoints = $db->loadObjectList();

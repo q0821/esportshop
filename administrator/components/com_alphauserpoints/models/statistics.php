@@ -293,7 +293,7 @@ class alphauserpointsModelStatistics extends JmodelLegacy {
 		$db->query();
 		
 		// update Ranks / Medals if necessary		
-		AlphaUserPointsHelper::checkRankMedal ( $referrerid );
+		// AlphaUserPointsHelper::checkRankMedal ( $referrerid );
 	
 	}
 	

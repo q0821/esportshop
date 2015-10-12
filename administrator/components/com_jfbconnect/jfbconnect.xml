@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="component" version="1.6.0" method="upgrade" client="site">
     <name>COM_JFBCONNECT</name>
-    <version>6.3.0</version>
-    <creationDate>2015/03/19</creationDate>
+    <version>6.4.2</version>
+    <creationDate>2015/08/24</creationDate>
     <author>SourceCoast | www.sourcecoast.com</author>
     <authorEmail>support@sourcecoast.com</authorEmail>
     <authorUrl>http://www.sourcecoast.com</authorUrl>
-    <copyright>Copyright (C) 2009-2014 SourceCoast. All rights reserved.</copyright>
+    <copyright>Copyright (C) 2009-2015 SourceCoast. All rights reserved.</copyright>
     <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
     <description></description>
     <scriptfile>install.php</scriptfile>
@@ -151,10 +151,8 @@
         <filename>libraries/provider/facebook/widget/commentscount.xml</filename>
         <filename>libraries/provider/facebook/widget/embeddedposts.php</filename>
         <filename>libraries/provider/facebook/widget/embeddedposts.xml</filename>
-        <filename>libraries/provider/facebook/widget/facepile.php</filename>
-        <filename>libraries/provider/facebook/widget/facepile.xml</filename>
-        <filename>libraries/provider/facebook/widget/feed.php</filename>
-        <filename>libraries/provider/facebook/widget/feed.xml</filename>
+        <filename>libraries/provider/facebook/widget/embeddedvideos.php</filename>
+        <filename>libraries/provider/facebook/widget/embeddedvideos.xml</filename>
         <filename>libraries/provider/facebook/widget/follow.php</filename>
         <filename>libraries/provider/facebook/widget/follow.xml</filename>
         <filename>libraries/provider/facebook/widget/like.php</filename>
@@ -163,8 +161,8 @@
         <filename>libraries/provider/facebook/widget/likebox.xml</filename>
         <filename>libraries/provider/facebook/widget/login.php</filename>
         <filename>libraries/provider/facebook/widget/login.xml</filename>
-        <filename>libraries/provider/facebook/widget/recommendations.php</filename>
-        <filename>libraries/provider/facebook/widget/recommendations.xml</filename>
+        <filename>libraries/provider/facebook/widget/pageplugin.php</filename>
+        <filename>libraries/provider/facebook/widget/pageplugin.xml</filename>
         <filename>libraries/provider/facebook/widget/request.php</filename>
         <filename>libraries/provider/facebook/widget/request.xml</filename>
         <filename>libraries/provider/facebook/widget/send.php</filename>
@@ -305,12 +303,14 @@
         <language tag="is-IS">is-IS.com_jfbconnect.ini</language>
         <language tag="it-IT">it-IT.com_jfbconnect.ini</language>
         <language tag="lt-LT">lt-LT.com_jfbconnect.ini</language>
+        <language tag="nb-NO">nb-NO.com_jfbconnect.ini</language>
         <language tag="nl-NL">nl-NL.com_jfbconnect.ini</language>
         <language tag="pl-PL">pl-PL.com_jfbconnect.ini</language>
         <language tag="pt-BR">pt-BR.com_jfbconnect.ini</language>
         <language tag="pt-PT">pt-PT.com_jfbconnect.ini</language>
         <language tag="ro-RO">ro-RO.com_jfbconnect.ini</language>
         <language tag="ru-RU">ru-RU.com_jfbconnect.ini</language>
+        <language tag="sr-YU">sr-YU.com_jfbconnect.ini</language>
         <language tag="sv-SE">sv-SE.com_jfbconnect.ini</language>
         <language tag="th-TH">th-TH.com_jfbconnect.ini</language>
         <language tag="tr-TR">tr-TR.com_jfbconnect.ini</language>

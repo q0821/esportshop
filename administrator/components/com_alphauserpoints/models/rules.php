@@ -265,8 +265,8 @@ class alphauserpointsModelRules extends JmodelLegacy {
 				$row->emailformat		 		= $item->emailformat;
 				$row->bcc2admin		 			= $item->bcc2admin;
 				$row->type_expire_date 			= $item->type_expire_date;
-				$row->chain 					= intval($item->chain);
-				$row->linkup 					= 0;
+				$row->chain 					= 0;
+				$row->linkup 					= intval($item->linkup);
 				
 				
 				if (!$row->store()) {

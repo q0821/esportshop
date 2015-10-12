@@ -23,13 +23,8 @@ JHtml::_('formbehavior.chosen', 'select');
 ?>
 <script type="text/javascript">
 	Joomla.submitbutton = function(task)
-	{
-		//if (task == 'cpanel' || task == 'cancelrule' || document.formvalidator.isValid(document.id('rule-form'))) {
-			Joomla.submitform(task, document.getElementById('rule-form'));
-		//}
-		//else {
-			//alert('<?php echo $this->escape(JText::_('JGLOBAL_VALIDATION_FORM_FAILED'));?>');
-		//}
+	{		
+		Joomla.submitform(task, document.getElementById('rule-form'));
 	}
 </script>
 <div id="j-main-container">
@@ -364,7 +359,19 @@ JHtml::_('formbehavior.chosen', 'select');
 				<?php echo $this->lists['inactive_preset_period'] ; ?>
 				</div>
 			</div>
-			<?php }?>		
+			<?php }?>	
+			<div class="control-group">
+				<div class="control-label">
+					<span class="editlinktip hasTip" title="<?php echo JText::_('AUP_DISPLAYACTIVITYDESCRIPTION'); ?>">
+						<?php echo JText::_( 'AUP_DISPLAYACTIVITY' ); ?>:
+					</span>
+				</div>
+				<div class="controls" style="margin-left:0px;">
+					<fieldset id="jform_displayactivity" class="radio btn-group">	
+						<?php echo $this->lists['displayactivity']; ?>
+					</fieldset>
+				</div>
+			</div>	
 			<?php if ( $row->plugin_function!='sysplgaup_newregistered' ) { ?>
 			<div class="control-group">
 				<div class="control-label">
@@ -437,10 +444,8 @@ JHtml::_('formbehavior.chosen', 'select');
 					 </fieldset>
 				</div>
 			</div>
-			<?php
-			
-			}
-			
+			<?php			
+			}			
 			switch ( $row->plugin_function ) {
 				case 'sysplgaup_excludeusers':
 				case 'sysplgaup_raffle':
@@ -527,8 +532,7 @@ JHtml::_('formbehavior.chosen', 'select');
 					</span>
 				</div>
 				<div class="controls">
-				  <!--<textarea name="emailbody" cols="100" rows="5" class="inputbox" id="emailbody"><?php echo JText::_($row->emailbody); ?></textarea>-->
-				  <?php            			
+				    <?php            			
 					$editor		=  JFactory::getEditor();
 					echo $editor->display( 'emailbody',  $row->emailbody , '100%', '200', '75', '20', false );
 					?>
@@ -575,8 +579,6 @@ JHtml::_('formbehavior.chosen', 'select');
 		<?php echo JHtml::_('bootstrap.endTab'); ?>
 	<?php endif; ?>		
 	<?php echo JHtml::_('bootstrap.endTabSet'); ?>
-
-
 		<input type="hidden" name="option" value="com_alphauserpoints" />
 		<input type="hidden" name="task" value="" />
 		<input type="hidden" name="id" value="<?php echo $row->id; ?>" />

@@ -333,7 +333,7 @@ if ( $this->synch=='start' || $this->recalculate=='start' ) {
 													$db->setQuery( $query );
 													$resultCount = $db->loadResult();
 													if ( !$resultCount ) {					
-														$query = "INSERT INTO #__alpha_userpoints_rules VALUES ('', '".$nameRule."', '".$descriptionRule."', '".$component."', '".$pluginRule."', '1', '".$component."', '', '', '0', '0', '0', '0000-00-00 00:00:00', '', '', '', '', '1', '0', '0', '0', '1', '".$fixed_points."', '".$category."', '".$display_message."', '', '0', '".$email_notification."', '', '', '0', '0', '0', '0', '0' )";
+														$query = "INSERT INTO #__alpha_userpoints_rules VALUES ('', '".$nameRule."', '".$descriptionRule."', '".$component."', '".$pluginRule."', '1', '".$component."', '', '', '0', '0', '0', '0000-00-00 00:00:00', '', '', '', '', '1', '0', '0', '0', '1', '".$fixed_points."', '".$category."', '".$display_message."', '', '0', '".$email_notification."', '', '', '0', '0', '0', '0', '0', '1' )";
 														$db->setQuery( $query );
 														if ( $db->query() ) {							
 															$count ++;

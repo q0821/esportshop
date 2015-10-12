@@ -1,10 +1,10 @@
 <?php
 /**
  * @package         JFBConnect
- * @copyright (c)   2009-2014 by SourceCoast - All Rights Reserved
+ * @copyright (c)   2009-2015 by SourceCoast - All Rights Reserved
  * @license         http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
- * @version         Release v6.2.2
- * @build-date      2014/10/17
+ * @version         Release v6.4.2
+ * @build-date      2015/08/24
  */
 
 // No direct access

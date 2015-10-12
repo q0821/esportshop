@@ -1,6 +1,6 @@
 /**
  * @package JFBConnect
- * @copyright (C) 2009-2014 by Source Coast - All rights reserved
+ * @copyright (C) 2009-2015 by Source Coast - All rights reserved
  * @website http://www.sourcecoast.com/
  * @website http://www.sourcecoast.com/joomla-facebook/
  * @license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL

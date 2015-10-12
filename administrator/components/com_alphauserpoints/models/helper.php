@@ -413,6 +413,7 @@ class alphauserpointsModelHelper extends JmodelLegacy {
 	function sendwinnernotification ( $referrerid, $assignpoints, $newtotal, $emailadmins='' ) 
 	{
 		$app = JFactory::getApplication();
+		jimport( 'joomla.mail.helper' );	
 		
 		$MailFrom	= $app->getCfg('mailfrom'); 	
 		$FromName	= $app->getCfg('fromname'); 
@@ -420,24 +421,27 @@ class alphauserpointsModelHelper extends JmodelLegacy {
 		$userinfo 	= $this->getUserInfos( $referrerid );
 		$name 		= $userinfo->name;
 		$email	 	= $userinfo->email;
+		$formatMail = 1;
 
 		if ( !$userinfo->block ) 
 		{		
 		
 			// send notification to winner
 			$subject = JText::_('AUP_EMAILWINNERNOTIFICATION_SUBJECT_MSG_USER');
-			$message = sprintf ( JText::_('AUP_EMAILWINNERNOTIFICATION_MSG_USER'), $name, $newtotal );
+			$body = sprintf ( JText::_('AUP_EMAILWINNERNOTIFICATION_MSG_USER'), $name, $newtotal );
 			
-			JMail::sendMail( $MailFrom, $FromName, $email, $subject, $message );		
-			
-			// send notification to administrators...		
+			$mailer = JFactory::getMailer();
+			$mailer->setSender( array( $MailFrom, $FromName ) );
+			$mailer->setSubject( $subject);
+			$mailer->isHTML((bool) $formatMail);
+			$mailer->CharSet = "utf-8";
+			$mailer->setBody($body);
+			$mailer->addRecipient( $email );
 			if ( $emailadmins ) 
-			{
-				$subject = JText::_('AUP_EMAILWINNERNOTIFICATION_SUBJECT_MSG_ADMIN');
-				$message = sprintf ( JText::_('AUP_EMAILWINNERNOTIFICATION_MSG_ADMIN'), $name, $newtotal );
-				
-				JMail::sendMail( $MailFrom, $FromName, $emailadmins, $subject, $message );
-			}
+			{			
+				$mailer->addBCC( $emailadmins );
+			}		
+			$send = $mailer->Send();		
 		}
 	
 	}

@@ -25,7 +25,7 @@ class alphauserpointsControllerRssactivity extends alphauserpointsController
 	
 	public function display($cachable = false, $urlparams = false) 
 	{
-		$model      = &$this->getModel ( 'rssactivity' );
+		$model      = $this->getModel ( 'rssactivity' );
 		$view       = $this->getView  ( 'rssactivity','html' );	
 
 		$model->_showRSSAUPActivity();

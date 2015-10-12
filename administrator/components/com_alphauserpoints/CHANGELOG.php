@@ -40,6 +40,29 @@ code fixes.
 - -> Removed
 ! -> Note
 
+
+--------------------  2.0.3 stable [08 september 2015]  ---------------------
+- removed button for simple xml install in rules manager
+# fixed invite points
+# fixed new fields in tables on update by server system
+^ Updated documentation developer
+
+--------------------  2.0.2 stable [05 august 2015]  ---------------------
+# fixed coupon code generator
+# fixed save user function
++ added new option on each rule to display or not this activity on frontend activities listing
+# fixed rule coupon code point (set default to only once per user)
++ added installation 8 default modules directly on installation or upgrade component
+
+
+--------------------  2.0.1 stable [02 july 2015]  ---------------------
+# fixed RSS activities
+# fixed gid error with Uddeim integration enabled
+# fixed limit max option for winner
+# fixed send email winner notification
+# fixed Recalculate function if not allow negative account
+
+
 --------------------  2.0.0 stable [12 february 2015]  ---------------------
 ^ Responsive frontend
 - removed internal CSS class for AlphaUserPoints

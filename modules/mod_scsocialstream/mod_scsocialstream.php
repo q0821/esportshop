@@ -1,10 +1,10 @@
 <?php
 /**
  * @package         JFBConnect
- * @copyright (c)   2009-2014 by SourceCoast - All Rights Reserved
+ * @copyright (c)   2009-2015 by SourceCoast - All Rights Reserved
  * @license         http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
- * @version         Release v6.3.0
- * @build-date      2015/03/19
+ * @version         Release v6.4.2
+ * @build-date      2015/08/24
  */
 
 // no direct access
@@ -22,6 +22,9 @@ if (!class_exists('JFBCFactory'))
     echo "JFBConnect not enabled. Please enable.";
     return;
 }
+
+jimport('sourcecoast.utilities');
+SCStringUtilities::loadLanguage('com_jfbconnect');
 
 $channels = $params->get('channel_id');
 if (!is_array($channels))

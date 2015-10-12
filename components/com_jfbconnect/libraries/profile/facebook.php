@@ -1,10 +1,10 @@
 <?php
 /**
  * @package         JFBConnect
- * @copyright (c)   2009-2014 by SourceCoast - All Rights Reserved
+ * @copyright (c)   2009-2015 by SourceCoast - All Rights Reserved
  * @license         http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
- * @version         Release v6.3.0
- * @build-date      2015/03/19
+ * @version         Release v6.4.2
+ * @build-date      2015/08/24
  */
 
 // Check to ensure this file is included in Joomla!
@@ -195,7 +195,7 @@ class JFBConnectProfileFacebook extends JFBConnectProfile
 
     public function fetchStatus($providerUserId)
     {
-        $response = JFBCFactory::provider('facebook')->api('/me/statuses');
+        $response = JFBCFactory::provider('facebook')->api('/v2.4/me/feed');
         if (!isset($response['data'][0]))
             return;
         $socialStatus = $response['data'][0]['message'];
@@ -251,15 +251,15 @@ class JFBConnectProfileFacebook extends JFBConnectProfile
 
     function getProfileUrl($fbUserId)
     {
-        $profileUrl = JFBCFactory::cache()->get('facebook.profile.' . '.' . $fbUserId);
+        $profileUrl = JFBCFactory::cache()->get('facebook.link.' . '.' . $fbUserId);
         if ($profileUrl === false)
         {
-            $profileData = JFBCFactory::provider('facebook')->api('/' . $fbUserId);
+            $profileData = JFBCFactory::provider('facebook')->api('/' . $fbUserId . '?fields=link');
             if (is_array($profileData) && array_key_exists('link', $profileData))
             {
                 $profileUrl = $profileData['link'];
             }
-            JFBCFactory::cache()->store($profileUrl, 'facebook.profile.' . '.' . $fbUserId);
+            JFBCFactory::cache()->store($profileUrl, 'facebook.link.' . '.' . $fbUserId);
         }
         return $profileUrl;
     }

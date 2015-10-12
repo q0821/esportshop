@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6" type="plugin" group="socialprofiles" method="upgrade" client="site">
+    <name>Social Profiles - Alpha User Points</name>
+    <version>6.2.0</version>
+    <creationDate>2015/08/24</creationDate>
+    <author>SourceCoast | www.sourcecoast.com</author>
+    <authorEmail>support@sourcecoast.com</authorEmail>
+    <authorUrl>http://www.sourcecoast.com</authorUrl>
+    <copyright>Copyright (C) 2010-2015 SourceCoast. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <description>Alpha User Point integration for JFBConnect</description>
+    <files>
+        <filename plugin="alphauserpoints">alphauserpoints.php</filename>
+        <filename>alphauserpoints_rule.xml</filename>
+        <filename>forms/config.xml</filename>
+    </files>
+    <languages folder="translations">
+        <language tag="en-GB">en-GB.plg_socialprofiles_alphauserpoints.ini</language>
+    </languages>
+</extension>

@@ -1,9 +1,9 @@
 <?php
 /**
  * @package         JFBConnect
- * @copyright (c)   2009-2014 by SourceCoast - All Rights Reserved
+ * @copyright (c)   2009-2015 by SourceCoast - All Rights Reserved
  * @license         http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
- * @build-date      2015/03/19
+ * @build-date      2015/08/24
  */
 
 // Check to ensure this file is included in Joomla!

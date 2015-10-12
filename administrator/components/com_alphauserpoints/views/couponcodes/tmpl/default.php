@@ -373,7 +373,7 @@ JHtml::_('formbehavior.chosen', 'select');
 			<button class="btn" type="button" data-dismiss="modal">
 				<?php echo JText::_( 'Cancel' ); ?>
 			</button>
-			<button class="btn btn-primary" type="submit" onclick="Joomla.submitform('savecoupongenerator', this.form);">
+			<button class="btn btn-primary" type="submit" onclick="submit('savecoupongenerator');">
 				<?php echo JText::_( 'Save' ); ?>
 			</button>
 

@@ -47,14 +47,15 @@ It should keep a nomage standard for plugin-third of components as follows: <br 
 Example <i>plgaup_new_comment</i> or <i>plgaup_kunena_topic_reply</i> to resume the example of the inclusion of this component API in a comment or Kunena forum. <br />
 The name of a function to award points when creating a new topic posted in the component Kunena could be, for example, <i>plgaup_kunena_topic_create</i>. <br />
 <br />
-<span class="Style1">Step 2 - Add a new rule in the rules manager </span><br /> 
-Go to the rules manager and click on <b>New</b>  button (Toolbar). Fill all fields necessary and publish this new rule. Then save it. </p>
-<p> You can also click on the toolbar button in rules manager or Plugins button control panel component, and then select the file. Zip or. Xml containing the new rule. Upload the file. If the file is uploaded correctly, a new rule will add to the existing list. Set this new rule and enable there to suit your needs.<br />
-  <br />
-  <br />
+<span class="Style1">Step 2 - Add the new rule(s) in the rules manager </span><br /> 
+With AlphaUserPoints version 1.9.6 and later for Joomla 3.x,  all developers of third extensions for Joomla! can add directly at the root of their <strong>frontend </strong> components or plugins an unique xml file containing all the rules for a single component. The file structure is almost similar but you have to respect the ordering and tags: </p>
+<p><img src="schemaxml.gif" width="689" height="559" /></p>
+<p>Tag “component” is the name of the third component like “com_kunena” or other. As it is the same component, it is worth repeating for each rule in the tag “rule” </p>
+<p>Administrator of the website which install a third component with this xml file can auto-detect directly from the button “auto-detect plugins” in control panel of AlphaUserPoints. </p>
+<p>This xml file has to be utf-8 encoded (required) but not be zipped! Just put this file at the root of <strong>frontend </strong> component folder or plugin or module and include this file in your installer extension . This file <strong>must </strong><strong></strong><strong>be </strong><strong></strong><strong>named </strong>exactly as follows: <strong>alphauserpoints_rule.xml </strong></p>
+<p>  <br />
   <span class="Style1">Note to developers </span><br />
   <br />
-You can find the complete documentation to insert and use this API in your components on official website author <a href="http://www.alphaplug.com">www.alphaplug.com</a>.</p>
-<p>&nbsp;</p>
+You can find the complete documentation to insert and use this API in your components or plugin <a href="developer_documentation_2.0.x_english.pdf">here</a>.</p>
 </body>
 </html>

@@ -1,10 +1,10 @@
 <?php
 /**
  * @package         JFBConnect
- * @copyright (c)   2009-2014 by SourceCoast - All Rights Reserved
+ * @copyright (c)   2009-2015 by SourceCoast - All Rights Reserved
  * @license         http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
- * @version         Release v6.3.0
- * @build-date      2015/03/19
+ * @version         Release v6.4.2
+ * @build-date      2015/08/24
  */
 defined('_JEXEC') or die('Restricted access');
 
@@ -12,7 +12,8 @@ jimport('joomla.version');
 jimport('sourcecoast.utilities');
 jimport('sourcecoast.adminHelper');
 
-$ajaxUrl = JURI::base() . 'index.php?option=com_installer&view=update&task=update.ajax';
+$token    = JSession::getFormToken() . '=' . 1;
+$ajaxUrl = JURI::base() . 'index.php?option=com_installer&view=update&task=update.ajax&' . $token;
 $script = "var jfbconnect_update_ajax_url = '$ajaxUrl';\n";
 $script .= 'var jfbconnect_update_text = {"UPTODATE" : "' . JText::_('COM_JFBCONNECT_UPDATES_UPDATE_TEXT') . '",
     "UPDATEFOUND": "' . JText::_('COM_JFBCONNECT_UPDATES_UPDATE_FOUND') . '",

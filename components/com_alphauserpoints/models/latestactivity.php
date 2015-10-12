@@ -49,7 +49,7 @@ class alphauserpointsModelLatestactivity extends JmodelLegacy {
 		$limitstart = ( $limit != 0 ? (floor( $limitstart / $limit ) * $limit) : 0);		
 		$query = "SELECT a.insert_date, a.referreid, a.points AS last_points, a.datareference, u.".$params->get('usrname', 'name')." AS usrname, r.rule_name, r.plugin_function, r.category"
 			   . " FROM #__alpha_userpoints_details AS a, #__alpha_userpoints AS aup, #__users AS u, #__alpha_userpoints_rules AS r"
-			   . " WHERE aup.referreid=a.referreid AND aup.userid=u.id AND aup.published='1' AND a.approved='1' AND (a.expire_date>='".$now."' OR a.expire_date='0000-00-00 00:00:00') AND r.id=a.rule"
+			   . " WHERE aup.referreid=a.referreid AND aup.userid=u.id AND r.displayactivity='1' AND aup.published='1' AND a.approved='1' AND (a.expire_date>='".$now."' OR a.expire_date='0000-00-00 00:00:00') AND r.id=a.rule"
 			   . $typeActivity
 			   . " ORDER BY a.insert_date DESC"
 		 	   ;

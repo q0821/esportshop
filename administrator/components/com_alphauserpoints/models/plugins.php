@@ -86,7 +86,7 @@ class alphauserpointsModelPlugins extends JmodelLegacy {
 					$db->setQuery( $query );
 					$resultCount = $db->loadResult();
 					if ( !$resultCount ) {					
-						$query = "INSERT INTO #__alpha_userpoints_rules VALUES ('', '".$nameRule."', '".$descriptionRule."', '".$componentRule."', '".$pluginRule."', '1', '".$componentRule."', '', '', '0', '0', 0, '0000-00-00 00:00:00', '', '', '', '', '0', '0', '0', '0', '1', '".$fixedpointsRule."', '".$categoryRule."', '".$displayMessage."', '', '0', '".$emailNotification."', '', '', '0', '0', '0', '0', '0')";
+						$query = "INSERT INTO #__alpha_userpoints_rules VALUES ('', '".$nameRule."', '".$descriptionRule."', '".$componentRule."', '".$pluginRule."', '1', '".$componentRule."', '', '', '0', '0', 0, '0000-00-00 00:00:00', '', '', '', '', '0', '0', '0', '0', '1', '".$fixedpointsRule."', '".$categoryRule."', '".$displayMessage."', '', '0', '".$emailNotification."', '', '', '0', '0', '0', '0', '0', '1')";
 						$db->setQuery( $query );
 						if ( $db->query() ) {							
 							$msg = JText::_('AUP_NEW_RULE_INSTALLED_SUCCESSFULLY') . ' : <b>' . $nameRule . '</b>';

@@ -45,7 +45,7 @@ class alphauserpointsController extends JControllerLegacy
 		$_last_Activities 	= $model3->_last_Activities ();	
 		$_communitypoints 	= $model->_totalcurrentcommunitypoints();
 		
-		if ( $_params->get('showUpdateCheck', 1) ) 
+		if ( $_params->get('showUpdateCheck', 0) ) 
 		{
 
 			$cache=  JFactory::getCache('com_alphauserpoints');

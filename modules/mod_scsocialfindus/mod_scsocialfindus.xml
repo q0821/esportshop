@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="1.6" type="module" method="upgrade" client="site">
     <name>SCSocial Find Us</name>
-    <version>6.3.0</version>
-    <creationDate>2015/03/19</creationDate>
+    <version>6.4.1</version>
+    <creationDate>2015/08/24</creationDate>
     <author>SourceCoast | www.sourcecoast.com</author>
     <authorEmail>support@sourcecoast.com</authorEmail>
     <authorUrl>http://www.sourcecoast.com</authorUrl>
-    <copyright>Copyright (C) 2014-2014 SourceCoast. All rights reserved.</copyright>
+    <copyright>Copyright (C) 2014-2015 SourceCoast. All rights reserved.</copyright>
     <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
     <description>This is the Social Find Us module that goes with the JFBConnect component, which lets users share their social network pages.</description>
     <files>
@@ -41,6 +41,7 @@
                 <field name="linkedin_url" type="text" label="LinkedIn URL" description="Your LinkedIn profile, company or school page url." />
                 <field name="pinterest_url" type="text" label="Pinterest URL" description="Your Pinterest profile or stream url." />
                 <field name="twitter_url" type="text" label="Twitter URL" description="Your Twitter profile or stream url." />
+                <field name="flickr_url" type="text" label="Flickr URL" description="Your Flickr url." />
                 <field name="rss_url" type="text" label="RSS URL" description="Your RSS url." />
             </fieldset>
             <fieldset name="advanced">

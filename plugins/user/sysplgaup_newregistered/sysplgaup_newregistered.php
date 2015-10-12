@@ -184,6 +184,7 @@ class plgUserSysplgaup_newregistered extends JPlugin
 
 		$ip = $_SERVER["REMOTE_ADDR"];
 		require_once(JPATH_SITE.DS.'components'.DS.'com_alphauserpoints'.DS.'helper.php');
+		$keyreference = AlphaUserPointsHelper::buildKeyreference( 'sysplgaup_invitewithsuccess', $ip );
 		AlphaUserPointsHelper::userpoints( 'sysplgaup_invitewithsuccess', $referrerid, 0, $ip, $data );
 
 	}

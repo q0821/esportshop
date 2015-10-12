@@ -196,7 +196,7 @@ class AlphaUserPointsHelper
 		if ( $row->max_points >=1 && ( $newtotal > $row->max_points ) )
 		{
 			// Max total was reached !
-			$newtotal = $row->max_points;
+			//$newtotal = $row->max_points;
 
 			if ( AlphaUserPointsHelper::checkRuleEnabled( 'sysplgaup_winnernotification', 0, $referrerid ) )
 			{
@@ -1017,6 +1017,7 @@ class AlphaUserPointsHelper
 	public static function sendwinnernotification ( $referrerid, $assignpoints, $newtotal, $emailadmins='' )
 	{
 		$app = JFactory::getApplication();
+		jimport( 'joomla.mail.helper' );	
 		
 		$lang = JFactory::getLanguage();
 		$lang->load( 'com_alphauserpoints', JPATH_SITE);
@@ -1027,19 +1028,25 @@ class AlphaUserPointsHelper
 		$userinfo 	= AlphaUserPointsHelper::getUserInfo( $referrerid );
 		$name 		= $userinfo->name;
 		$email	 	= $userinfo->email;
+		$formatMail = 1;
 		if ( !$userinfo->block )
 		{				
 			// send notification to winner
 			$subject = JText::_('AUP_EMAILWINNERNOTIFICATION_SUBJECT_MSG_USER');
-			$message = sprintf ( JText::_('AUP_EMAILWINNERNOTIFICATION_MSG_USER'), $name, AlphaUserPointsHelper::getFPoints($newtotal) );			
-			JMail::sendMail( $MailFrom, $FromName, $email, $subject, $message );			
-			// send notification to administrators...		
-			if ( $emailadmins )
-			{
-				$subject = JText::_('AUP_EMAILWINNERNOTIFICATION_SUBJECT_MSG_ADMIN');
-				$message = sprintf ( JText::_('AUP_EMAILWINNERNOTIFICATION_MSG_ADMIN'), $name, AlphaUserPointsHelper::getFPoints($newtotal) );				
-				JMail::sendMail( $MailFrom, $FromName, $emailadmins, $subject, $message );
-			}
+			$body = sprintf ( JText::_('AUP_EMAILWINNERNOTIFICATION_MSG_USER'), $name, AlphaUserPointsHelper::getFPoints($newtotal) );		
+			
+			$mailer = JFactory::getMailer();
+			$mailer->setSender( array( $MailFrom, $FromName ) );
+			$mailer->setSubject( $subject);
+			$mailer->isHTML((bool) $formatMail);
+			$mailer->CharSet = "utf-8";
+			$mailer->setBody($body);
+			$mailer->addRecipient( $email );
+			if ( $emailadmins ) 
+			{			
+				$mailer->addBCC( $emailadmins );
+			}		
+			$send = $mailer->Send();		
 		}
 	
 	}
@@ -1546,7 +1553,7 @@ class AlphaUserPointsHelper
 		
 		$query = "SELECT a.insert_date, a.referreid, a.points, aup.points AS last_total_points, a.datareference, r.rule_name, r.plugin_function, r.category"
 			   . " FROM #__alpha_userpoints_details AS a, #__alpha_userpoints AS aup, #__users AS u, #__alpha_userpoints_rules AS r"
-			   . " WHERE aup.referreid=a.referreid AND aup.userid=u.id AND aup.published='1' AND a.approved='1' AND (a.expire_date>='".$now."' OR a.expire_date='0000-00-00 00:00:00') AND r.id=a.rule"
+			   . " WHERE aup.referreid=a.referreid AND aup.userid=u.id AND aup.published='1' AND a.approved='1' AND (a.expire_date>='".$now."' OR a.expire_date='0000-00-00 00:00:00') AND r.id=a.rule AND r.displayactivity='1'"
 			   . $typeActivity
 			   . $userID 
 			   . " ORDER BY a.insert_date DESC"
@@ -1554,7 +1561,7 @@ class AlphaUserPointsHelper
 			   
 		$totalquery = "SELECT COUNT(a.referreid)"
 			   . " FROM #__alpha_userpoints_details AS a, #__alpha_userpoints AS aup, #__users AS u, #__alpha_userpoints_rules AS r"
-			   . " WHERE aup.referreid=a.referreid AND aup.userid=u.id AND aup.published='1' AND a.approved='1' AND (a.expire_date>='".$now."' OR a.expire_date='0000-00-00 00:00:00') AND r.id=a.rule"
+			   . " WHERE aup.referreid=a.referreid AND aup.userid=u.id AND aup.published='1' AND a.approved='1' AND (a.expire_date>='".$now."' OR a.expire_date='0000-00-00 00:00:00') AND r.id=a.rule AND r.displayactivity='1'"
 			   . $typeActivity
 			   . $userID 
 			   ;

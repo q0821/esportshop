@@ -236,6 +236,8 @@ class alphauserpointsControllerInvite extends alphauserpointsController
 		
 		$rule_ID = $model->_getRuleID ( 'sysplgaup_invite' );
 		
+		$refer_ID = AlphaUserPointsHelper::getAnyUserReferreID( $user->id );
+		
 		$numpoints4invite = AlphaUserPointsHelper::getPointsRule( 'sysplgaup_invite' );
 		$totalpointsearned= 0;
 		
@@ -287,7 +289,8 @@ class alphauserpointsControllerInvite extends alphauserpointsController
 							if ( AlphaUserPointsHelper::checkRuleEnabled('sysplgaup_invite') ) {						
 								// insert email for tracking
 								$email2 = str_replace("@" ," [at] ", $email); // change @ because can be display on frontend in latest activity
-								AlphaUserPointsHelper::userpoints( 'sysplgaup_invite', '', 0, $email, $email2  );
+								$keyreference = AlphaUserPointsHelper::buildKeyreference( 'sysplgaup_invite', $email );
+								AlphaUserPointsHelper::userpoints( 'sysplgaup_invite', $refer_ID, 0, $keyreference, $email2  );
 								$totalpointsearned = $totalpointsearned + $numpoints4invite;
 							}
 						} else {

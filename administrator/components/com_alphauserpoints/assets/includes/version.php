@@ -11,14 +11,14 @@ defined('_JEXEC') or die('Restricted access');
 
 // num version
 if(!defined("_ALPHAUSERPOINTS_NUM_VERSION")) {
-   DEFINE( "_ALPHAUSERPOINTS_NUM_VERSION", "2.0.0" );
+   DEFINE( "_ALPHAUSERPOINTS_NUM_VERSION", "2.0.3" );
 }
 
 function aup_update_db_version () {
 	
 	$db	= JFactory::getDBO(); 
 	// update table version
-	$query = "UPDATE #__alpha_userpoints_version SET `version`='2.0.0' WHERE 1";
+	$query = "UPDATE #__alpha_userpoints_version SET `version`='2.0.3' WHERE 1";
 	$db->setQuery( $query );
 	$db->query();
 

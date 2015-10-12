@@ -1,10 +1,10 @@
 <?php
 /**
  * @package         SourceCoast Extensions
- * @copyright (c)   2009-2014 by SourceCoast - All Rights Reserved
+ * @copyright (c)   2009-2015 by SourceCoast - All Rights Reserved
  * @license         http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
- * @version         Release v6.3.0
- * @build-date      2015/03/19
+ * @version         Release v6.4.2
+ * @build-date      2015/08/24
  */
 
 // Check to ensure this file is included in Joomla!
@@ -79,7 +79,7 @@ class SCSocialUtilities
 
         if ($showLinkedInButton)
         {
-            $extraButtonText .= '{JLinkedShare href=' . urlencode($url) . " layout=" . $dataCount . $renderKeyString . '}';
+            $extraButtonText .= '{JLinkedShare href=' . $url . " layout=" . $dataCount . $renderKeyString . '}';
         }
         if ($showTwitterButton)
         {
@@ -126,6 +126,7 @@ class SCSocialUtilities
         $juri->delVar('utm_medium');
         $juri->delVar('utm_campaign');
         $juri->delVar('utm_term');
+        $juri->delVar('utm_content');
         $juri->delVar('fb_source');
         $juri->delVar('fb_action_ids');
         $juri->delVar('fb_action_types');

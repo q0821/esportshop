@@ -72,6 +72,8 @@ function Recalc( $start, $tempsExec )
 	
 		require_once (JPATH_SITE.DS.'components'.DS.'com_alphauserpoints'.DS.'helper.php');
 		
+		$allowNegativeAccount = $params->get( 'allowNegativeAccount', 0 );
+		
 		for ($i, $n=$numusers; $i < $n; $i++) {			
 				
 			if ($new_time - $start_time < $tempsExec){
@@ -82,6 +84,8 @@ function Recalc( $start, $tempsExec )
 				$query = "SELECT SUM(points) FROM #__alpha_userpoints_details WHERE `referreid`='" . $user->referreid . "' AND `approved`='1' AND (`expire_date`>'$now' OR `expire_date`='0000-00-00 00:00:00')";
 				$db->setQuery($query);
 				$newtotal = $db->loadResult();
+				
+				if (!$allowNegativeAccount && $newtotal<0) $newtotal = 0;
 
 				$query = "UPDATE #__alpha_userpoints SET `points`='" . $newtotal . "', `last_update`='$now' WHERE `referreid`='" . $user->referreid . "'";
 				$db->setQuery( $query );

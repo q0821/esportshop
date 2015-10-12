@@ -75,7 +75,8 @@ if (!$udduserid) {
 	return;
 }
 
-$uddsql = "SELECT gid FROM #__users WHERE id=".(int)$udduserid;
+//$uddsql = "SELECT gid FROM #__users WHERE id=".(int)$udduserid;
+$uddsql = "SELECT group_id FROM #__user_usergroup_map WHERE user_id=".(int)$udduserid;
 $udddatabase->setQuery($uddsql);
 $uddmy_gid=(int)$udddatabase->loadResult();
 

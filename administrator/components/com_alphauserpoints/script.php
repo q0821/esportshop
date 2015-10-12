@@ -182,28 +182,28 @@ class com_AlphaUserPointsInstallerScript
 					$result = $db->loadResult();
 					if ( !$result ) {		
 						// Insert default rules on fresh install
-						$query = "INSERT INTO #__alpha_userpoints_rules (`id`, `rule_name`, `rule_description`, `rule_plugin`, `plugin_function`, `access`, `component`, `calltask`, `taskid`, `points`, `points2`, `percentage`, `rule_expire`, `sections`, `categories`, `content_items`, `exclude_items`, `published`, `system`, `duplicate`, `blockcopy`, `autoapproved`, `fixedpoints`, `category`, `displaymsg`, `msg`, `method`, `notification`, `emailsubject`, `emailbody`, `emailformat`, `bcc2admin`, `type_expire_date`, `chain`,`linkup`) VALUES
-							('', 'AUP_NEWUSER', 'AUP_NEWUSERDESCRIPTION', 'AUP_SYSTEM', 'sysplgaup_newregistered', '1', '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', '', 1, 1, 0, 1, 1, 1, 'us', '0', '', '1', '0', '', '', '0', '0', '0', '0', '0'),
-							('', 'AUP_INVITE', 'AUP_INVITE_A_USER', 'AUP_SYSTEM', 'sysplgaup_invite', '1', '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', '', 0, 1, 0, 1, 1, 1, 're', '1', '', '4', '0', '', '', '0', '0', '0', '0', '0'),
-							('', 'AUP_INVITESUCCES', 'AUP_INVITE_A_USERSUCCESS', 'AUP_SYSTEM', 'sysplgaup_invitewithsuccess', '1', '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', '', 0, 1, 0, 1, 1, 1, 're', '0', '', '4', '0', '', '', '0', '0', '0', '0', '0'),
-							('', 'AUP_READTOAUTHOR', 'AUP_READTOAUTHORDESCRIPTION', 'AUP_SYSTEM', 'sysplgaup_reader2author', '0', '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', '', 0, 1, 0, 1, 1, 1, 'ar', '1', '', '4', '0', '', '', '0', '0', '0', '0', '0'),
-							('', 'AUP_REFERRALPOINTS', 'AUP_REFERRALPOINTSDESCRIPTION', 'AUP_SYSTEM', 'sysplgaup_referralpoints', '1', '', '', '', 0, 0, 1, '0000-00-00 00:00:00', '', '', '', '', 0, 1, 0, 1, 1, 1, 'co', '0', '', '4', '0', '', '', '0', '0', '0', '0', '0'),
-							('', 'AUP_BONUSPOINTS', 'AUP_BONUSPOINTSDESCRIPTION', 'AUP_SYSTEM', 'sysplgaup_bonuspoints', '1', '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', '', 0, 1, 1, 0, 1, 1, 'ot', '0', '', '4', '0', '', '', '0', '0', '0', '1', '0'),
-							('', 'AUP_WINNERNOTIFICATION', 'AUP_WINNERNOTIFICATIONDESCRIPTION', 'AUP_SYSTEM', 'sysplgaup_winnernotification', '1', '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', '', 0, 1, 0, 1, 1, 0, 'sy', '0', '', '4', '0', '', '', '0', '0', '0', '0', '0'),
-							('', 'AUP_COUPON_POINTS_CODES', 'AUP_COUPON_POINTS_CODES_DESCRIPTION', 'AUP_SYSTEM', 'sysplgaup_couponpointscodes', '1', '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', '', 0, 1, 0, 1, 1, 0, 'cd', '1', '', '4', '0', '', '', '0', '0', '0', '0', '0'),			
-							('', 'AUP_RAFFLE', 'AUP_RAFFLE_DESCRIPTION', 'AUP_SYSTEM', 'sysplgaup_raffle', '1', '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', '', 0, 1, 0, 1, 1, 0, 'ot', '1', '', '4', '0', '', '', '0', '0', '0', '0', '0'),
-							('', 'AUP_CUSTOM', 'AUP_CUSTOM_DESCRIPTION', 'AUP_SYSTEM', 'sysplgaup_custom', '1', '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', '', 0, 1, 0, 0, 1, 0, 'ot', '1', '', '4', '0', '', '', '0', '0', '0', '0', '0'),
-							('', 'AUP_UPLOADAVATAR', 'AUP_UPLOADAVATAR_DESCRIPTION', 'AUP_SYSTEM', 'sysplgaup_uploadavatar', '1', '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', '', 0, 1, 0, 1, 1, 1, 'us', '1', '', '1', '0', '', '', '0', '0', '0', '0', '0'),
-							('', 'AUP_PROFILECOMPLETE', 'AUP_PROFILECOMPLETE_DESCRIPTION', 'AUP_SYSTEM', 'sysplgaup_profilecomplete', '1', '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', '', 0, 1, 0, 1, 1, 1, 'us', '1', '', '1', '0', '', '', '0', '0', '0', '0', '0'),
-							('', 'AUP_PROFILE_VIEW', 'AUP_PROFILE_VIEW_DESCRIPTION', 'AUP_SYSTEM', 'sysplgaup_profile_view', '1', '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', '', 0, 1, 0, 1, 1, 1, 'co', '1', '', '1', '0', '', '', '0', '0', '0', '0', '0'),
-							('', 'AUP_CHANGE_LEVEL_1', 'AUP_CHANGE_LEVEL_DESCRIPTION', 'AUP_SYSTEM', 'sysplgaup_changelevel1', '1', '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', '', 0, 1, 0, 1, 1, 1, 'us', '0', '', '4', '0', '', '', '0', '0', '0', '0', '0'),
-							('', 'AUP_CHANGE_LEVEL_2', 'AUP_CHANGE_LEVEL_DESCRIPTION', 'AUP_SYSTEM', 'sysplgaup_changelevel2', '1', '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', '', 0, 1, 0, 1, 1, 1, 'us', '0', '', '4', '0', '', '', '0', '0', '0', '0', '0'),
-							('', 'AUP_CHANGE_LEVEL_3', 'AUP_CHANGE_LEVEL_DESCRIPTION', 'AUP_SYSTEM', 'sysplgaup_changelevel3', '1', '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', '', 0, 1, 0, 1, 1, 1, 'us', '0', '', '4', '0', '', '', '0', '0', '0', '0', '0'),			
-							('', 'AUP_COMBINED_ACTIVITIES', 'AUP_COMBINE_ACTIVITIES_DESCRIPTION', 'AUP_SYSTEM', 'sysplgaup_archive', '1', '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', '', 1, 1, 0, 1, 1, 0, 'sy', '0', '', '4', '0', '', '', '0', '0', '0', '0', '0'),
-							('', 'AUP_KU_NEW_TOPIC', 'AUP_KU_NEW_TOPIC_DESCRIPTION', 'AUP_KUNENA_FORUM', 'plgaup_kunena_topic_create', '1', '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', '', 0, 0, 0, 0, 1, 1, 'fo', '1', '', '4', '0', '', '', '0', '0', '0', '0', '0'),
-							('', 'AUP_KU_REPLY_TOPIC', 'AUP_KU_REPLY_DESCRIPTION', 'AUP_KUNENA_FORUM', 'plgaup_kunena_topic_reply', '1', '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', '', 0, 0, 0, 0, 1, 1, 'fo', '1', '', '4', '0', '', '', '0', '0', '0', '0', '0'),
-							('', 'AUP_KU_THANKYOU', 'AUP_KU_THANKYOU_DESCRIPTION', 'AUP_KUNENA_FORUM', 'plgaup_kunena_message_thankyou', '1', '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', '', 0, 0, 0, 0, 1, 1, 'fo', '1', '', '4', '0', '', '', '0', '0', '0', '0', '0'),
-							('', 'AUP_KU_DELETE_POST', 'AUP_KU_DELETE_POST_DESCRIPTION', 'AUP_KUNENA_FORUM', 'plgaup_kunena_message_delete', '1', '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', '', 0, 0, 0, 0, 1, 1, 'fo', '1', '', '4', '0', '', '', '0', '0', '0', '0', '0');";
+						$query = "INSERT INTO #__alpha_userpoints_rules (`id`, `rule_name`, `rule_description`, `rule_plugin`, `plugin_function`, `access`, `component`, `calltask`, `taskid`, `points`, `points2`, `percentage`, `rule_expire`, `sections`, `categories`, `content_items`, `exclude_items`, `published`, `system`, `duplicate`, `blockcopy`, `autoapproved`, `fixedpoints`, `category`, `displaymsg`, `msg`, `method`, `notification`, `emailsubject`, `emailbody`, `emailformat`, `bcc2admin`, `type_expire_date`, `chain`,`linkup`, `displayactivity`) VALUES
+							('', 'AUP_NEWUSER', 'AUP_NEWUSERDESCRIPTION', 'AUP_SYSTEM', 'sysplgaup_newregistered', '1', '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', '', 1, 1, 0, 1, 1, 1, 'us', '0', '', '1', '0', '', '', '0', '0', '0', '0', '0', '1'),
+							('', 'AUP_INVITE', 'AUP_INVITE_A_USER', 'AUP_SYSTEM', 'sysplgaup_invite', '1', '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', '', 0, 1, 0, 1, 1, 1, 're', '1', '', '4', '0', '', '', '0', '0', '0', '0', '0', '1'),
+							('', 'AUP_INVITESUCCES', 'AUP_INVITE_A_USERSUCCESS', 'AUP_SYSTEM', 'sysplgaup_invitewithsuccess', '1', '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', '', 0, 1, 0, 1, 1, 1, 're', '0', '', '4', '0', '', '', '0', '0', '0', '0', '0', '1'),
+							('', 'AUP_READTOAUTHOR', 'AUP_READTOAUTHORDESCRIPTION', 'AUP_SYSTEM', 'sysplgaup_reader2author', '0', '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', '', 0, 1, 0, 1, 1, 1, 'ar', '1', '', '4', '0', '', '', '0', '0', '0', '0', '0', '1'),
+							('', 'AUP_REFERRALPOINTS', 'AUP_REFERRALPOINTSDESCRIPTION', 'AUP_SYSTEM', 'sysplgaup_referralpoints', '1', '', '', '', 0, 0, 1, '0000-00-00 00:00:00', '', '', '', '', 0, 1, 0, 1, 1, 1, 'co', '0', '', '4', '0', '', '', '0', '0', '0', '0', '0', '1'),
+							('', 'AUP_BONUSPOINTS', 'AUP_BONUSPOINTSDESCRIPTION', 'AUP_SYSTEM', 'sysplgaup_bonuspoints', '1', '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', '', 0, 1, 1, 0, 1, 1, 'ot', '0', '', '4', '0', '', '', '0', '0', '0', '1', '0', '1'),
+							('', 'AUP_WINNERNOTIFICATION', 'AUP_WINNERNOTIFICATIONDESCRIPTION', 'AUP_SYSTEM', 'sysplgaup_winnernotification', '1', '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', '', 0, 1, 0, 1, 1, 0, 'sy', '0', '', '4', '0', '', '', '0', '0', '0', '0', '0', '1'),
+							('', 'AUP_COUPON_POINTS_CODES', 'AUP_COUPON_POINTS_CODES_DESCRIPTION', 'AUP_SYSTEM', 'sysplgaup_couponpointscodes', '1', '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', '', 0, 1, 0, 1, 1, 0, 'cd', '1', '', '1', '0', '', '', '0', '0', '0', '0', '0', '1'),			
+							('', 'AUP_RAFFLE', 'AUP_RAFFLE_DESCRIPTION', 'AUP_SYSTEM', 'sysplgaup_raffle', '1', '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', '', 0, 1, 0, 1, 1, 0, 'ot', '1', '', '4', '0', '', '', '0', '0', '0', '0', '0', '1'),
+							('', 'AUP_CUSTOM', 'AUP_CUSTOM_DESCRIPTION', 'AUP_SYSTEM', 'sysplgaup_custom', '1', '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', '', 0, 1, 0, 0, 1, 0, 'ot', '1', '', '4', '0', '', '', '0', '0', '0', '0', '0', '1'),
+							('', 'AUP_UPLOADAVATAR', 'AUP_UPLOADAVATAR_DESCRIPTION', 'AUP_SYSTEM', 'sysplgaup_uploadavatar', '1', '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', '', 0, 1, 0, 1, 1, 1, 'us', '1', '', '1', '0', '', '', '0', '0', '0', '0', '0', '1'),
+							('', 'AUP_PROFILECOMPLETE', 'AUP_PROFILECOMPLETE_DESCRIPTION', 'AUP_SYSTEM', 'sysplgaup_profilecomplete', '1', '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', '', 0, 1, 0, 1, 1, 1, 'us', '1', '', '1', '0', '', '', '0', '0', '0', '0', '0', '1'),
+							('', 'AUP_PROFILE_VIEW', 'AUP_PROFILE_VIEW_DESCRIPTION', 'AUP_SYSTEM', 'sysplgaup_profile_view', '1', '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', '', 0, 1, 0, 1, 1, 1, 'co', '1', '', '1', '0', '', '', '0', '0', '0', '0', '0', '1'),
+							('', 'AUP_CHANGE_LEVEL_1', 'AUP_CHANGE_LEVEL_DESCRIPTION', 'AUP_SYSTEM', 'sysplgaup_changelevel1', '1', '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', '', 0, 1, 0, 1, 1, 1, 'us', '0', '', '4', '0', '', '', '0', '0', '0', '0', '0', '1'),
+							('', 'AUP_CHANGE_LEVEL_2', 'AUP_CHANGE_LEVEL_DESCRIPTION', 'AUP_SYSTEM', 'sysplgaup_changelevel2', '1', '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', '', 0, 1, 0, 1, 1, 1, 'us', '0', '', '4', '0', '', '', '0', '0', '0', '0', '0', '1'),
+							('', 'AUP_CHANGE_LEVEL_3', 'AUP_CHANGE_LEVEL_DESCRIPTION', 'AUP_SYSTEM', 'sysplgaup_changelevel3', '1', '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', '', 0, 1, 0, 1, 1, 1, 'us', '0', '', '4', '0', '', '', '0', '0', '0', '0', '0', '1'),			
+							('', 'AUP_COMBINED_ACTIVITIES', 'AUP_COMBINE_ACTIVITIES_DESCRIPTION', 'AUP_SYSTEM', 'sysplgaup_archive', '1', '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', '', 1, 1, 0, 1, 1, 0, 'sy', '0', '', '4', '0', '', '', '0', '0', '0', '0', '0', '1'),
+							('', 'AUP_KU_NEW_TOPIC', 'AUP_KU_NEW_TOPIC_DESCRIPTION', 'AUP_KUNENA_FORUM', 'plgaup_kunena_topic_create', '1', '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', '', 0, 0, 0, 0, 1, 1, 'fo', '1', '', '4', '0', '', '', '0', '0', '0', '0', '0', '1'),
+							('', 'AUP_KU_REPLY_TOPIC', 'AUP_KU_REPLY_DESCRIPTION', 'AUP_KUNENA_FORUM', 'plgaup_kunena_topic_reply', '1', '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', '', 0, 0, 0, 0, 1, 1, 'fo', '1', '', '4', '0', '', '', '0', '0', '0', '0', '0', '1'),
+							('', 'AUP_KU_THANKYOU', 'AUP_KU_THANKYOU_DESCRIPTION', 'AUP_KUNENA_FORUM', 'plgaup_kunena_message_thankyou', '1', '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', '', 0, 0, 0, 0, 1, 1, 'fo', '1', '', '4', '0', '', '', '0', '0', '0', '0', '0', '1'),
+							('', 'AUP_KU_DELETE_POST', 'AUP_KU_DELETE_POST_DESCRIPTION', 'AUP_KUNENA_FORUM', 'plgaup_kunena_message_delete', '1', '', '', '', 0, 0, 0, '0000-00-00 00:00:00', '', '', '', '', 0, 0, 0, 0, 1, 1, 'fo', '1', '', '4', '0', '', '', '0', '0', '0', '0', '0', '1');";
 				
 						$db->setQuery( $query );
 						if ( $db->query() ) {
@@ -247,6 +247,75 @@ class com_AlphaUserPointsInstallerScript
 						$install .=  '<img src="components/com_alphauserpoints/assets/images/icon-16-allow.png" alt="" align="absmiddle" /> Sample ranks/medals installed<br/>';
 						
 					}
+				
+				// install default modules
+				// =======================
+				$status = new stdClass;
+				$status->modules = array();
+				$status->plugins = array();
+				$src = $parent->getParent()->getPath('source');
+				$manifest = $parent->getParent()->manifest;
+				$modules = $manifest->xpath('modules/module');
+				foreach ($modules as $module)
+				{
+					$name = (string)$module->attributes()->module;
+					$client = (string)$module->attributes()->client;
+					$modulePublished = (string)$module->attributes()->publish;
+					$modulePosition = (string)$module->attributes()->position;
+					if (is_null($client))
+					{
+						$client = 'site';
+					}
+					$path = $src.'/modules/'.$name;
+					$installer = new JInstaller;
+					$result = $installer->install($path);
+		
+					if($client == 'administrator') {
+							//auto publish the admin modules
+							$sql = $db->getQuery(true)
+									->update($db->qn('#__modules'))
+									->set($db->qn('position').' = '.$db->q($modulePosition))
+									->where($db->qn('module').' = '.$db->q($name));
+								if($modulePublished) {
+									$sql->set($db->qn('published').' = '.$db->q('1'));
+								}
+								$db->setQuery($sql);
+								$db->execute();
+		
+								// Link to all pages
+								$query = $db->getQuery(true);
+								$query->select('id')->from($db->qn('#__modules'))
+									->where($db->qn('module').' = '.$db->q($name));
+								$db->setQuery($query);
+								$moduleid = $db->loadResult();
+		
+								$query = $db->getQuery(true);
+								$query->select('*')->from($db->qn('#__modules_menu'))
+									->where($db->qn('moduleid').' = '.$db->q($moduleid));
+								$db->setQuery($query);
+								$assignments = $db->loadObjectList();
+								$isAssigned = !empty($assignments);
+								if(!$isAssigned) {
+									$o = (object)array(
+										'moduleid'	=> $moduleid,
+										'menuid'	=> 0
+									);
+									$db->insertObject('#__modules_menu', $o);
+								}
+		
+					}
+		
+					$status->modules[] = array('name' => $name, 'client' => $client, 'result' => $result);
+					
+				}
+				
+				if (count($status->modules))
+				{				 	
+					foreach ($status->modules as $module) 
+					{
+						$install.=  ($module['result'])?'<img src="components/com_alphauserpoints/assets/images/icon-16-allow.png" alt="" align="absmiddle" /> Module '.$module['name']. ' installed<br/>':'<img src="components/com_alphauserpoints/assets/images/publish_x.png" alt="" align="absmiddle" /> Module '.$module['name'].' not installed !!!<br/>';
+					}
+				}					
 					
 				echo "<p>&nbsp;</p><p>&nbsp;</p><p>" . $install . "</p>";				
 				echo '<p>&nbsp;</p><p><a href="index.php?option=com_alphauserpoints" class="btn btn-primary">Go to AlphaUserPoints</a></p>';
@@ -277,7 +346,44 @@ class com_AlphaUserPointsInstallerScript
         {
                 // $parent is the class calling this method				
 				
-				$this->install($parent);
+				$app = JFactory::getApplication();
+				$db	= JFactory::getDBO();
+				
+				// Upgrade field in database
+				// -------------------------------------------
+					
+				// version 1.9.9	
+				$test199 = "SELECT `notification` FROM #__alpha_userpoints_levelrank";
+				$db->setQuery( $test199 );
+				if ( !$db->query() ) {		
+					$query = "ALTER TABLE #__alpha_userpoints_levelrank ADD `notification` tinyint(1) NOT NULL DEFAULT '0', ADD `emailsubject` varchar(255) NOT NULL DEFAULT '', ADD `emailbody` text NOT NULL DEFAULT '', ADD `emailformat` tinyint(1) NOT NULL DEFAULT '0', ADD `bcc2admin` tinyint(1) NOT NULL DEFAULT '0';";
+					$db->setQuery( $query );
+					$db->query();
+					
+					$query = "ALTER TABLE #__alpha_userpoints_raffle_inscriptions ADD `ticket` varchar(30) NOT NULL DEFAULT '', ADD `referredraw` int(11) NOT NULL DEFAULT '0', ADD `inscription` datetime NOT NULL DEFAULT '0000-00-00 00:00:00';";
+					$db->setQuery( $query );
+					$db->query();
+					
+					$query = "ALTER TABLE #__alpha_userpoints_rules ADD `chain` tinyint(1) NOT NULL DEFAULT '0', ADD `linkup` int(11) NOT NULL DEFAULT '0';";
+					$db->setQuery( $query );
+					$db->query();
+
+					$query = "UPDATE #__alpha_userpoints_rules SET `duplicate`='1', `blockcopy`='0', `chain`='1' WHERE `plugin_function`='sysplgaup_bonuspoints';";
+					$db->setQuery( $query );
+					$db->query();
+				}		
+				
+				// version 2.0.2 	
+				$test202 = "SELECT `displayactivity` FROM #__alpha_userpoints_rules";
+				$db->setQuery( $test202 );
+				if ( !$db->query() ) {		
+					$query = "ALTER TABLE #__alpha_userpoints_rules ADD `displayactivity` tinyint(1) NOT NULL DEFAULT '1';";
+					$db->setQuery( $query );
+					$db->query();
+				}			
+				
+				$this->install($parent);			
+				
 				
         }
  
@@ -292,7 +398,7 @@ class com_AlphaUserPointsInstallerScript
                 // $type is the type of change (install, update or discover_install)
                 //echo '<p>' . JText::_('COM_HELLOWORLD_PREFLIGHT_' . $type . '_TEXT') . '</p>';
         }
- 
+		 
         /**
          * method to run after an install/update/uninstall method
          *
@@ -300,11 +406,10 @@ class com_AlphaUserPointsInstallerScript
          */
         function postflight($type, $parent) 
         {
-                // $parent is the class calling this method
-                // $type is the type of change (install, update or discover_install)
-               //echo '<p>' . JText::_('COM_HELLOWORLD_POSTFLIGHT_' . $type . '_TEXT') . '</p>';
+            // $parent is the class calling this method
+            // $type is the type of change (install, update or discover_install)
+			
         }
-		
-		
+				
 }
 ?>

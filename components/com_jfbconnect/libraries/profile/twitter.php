@@ -1,10 +1,10 @@
 <?php
 /**
  * @package         JFBConnect
- * @copyright (c)   2009-2014 by SourceCoast - All Rights Reserved
+ * @copyright (c)   2009-2015 by SourceCoast - All Rights Reserved
  * @license         http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
- * @version         Release v6.3.0
- * @build-date      2015/03/19
+ * @version         Release v6.4.2
+ * @build-date      2015/08/24
  */
 
 // Check to ensure this file is included in Joomla!
@@ -112,13 +112,13 @@ class JFBConnectProfileTwitter extends JFBConnectProfile
 
     function getCoverPhoto($providerUserId)
     {
-        $fields = array('profile_background_image_url', 'profile_use_background_image');
+        $fields = array('profile_banner_url');
         $profile = $this->fetchProfile($providerUserId, $fields);
-        if ($profile->get('profile_use_background_image', true) && $profile->get('profile_background_image_url', null))
+        if ($profile->get('profile_banner_url', null))
         {
             $cover = new JRegistry();
 
-            $url = $profile->get('profile_background_image_url');
+            $url = $profile->get('profile_banner_url');
             $cover->set('url', $url);
             $cover->set('offsetY', 0);
             $cover->set('offsetX', 0);

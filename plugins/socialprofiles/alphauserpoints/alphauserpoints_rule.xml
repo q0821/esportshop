@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<alphauserpoints>
+    <component>JFBConnect</component>
+    <rules>
+        <rule>
+            <name>Social Network Authentication</name>
+            <description>Award points to users when they link their Joomla account to a social network account</description>
+            <plugin_function>plgaup_jfbconnect_account_map</plugin_function>
+            <fixed_points>true</fixed_points>
+            <category>co</category>
+            <display_message>0</display_message>
+            <email_notification>0</email_notification>
+        </rule>
+        <rule>
+            <name>Facebook Comment New</name>
+            <description>Award points to users when leaving Facebook comments on your site.</description>
+            <plugin_function>plgaup_jfbconnect_facebook_comment_create</plugin_function>
+            <fixed_points>true</fixed_points>
+            <category>fo</category>
+            <display_message>0</display_message>
+            <email_notification>0</email_notification>
+        </rule>
+        <rule>
+            <name>Facebook Comment Delete</name>
+            <description>Remove points from users when deleting their Facebook comments.</description>
+            <plugin_function>plgaup_jfbconnect_facebook_comment_remove</plugin_function>
+            <fixed_points>true</fixed_points>
+            <category>fo</category>
+            <display_message>0</display_message>
+            <email_notification>0</email_notification>
+        </rule>
+        <rule>
+            <name>Facebook Like New</name>
+            <description>Award points to users that Like pages on your site.</description>
+            <plugin_function>plgaup_jfbconnect_facebook_like_create</plugin_function>
+            <fixed_points>true</fixed_points>
+            <category>re</category>
+            <display_message>0</display_message>
+            <email_notification>0</email_notification>
+        </rule>
+        <rule>
+            <name>Facebook Like Remove</name>
+            <description>Remove points to users that Unlike pages on your site.</description>
+            <plugin_function>plgaup_jfbconnect_facebook_like_remove</plugin_function>
+            <fixed_points>true</fixed_points>
+            <category>re</category>
+            <display_message>0</display_message>
+            <email_notification>0</email_notification>
+        </rule>
+        <rule>
+            <name>Facebook Friend Request Sent</name>
+            <description>Award points to users that send Facebook Requests to their friends.</description>
+            <plugin_function>plgaup_jfbconnect_facebook_request_create</plugin_function>
+            <fixed_points>true</fixed_points>
+            <category>co</category>
+            <display_message>0</display_message>
+            <email_notification>0</email_notification>
+        </rule>
+        <rule>
+            <name>Google +1 content on the site</name>
+            <description>Award points to users that use the Google +1 on your site.</description>
+            <plugin_function>plgaup_jfbconnect_google_plusone_create</plugin_function>
+            <fixed_points>true</fixed_points>
+            <category>re</category>
+            <display_message>0</display_message>
+            <email_notification>0</email_notification>
+        </rule>
+        <rule>
+            <name>Google +1 Remove</name>
+            <description>Take away points to users that remove a Google +1 from your site.</description>
+            <plugin_function>plgaup_jfbconnect_google_plusone_remove</plugin_function>
+            <fixed_points>true</fixed_points>
+            <category>re</category>
+            <display_message>0</display_message>
+            <email_notification>0</email_notification>
+        </rule>
+        <rule>
+            <name>Tweet a page to your Twitter followers</name>
+            <description>Award points to users that use the Tweet button on your site.</description>
+            <plugin_function>plgaup_jfbconnect_twitter_tweet_create</plugin_function>
+            <fixed_points>true</fixed_points>
+            <category>re</category>
+            <display_message>0</display_message>
+            <email_notification>0</email_notification>
+        </rule>
+        <rule>
+            <name>Share a page to LinkedIn</name>
+            <description>Award points to users that use the LinkedIn Share button on your site.</description>
+            <plugin_function>plgaup_jfbconnect_linkedin_share_create</plugin_function>
+            <fixed_points>true</fixed_points>
+            <category>re</category>
+            <display_message>0</display_message>
+            <email_notification>0</email_notification>
+        </rule>
+    </rules>
+</alphauserpoints>

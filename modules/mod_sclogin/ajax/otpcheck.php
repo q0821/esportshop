@@ -1,10 +1,10 @@
 <?php
 /**
  * @package         SCLogin - 2FA login check. Return true if login credentials are correct and 2FA screen should be shown.
- * @copyright (c)   2009-2014 by SourceCoast - All Rights Reserved
+ * @copyright (c)   2009-2015 by SourceCoast - All Rights Reserved
  * @license         http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
- * @version         Release v4.3.0
- * @build-date      2015/03/19
+ * @version         Release v4.4.2
+ * @build-date      2015/08/24
  */
 
 // We are a valid entry point.

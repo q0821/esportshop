@@ -138,6 +138,13 @@ div.scsocialbuttons.vertical >div {
 }
 /* End responsive code */
 
+.sourcecoast.facebook .fb-like > span,
+.sourcecoast.facebook .fb-share-button > span,
+div.scsocialbuttons .fb-like > span,
+div.scsocialbuttons .fb-share-button > span{
+    vertical-align: initial !important;
+}
+
 #jfbcLoginModal {
     text-align:center;
     color: black;
@@ -235,3 +242,4 @@ form#social-post-form label {
     height: 32px;
     width: 32px;
 }
+

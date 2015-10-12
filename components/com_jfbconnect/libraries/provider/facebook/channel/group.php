@@ -1,10 +1,10 @@
 <?php
 /**
  * @package         JFBConnect
- * @copyright (c)   2009-2014 by SourceCoast - All Rights Reserved
+ * @copyright (c)   2009-2015 by SourceCoast - All Rights Reserved
  * @license         http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
- * @version         Release v6.3.0
- * @build-date      2015/03/19
+ * @version         Release v6.4.2
+ * @build-date      2015/08/24
  */
 
 class JFBConnectProviderFacebookChannelGroup extends JFBConnectChannel
@@ -16,7 +16,7 @@ class JFBConnectProviderFacebookChannelGroup extends JFBConnectChannel
         $this->name = "Group";
         $this->outbound = true;
         $this->inbound = true;
-        $this->requiredScope[] = 'user_groups';
+        $this->requiredScope[] = 'user_managed_groups';
     }
 
     public function onAfterSave($newData, $oldData)
@@ -38,7 +38,7 @@ class JFBConnectProviderFacebookChannelGroup extends JFBConnectChannel
         {
             $uid = JFBCFactory::usermap()->getProviderUserId($jid, 'facebook');
             if ($uid && isset($data['attribs']['group_id']) && ($data['attribs']['group_id'] != '--') &&
-                JFBCFactory::provider('facebook')->hasScope($uid, 'user_groups') &&
+                JFBCFactory::provider('facebook')->hasScope($uid, 'user_managed_groups') &&
                 (JFBCFactory::provider('facebook')->hasScope($uid, 'publish_actions') || !$data['attribs']['allow_posts'])
             )
             {
@@ -60,7 +60,7 @@ class JFBConnectProviderFacebookChannelGroup extends JFBConnectChannel
         {
             $params = array();
             $params['access_token'] = JFBCFactory::usermap()->getUserAccessToken($this->options->get('user_id'), 'facebook');
-            $feed = $this->provider->api($groupId . '/feed', $params, true, 'GET');
+            $feed = $this->provider->api($groupId . '/feed?fields=message,from,updated_time,name,link,caption,description,comments,picture', $params, true, 'GET');
             JFBCFactory::cache()->store($feed, 'facebook.page.group.' . $groupId);
         }
 
@@ -78,8 +78,9 @@ class JFBConnectProviderFacebookChannelGroup extends JFBConnectChannel
                     }
                     else
                     {
-                        $ids = explode("_", $groupId);
-                        $post->link = 'https://www.facebook.com/'.$groupId.'/posts/'.$ids[1];
+                        $ids = explode("_", $data['id']);
+                        $idIndex = count($ids) - 1;
+                        $post->link = 'https://www.facebook.com/'.$groupId.'/posts/'.$ids[$idIndex];
                     }
 
                     $post->message = (array_key_exists('message', $data)?$data['message']:"");

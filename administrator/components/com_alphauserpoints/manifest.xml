@@ -2,12 +2,12 @@
 <extension type="component" version="3.0" method="upgrade">
 	<name>AlphaUserPoints</name>
 	<author>Bernard Gilly</author>
-	<creationDate>2015 february 12</creationDate>	
+	<creationDate>2015 september 08</creationDate>	
 	<authorEmail>contact@alphaplug.com</authorEmail>
 	<authorUrl>http://www.alphaplug.com</authorUrl>
 	<copyright>2008-2015 Bernard Gilly - All Rights Reserved</copyright>
 	<license>GNU/GPL</license>
-	<version>2.0.0</version>
+	<version>2.0.3</version>
 	<description><![CDATA[User Points System component for Joomla! 3.x - Released under GNU/GPL license. See LICENSE.txt.]]></description>
 	<files folder="site">
 		<filename>index.html</filename>
@@ -230,6 +230,9 @@
       <filename>sql/updates/mysql/1.9.12.sql</filename>
       <filename>sql/updates/mysql/1.9.13.sql</filename>
       <filename>sql/updates/mysql/2.0.0.sql</filename>
+      <filename>sql/updates/mysql/2.0.1.sql</filename>
+      <filename>sql/updates/mysql/2.0.2.sql</filename>
+      <filename>sql/updates/mysql/2.0.3.sql</filename>
 			<filename>views/index.html</filename>
 			<filename>views/rules/index.html</filename>
 			<filename>views/rules/view.html.php</filename>
@@ -430,7 +433,8 @@
 			<filename>help/en-GB/index.html</filename>
 			<filename>help/en-GB/screen.alphauserpoints.html</filename>
 			<filename>help/en-GB/screen.how_create_plugin.html</filename>
-			<filename>help/en-GB/developer_documentation_1.9.x_english.pdf</filename>
+      <filename>help/en-GB/schemaxml.gif</filename>       
+			<filename>help/en-GB/developer_documentation_2.0.x_english.pdf</filename>
 			<filename>help/en-GB/css/index.html</filename>
 			<filename>help/en-GB/css/help.css</filename>
 			<filename>tables/index.html</filename>
@@ -505,5 +509,15 @@
 	</administration>
 	<updateservers>
 		<server type="extension" priority="1" name="AlphaUserPoints Update Site">http://update.alphaplug.com/alphauserpoints-update-19x.xml</server>
-	</updateservers>
+	</updateservers>   
+  <modules>
+    <module module="mod_alphauserpoints_actual_points"/>    
+    <module module="mod_alphauserpoints_couponcode"/>
+    <module module="mod_alphauserpoints_last_points_earned_by"/>
+    <module module="mod_alphauserpoints_latest_activity"/>
+    <module module="mod_alphauserpoints_most_active_users"/>
+    <module module="mod_alphauserpoints_most_referral_users"/>
+    <module module="mod_alphauserpoints_online_users"/>
+    <module module="mod_alphauserpoints_stats_monthly"/>
+  </modules>   
 </extension>

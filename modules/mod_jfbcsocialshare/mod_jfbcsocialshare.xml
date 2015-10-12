@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="1.6" type="module" method="upgrade" client="site">
     <name>JFBC Social Share</name>
-    <version>6.2.0</version>
-    <creationDate>2015/03/19</creationDate>
+    <version>6.4.0</version>
+    <creationDate>2015/08/24</creationDate>
     <author>SourceCoast | www.sourcecoast.com</author>
     <authorEmail>support@sourcecoast.com</authorEmail>
     <authorUrl>http://www.sourcecoast.com</authorUrl>
-    <copyright>Copyright (C) 2011-2014 SourceCoast. All rights reserved.</copyright>
+    <copyright>Copyright (C) 2011-2015 SourceCoast. All rights reserved.</copyright>
     <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
     <description>This is the Social Sharing module that goes with the JFBConnect component, which lets users share pages from your site back to their social network with one click.</description>
     <files>

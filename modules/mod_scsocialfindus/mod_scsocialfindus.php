@@ -1,10 +1,10 @@
 <?php
 /**
  * @package         JFBConnect
- * @copyright (c)   2014-2014 by SourceCoast - All Rights Reserved
+ * @copyright (c)   2014-2015 by SourceCoast - All Rights Reserved
  * @license         http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
- * @version         Release v6.3.0
- * @build-date      2015/03/19
+ * @version         Release v6.4.2
+ * @build-date      2015/08/24
  */
 
 // no direct access
@@ -57,6 +57,9 @@ $linkedinLink = $params->get('linkedin_url');
 //Pinterest
 $pinterestLink = $params->get('pinterest_url');
 
+//Flickr
+$flickrLink = $params->get('flickr_url');
+
 //RSS
 $rssLink = $params->get('rss_url');
 
@@ -95,6 +98,7 @@ if(!empty($instagramLink)) $width += 32;
 if(!empty($twitterLink)) $width += 32;
 if(!empty($linkedinLink)) $width += 32;
 if(!empty($pinterestLink)) $width += 32;
+if(!empty($flickrLink)) $width += 32;
 if(!empty($rssLink)) $width += 32;
 $groupStyles .= $orientation == "vertical" ? 'width: 32px;' : "width: {$width}px;";
 

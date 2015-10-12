@@ -1,10 +1,10 @@
 <?php
 /**
  * @package         JFBConnect
- * @copyright (c)   2009-2014 by SourceCoast - All Rights Reserved
+ * @copyright (c)   2009-2015 by SourceCoast - All Rights Reserved
  * @license         http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
- * @version         Release v6.3.0
- * @build-date      2015/03/19
+ * @version         Release v6.4.2
+ * @build-date      2015/08/24
  */
 
 defined('JPATH_PLATFORM') or die;
@@ -45,7 +45,7 @@ class JFormFieldFacebookGroupList extends JFormFieldList
             $uid = JFBCFactory::usermap()->getProviderUserId($jid, 'facebook');
             if ($uid)
             {
-                if (!JFBCFactory::provider('facebook')->hasScope($uid, 'user_groups'))
+                if (!JFBCFactory::provider('facebook')->hasScope($uid, 'user_managed_groups'))
                     return '<div class="jfbc-error">'.JText::_('COM_JFBCONNECT_CHANNEL_FACEBOOK_PERM_USER_GROUPS_ERROR_LABEL').'</div>';
                 else if (!JFBCFactory::provider('facebook')->hasScope($uid, 'publish_actions') && $this->form->getValue('attribs.allow_posts'))
                     return '<div class="jfbc-error">'.JText::_('COM_JFBCONNECT_CHANNEL_FACEBOOK_PERM_PUBLISH_ACTIONS_ERROR_LABEL').'</div>';

@@ -1,10 +1,10 @@
 <?php
 /**
  * @package         JFBConnect
- * @copyright (c)   2009-2014 by SourceCoast - All Rights Reserved
+ * @copyright (c)   2009-2015 by SourceCoast - All Rights Reserved
  * @license         http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
- * @version         Release v6.3.0
- * @build-date      2015/03/19
+ * @version         Release v6.4.2
+ * @build-date      2015/08/24
  */
 
 // Check to ensure this file is included in Joomla!
@@ -199,7 +199,8 @@ class JFBConnectProviderFacebook extends JFBConnectProvider
     {
         // get current scope for the user
         $return = array();
-        $params['access_token'] = JFBCFactory::usermap()->getUserAccessToken($uid, 'facebook');
+        $jid = JFBCFactory::usermap()->getJoomlaUserId($uid, 'facebook');
+        $params['access_token'] = JFBCFactory::usermap()->getUserAccessToken($jid, 'facebook');
         $currentScope = $this->api('/' . $uid . '/permissions', $params, true, 'GET');
         if (isset($currentScope['data']) && isset($currentScope['data'][0]))
         {
@@ -393,7 +394,7 @@ class JFBConnectProviderFacebook extends JFBConnectProvider
         $forceParse = JFBCFactory::config()->get('social_tags_always_parse');
         $xfbml = ($forceParse || $this->widgetRendered) ? 'true' : 'false';
 
-        $version = "version: 'v2.0',";
+        $version = "version: 'v2.3',";
         $javascript =
 <<<EOT
 <div id="fb-root"></div>

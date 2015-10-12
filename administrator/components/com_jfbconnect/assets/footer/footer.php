@@ -1,10 +1,10 @@
 <?php
 /**
  * @package         JFBConnect
- * @copyright (c)   2009-2014 by SourceCoast - All Rights Reserved
+ * @copyright (c)   2009-2015 by SourceCoast - All Rights Reserved
  * @license         http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
- * @version         Release v6.3.0
- * @build-date      2015/03/19
+ * @version         Release v6.4.2
+ * @build-date      2015/08/24
  */
 
 defined('_JEXEC') or die('Restricted access');
@@ -24,8 +24,8 @@ if($xmlElement)
 			<a href="http://www.sourcecoast.com" target="_blank"><img src="components/<?php echo $option;?>/assets/footer/SourceCoast_Logo.png" width="250px"/></a>
 			</td>
 			<td style="text-align: center; width: 49%;">
-				<?php echo $title;?>
-				<br/>Copyright: 2010-2014 &copy; <a href="http://www.sourcecoast.com" target="_blank">SourceCoast Web Development</a>
+				<?php echo JText::_($title);?>
+				<br/>Copyright: 2010-2015 &copy; <a href="http://www.sourcecoast.com" target="_blank">SourceCoast Web Development</a>
 				<br/>
 				Version: <?php echo $version;?>
 			</td>

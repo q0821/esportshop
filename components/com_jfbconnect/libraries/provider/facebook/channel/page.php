@@ -1,10 +1,10 @@
 <?php
 /**
  * @package         JFBConnect
- * @copyright (c)   2009-2014 by SourceCoast - All Rights Reserved
+ * @copyright (c)   2009-2015 by SourceCoast - All Rights Reserved
  * @license         http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
- * @version         Release v6.3.0
- * @build-date      2015/03/19
+ * @version         Release v6.4.2
+ * @build-date      2015/08/24
  */
 
 class JFBConnectProviderFacebookChannelPage extends JFBConnectChannel
@@ -15,6 +15,31 @@ class JFBConnectProviderFacebookChannelPage extends JFBConnectChannel
         $this->outbound = true;
         $this->inbound = true;
         $this->requiredScope[] = 'manage_pages';
+    }
+
+    // manipulate the input data in some way (retrieve an access token, etc)
+    public function onBeforeSave($data)
+    {
+        //get page access token
+        // set $newData['token'] to page access token
+        $jid = $data['attribs']['user_id'];
+        $uid = JFBCFactory::usermap()->getProviderUserId($jid, 'facebook');
+        $pageId = $data['attribs']['page_id'];
+        $pageAccessToken = '';
+        $params = array();
+        $params['access_token'] = JFBCFactory::usermap()->getUserAccessToken($jid, 'facebook');
+        $accounts = $this->provider->api($uid . '/accounts', $params, true, 'GET');
+        foreach($accounts['data'] as $account)
+        {
+            if($account['id'] == $pageId)
+            {
+                $pageAccessToken = $account['access_token'];
+                break;
+            }
+        }
+        $data['attribs']['access_token'] = $pageAccessToken;
+
+        return $data;
     }
 
     public function onAfterSave($newData, $oldData)
@@ -57,8 +82,10 @@ class JFBConnectProviderFacebookChannelPage extends JFBConnectChannel
         if ($feed === false)
         {
             $params = array();
-            $params['access_token'] = JFBCFactory::usermap()->getUserAccessToken($this->options->get('user_id'), 'facebook');
-            $feed = $this->provider->api($pageId . '/feed', $params, true, 'GET');
+            $params['access_token'] = $this->options->get('access_token');
+            //NOTE: Uncomment to use user access token instead of page access token
+            //$params['access_token'] = JFBCFactory::usermap()->getUserAccessToken($this->options->get('user_id'), 'facebook');
+            $feed = $this->provider->api($pageId . '/feed?fields=message,from,updated_time,name,link,picture,caption,description,comments', $params, true, 'GET');
             JFBCFactory::cache()->store($feed, 'facebook.page.stream.' . $pageId);
         }
 
@@ -76,8 +103,9 @@ class JFBConnectProviderFacebookChannelPage extends JFBConnectChannel
                     }
                     else
                     {
-                        $ids = explode("_", $pageId);
-                        $post->link = 'https://www.facebook.com/'.$pageId.'/posts/'.$ids[1];
+                        $ids = explode("_", $data['id']);
+                        $idIndex = count($ids) - 1;
+                        $post->link = 'https://www.facebook.com/'.$pageId.'/posts/'.$ids[$idIndex];
                     }
 
                     $post->message = (array_key_exists('message', $data)?$data['message']:"");
@@ -104,7 +132,9 @@ class JFBConnectProviderFacebookChannelPage extends JFBConnectChannel
         $link = $data->get('link', '');
 
         $params = array();
-        $params['access_token'] = JFBCFactory::usermap()->getUserAccessToken($this->options->get('user_id'), 'facebook');
+        $params['access_token'] = $this->options->get('access_token');
+        //NOTE: Uncomment to use user access token instead of page access token
+        //$params['access_token'] = JFBCFactory::usermap()->getUserAccessToken($this->options->get('user_id'), 'facebook');
         $params['message'] = $message;
         $params['link'] = $link;
 
