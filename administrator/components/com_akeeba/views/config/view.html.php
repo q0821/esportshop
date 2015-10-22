@@ -54,8 +54,5 @@ class AkeebaViewConfig extends F0FViewHtml
 				$this->securesettings = 0;
 			}
 		}
-
-		// Add live help
-		AkeebaHelperIncludes::addHelp('config');
 	}
 }

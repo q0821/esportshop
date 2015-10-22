@@ -28,45 +28,35 @@ class AkeebaViewCpanel extends F0FViewHtml
 		/** @var AkeebaModelCpanels $model */
 		$model = $this->getModel();
 
-		/**
-		$selfhealModel = F0FModel::getTmpInstance('Selfheal','AkeebaModel');
-		$schemaok = $selfhealModel->healSchema();
-		/**/
-		$schemaok = true;
-		$this->schemaok = $schemaok;
-
 		$aeconfig = Factory::getConfiguration();
 
-		if($schemaok) {
-			// Load the helper classes
-			$this->loadHelper('utils');
-			$this->loadHelper('status');
-			$statusHelper = AkeebaHelperStatus::getInstance();
+		// Load the helper classes
+		$this->loadHelper('utils');
+		$this->loadHelper('status');
+		$statusHelper = AkeebaHelperStatus::getInstance();
 
-			// Load the model
-			if(!class_exists('AkeebaModelStatistics')) JLoader::import('models.statistics', JPATH_COMPONENT_ADMINISTRATOR);
+		// Load the model
+		if(!class_exists('AkeebaModelStatistics')) JLoader::import('models.statistics', JPATH_COMPONENT_ADMINISTRATOR);
 
-			$statmodel = new AkeebaModelStatistics();
+		$statmodel = new AkeebaModelStatistics();
 
-			$this->icondefs = $model->getIconDefinitions(); // Icon definitions
-			$this->profileid = $model->getProfileID(); // Active profile ID
-			$this->profilelist = $model->getProfilesList(); // List of available profiles
-			$this->statuscell = $statusHelper->getStatusCell(); // Backup status
-			$this->detailscell = $statusHelper->getQuirksCell(); // Details (warnings)
-			$this->statscell = $statmodel->getLatestBackupDetails();
+		$this->profileid = $model->getProfileID(); // Active profile ID
+		$this->profilelist = $model->getProfilesList(); // List of available profiles
+		$this->statuscell = $statusHelper->getStatusCell(); // Backup status
+		$this->detailscell = $statusHelper->getQuirksCell(); // Details (warnings)
+		$this->statscell = $statmodel->getLatestBackupDetails();
 
-			$this->fixedpermissions = $model->fixMediaPermissions(); // Fix media/com_akeeba permissions
+		$this->fixedpermissions = $model->fixMediaPermissions(); // Fix media/com_akeeba permissions
 
-			$this->needsdlid = $model->needsDownloadID();
-			$this->needscoredlidwarning = $model->mustWarnAboutDownloadIDInCore();
-			$this->hasPostInstallationMessages = $model->hasPostInstallMessages();
-			$this->extension_id = $model->getState('extension_id', 0, 'int');
+		$this->needsdlid = $model->needsDownloadID();
+		$this->needscoredlidwarning = $model->mustWarnAboutDownloadIDInCore();
+		$this->extension_id = $model->getState('extension_id', 0, 'int');
 
-			// Add live help
-			AkeebaHelperIncludes::addHelp('cpanel');
+		// Should I ask for permission to display desktop notifications?
+		JLoader::import('joomla.application.component.helper');
+		$this->desktop_notifications = \Akeeba\Engine\Util\Comconfig::getValue('desktop_notifications', '0') ? 1 : 0;
 
-            $this->statsIframe = F0FModel::getTmpInstance('Stats', 'AkeebaModel')->collectStatistics(true);
-		}
+		$this->statsIframe = F0FModel::getTmpInstance('Stats', 'AkeebaModel')->collectStatistics(true);
 
 		return $this->onDisplay($tpl);
 	}

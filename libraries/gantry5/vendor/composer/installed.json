@@ -16,7 +16,7 @@
         },
         "time": "2015-08-03 09:24:05",
         "type": "library",
-        "installation-source": "dist",
+        "installation-source": "source",
         "autoload": {
             "psr-0": {
                 "Parsedown": ""
@@ -60,7 +60,7 @@
         },
         "time": "2015-01-25 14:52:34",
         "type": "library",
-        "installation-source": "dist",
+        "installation-source": "source",
         "autoload": {
             "psr-0": {
                 "ParsedownExtra": ""
@@ -168,7 +168,7 @@
                 "dev-master": "0.4.x-dev"
             }
         },
-        "installation-source": "dist",
+        "installation-source": "source",
         "autoload": {
             "classmap": [
                 "lessc.inc.php"
@@ -217,7 +217,7 @@
             "bin/pscss"
         ],
         "type": "library",
-        "installation-source": "dist",
+        "installation-source": "source",
         "autoload": {
             "classmap": [
                 "classmap.php"
@@ -301,13 +301,13 @@
         "version_normalized": "2.8.9999999.9999999-dev",
         "source": {
             "type": "git",
-            "url": "https://github.com/symfony/Yaml.git",
-            "reference": "d196cb1ac36901bde7d7fbed74ee31fdb85fd119"
+            "url": "https://github.com/symfony/yaml.git",
+            "reference": "b0a34de3306a4a5392b6d13f188d9e4bfc2ed714"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/Yaml/zipball/d196cb1ac36901bde7d7fbed74ee31fdb85fd119",
-            "reference": "d196cb1ac36901bde7d7fbed74ee31fdb85fd119",
+            "url": "https://api.github.com/repos/symfony/yaml/zipball/b0a34de3306a4a5392b6d13f188d9e4bfc2ed714",
+            "reference": "b0a34de3306a4a5392b6d13f188d9e4bfc2ed714",
             "shasum": ""
         },
         "require": {
@@ -316,7 +316,7 @@
         "require-dev": {
             "symfony/phpunit-bridge": "~2.7|~3.0.0"
         },
-        "time": "2015-09-14 14:15:17",
+        "time": "2015-10-02 06:55:39",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -352,13 +352,13 @@
         "version_normalized": "2.8.9999999.9999999-dev",
         "source": {
             "type": "git",
-            "url": "https://github.com/symfony/EventDispatcher.git",
-            "reference": "e79162fa079bb559ddad17c58cf8b7ecbaffd9b6"
+            "url": "https://github.com/symfony/event-dispatcher.git",
+            "reference": "1834bd8ece4da49a4135264044b9ac31fdebdc72"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/e79162fa079bb559ddad17c58cf8b7ecbaffd9b6",
-            "reference": "e79162fa079bb559ddad17c58cf8b7ecbaffd9b6",
+            "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/1834bd8ece4da49a4135264044b9ac31fdebdc72",
+            "reference": "1834bd8ece4da49a4135264044b9ac31fdebdc72",
             "shasum": ""
         },
         "require": {
@@ -376,7 +376,7 @@
             "symfony/dependency-injection": "",
             "symfony/http-kernel": ""
         },
-        "time": "2015-09-14 06:10:06",
+        "time": "2015-09-29 12:32:55",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -511,12 +511,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/twigphp/Twig.git",
-            "reference": "9fde02fe552256722466c9985520b6f50c9c759b"
+            "reference": "d6740f36827f88a7ecda923f71ce0bb28525a9b1"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/twigphp/Twig/zipball/9fde02fe552256722466c9985520b6f50c9c759b",
-            "reference": "9fde02fe552256722466c9985520b6f50c9c759b",
+            "url": "https://api.github.com/repos/twigphp/Twig/zipball/d6740f36827f88a7ecda923f71ce0bb28525a9b1",
+            "reference": "d6740f36827f88a7ecda923f71ce0bb28525a9b1",
             "shasum": ""
         },
         "require": {
@@ -526,7 +526,7 @@
             "symfony/debug": "~2.7",
             "symfony/phpunit-bridge": "~2.7"
         },
-        "time": "2015-09-16 08:32:19",
+        "time": "2015-09-30 12:05:09",
         "type": "library",
         "extra": {
             "branch-alias": {

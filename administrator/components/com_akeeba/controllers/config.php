@@ -38,6 +38,7 @@ class AkeebaControllerConfig extends AkeebaControllerDefault
 
 		// Get the var array from the request
 		$data = $this->input->get('var', array(), 'array', 4);
+		$data['akeeba.flag.confwiz'] = 1;
 
 		/** @var AkeebaModelConfigs $model */
 		$model = $this->getThisModel();

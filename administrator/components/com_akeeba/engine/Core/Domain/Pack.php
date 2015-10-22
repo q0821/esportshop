@@ -1054,11 +1054,6 @@ ENDVCONTENT;
 		$filename = array_shift($archiver->finishedPart);
 		Factory::getLog()->log(LogLevel::INFO, 'Preparing to post process ' . basename($filename));
 
-		// Add this part's size to the volatile storage
-		$volatileTotalSize = $configuration->get('volatile.engine.archiver.totalsize', 0);
-		$volatileTotalSize += (int)@filesize($filename);
-		$configuration->set('volatile.engine.archiver.totalsize', $volatileTotalSize);
-
         $timer     = Factory::getTimer();
         $startTime = $timer->getRunningTime();
 		$post_proc = Factory::getPostprocEngine();
@@ -1074,6 +1069,11 @@ ENDVCONTENT;
 		}
 		elseif($result === true)
 		{
+			// Add this part's size to the volatile storage
+			$volatileTotalSize = $configuration->get('volatile.engine.archiver.totalsize', 0);
+			$volatileTotalSize += (int)@filesize($filename);
+			$configuration->set('volatile.engine.archiver.totalsize', $volatileTotalSize);
+
 			Factory::getLog()->log(LogLevel::INFO, 'Successfully processed file ' . basename($filename));
 		}
         else

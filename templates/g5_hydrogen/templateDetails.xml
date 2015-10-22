@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <extension version="3.4" type="template" client="site" method="upgrade">
     <name>g5_hydrogen</name>
-    <version>5.1.5</version>
-    <creationDate>September 30, 2015</creationDate>
+    <version>5.1.6</version>
+    <creationDate>October 14, 2015</creationDate>
     <author>RocketTheme, LLC</author>
     <authorEmail>support@rockettheme.com</authorEmail>
     <authorUrl>http://www.rockettheme.com</authorUrl>
@@ -39,6 +39,7 @@
 
     <positions>
         <position>breadcrumbs</position>
+        <position>debug</position>
         <position>footer</position>
         <position>header</position>
     </positions>

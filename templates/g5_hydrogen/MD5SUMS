@@ -34,7 +34,7 @@ fonts/roboto_regular_macroman/Roboto-Regular-webfont.svg	da61d7ef302b8bf871dd0ae
 fonts/roboto_regular_macroman/Roboto-Regular-webfont.ttf	7f1320f7ec4f6716054d88c33235d17b
 fonts/roboto_regular_macroman/Roboto-Regular-webfont.woff	3e5675c89f974f7811eeaf07e2dd5ba3
 gantry/presets.yaml	f9d104c1b5bfe765eff0c642c00860ce
-gantry/theme.yaml	07cb72da646c615a9d876b31e9fce6ee
+gantry/theme.yaml	b20a5847978b494b3b2a92e4749aea81
 images/ipad.png	d5a7118045cc491070f6aac905dffc1f
 images/iphone.png	3e0764062333d05540e4cae7045fe07d
 images/macbook.png	faf9871d2d37a66bfd77cf13eff8a683
@@ -100,5 +100,5 @@ offline.php	996806ad7bb2e5b83cd4c6341322c25b
 template_preview.png	b237b16f0dd25ef092baa7390b1ff101
 template_thumbnail.png	aaf4cefe60854a1206736667081a4e9b
 install.php	cca9dffb3ac6a9d66571efcbeb0537cf
-templateDetails.xml	cc054fc9afeee5d645ced4ca3a972dce
+templateDetails.xml	ba519561a92c91c78cb6dc2805dd2039
 MD5SUMS	d41d8cd98f00b204e9800998ecf8427e

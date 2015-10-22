@@ -1,0 +1,23 @@
+ordering:
+  hydrogen: ''
+  hikashop-menu-for-categories-listing: ''
+  hikashop-menu-for-products-listing:
+    __module-x3DOu: ''
+items:
+  hikashop-menu-for-products-listing:
+    id: 106
+    hash: ''
+    dropdown_hide: ''
+    width: 500px
+    class: ''
+  hikashop-menu-for-products-listing/__module-x3DOu:
+    type: particle
+    particle: module
+    title: 購物車模組
+    options:
+      particle:
+        enabled: '1'
+        module_id: '98'
+        chrome: ''
+      block:
+        extra: {  }

@@ -155,6 +155,11 @@ abstract class Base implements PlatformInterface
 
 				foreach ($ini_data_local as $section => $row)
 				{
+					if ($section == 'volatile')
+					{
+						continue;
+					}
+
 					if (is_array($row) && !empty($row))
 					{
 						foreach ($row as $key => $value)

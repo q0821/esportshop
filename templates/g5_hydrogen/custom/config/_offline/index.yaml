@@ -1,8 +1,8 @@
 name: _offline
-timestamp: 1444302025
+timestamp: 1445234641
 preset:
   image: 'gantry-admin://images/layouts/offline.png'
   name: _offline
-  timestamp: 1444302025
+  timestamp: 1445234641
 positions:
   footer: Footer

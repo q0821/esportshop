@@ -1,8 +1,8 @@
 name: _error
-timestamp: 1444302025
+timestamp: 1445234641
 preset:
   image: 'gantry-admin://images/layouts/default.png'
   name: _error
-  timestamp: 1444302025
+  timestamp: 1445234641
 positions:
   footer: Footer

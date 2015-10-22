@@ -327,6 +327,7 @@ th { text-align: left; }
 .g-main-nav .g-sublevel > li.g-parent.g-selected > .g-menu-item-container > .g-menu-parent-indicator:after { content: "\f00d"; }
 
 .g-menu-item-container { display: block; position: relative; }
+.g-menu-item-container input, .g-menu-item-container textarea { color: #666; }
 
 .g-main-nav .g-standard { position: relative; }
 .g-main-nav .g-standard .g-sublevel > li { position: relative; }

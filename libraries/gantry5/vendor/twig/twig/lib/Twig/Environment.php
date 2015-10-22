@@ -16,7 +16,7 @@
  */
 class Twig_Environment
 {
-    const VERSION = '1.22.2-DEV';
+    const VERSION = '1.22.3-DEV';
 
     protected $charset;
     protected $loader;
@@ -291,6 +291,12 @@ class Twig_Environment
     /**
      * Gets the template class associated with the given string.
      *
+     * The generated template class is based on the following parameters:
+     *
+     *  * The cache key for the given template;
+     *  * The currently enabled extensions;
+     *  * Whether the Twig C extension is available or not.
+     *
      * @param string $name  The name for which to calculate the template class name
      * @param int    $index The index if it is an embedded template
      *
@@ -299,6 +305,10 @@ class Twig_Environment
     public function getTemplateClass($name, $index = null)
     {
         $key = $this->getLoader()->getCacheKey($name).'__'.implode('__', array_keys($this->extensions));
+
+        if (function_exists('twig_template_get_attributes')) {
+            $key .= '__cext';
+        }
 
         return $this->templateClassPrefix.hash('sha256', $key).(null === $index ? '' : '_'.$index);
     }
@@ -375,15 +385,20 @@ class Twig_Environment
                 $key = $this->cache->generateKey($name, $cls);
             }
 
-            if (!$this->cache->has($key) || ($this->isAutoReload() && !$this->isTemplateFresh($name, $this->cache->getTimestamp($key)))) {
-                if ($this->bcWriteCacheFile) {
-                    $this->writeCacheFile($key, $this->compileSource($this->getLoader()->getSource($name), $name));
-                } else {
-                    $this->cache->write($key, $this->compileSource($this->getLoader()->getSource($name), $name));
-                }
+            if (!$this->isAutoReload() || $this->isTemplateFresh($name, $this->cache->getTimestamp($key))) {
+                $this->cache->load($key);
             }
 
-            $this->cache->load($key);
+            if (!class_exists($cls, false)) {
+                $content = $this->compileSource($this->getLoader()->getSource($name), $name);
+                if ($this->bcWriteCacheFile) {
+                    $this->writeCacheFile($key, $content);
+                } else {
+                    $this->cache->write($key, $content);
+                }
+
+                eval('?>'.$content);
+            }
         }
 
         if (!$this->runtimeInitialized) {
