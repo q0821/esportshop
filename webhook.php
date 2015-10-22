@@ -7,7 +7,7 @@ $BRANCH             = "esportshop-hd";
 if ( $_POST['payload'] ) {
   // Only respond to POST requests from Github
   // If there is already a repo, just run a git pull to grab the latest changes
-  shell_exec("cd {$LOCAL_REPO_ROOT} && git pull origin/esportshop-hd　 esportshop-hd");
+  shell_exec("cd {$LOCAL_REPO_ROOT} && git pull origin/esportshop-hd esportshop-hd");
   var_dump($_POST['payload']);
   die("done " . mktime());
 }

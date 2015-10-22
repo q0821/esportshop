@@ -155,22 +155,22 @@ h1, h2, h3, h4, h5, h6, strong {
   font-family: "roboto";
   font-weight: 400;
   font-style: normal;
-  src: url('../../fonts/roboto_regular_macroman/Roboto-Regular-webfont.eot?562487d1');
-  src: url('../../fonts/roboto_regular_macroman/Roboto-Regular-webfont.eot?562487d1#iefix') format('embedded-opentype'), url('../../fonts/roboto_regular_macroman/Roboto-Regular-webfont.woff?562487d1') format('woff'), url('../../fonts/roboto_regular_macroman/Roboto-Regular-webfont.ttf?562487d1') format('truetype'), url('../../fonts/roboto_regular_macroman/Roboto-Regular-webfont.svg?562487d1#roboto') format('svg');
+  src: url('../../fonts/roboto_regular_macroman/Roboto-Regular-webfont.eot?5627763b');
+  src: url('../../fonts/roboto_regular_macroman/Roboto-Regular-webfont.eot?5627763b#iefix') format('embedded-opentype'), url('../../fonts/roboto_regular_macroman/Roboto-Regular-webfont.woff?5627763b') format('woff'), url('../../fonts/roboto_regular_macroman/Roboto-Regular-webfont.ttf?5627763b') format('truetype'), url('../../fonts/roboto_regular_macroman/Roboto-Regular-webfont.svg?5627763b#roboto') format('svg');
 }
 @font-face {
   font-family: "roboto";
   font-weight: 500;
   font-style: normal;
-  src: url('../../fonts/roboto_medium_macroman/Roboto-Medium-webfont.eot?562487d1');
-  src: url('../../fonts/roboto_medium_macroman/Roboto-Medium-webfont.eot?562487d1#iefix') format('embedded-opentype'), url('../../fonts/roboto_medium_macroman/Roboto-Medium-webfont.woff?562487d1') format('woff'), url('../../fonts/roboto_medium_macroman/Roboto-Medium-webfont.ttf?562487d1') format('truetype'), url('../../fonts/roboto_medium_macroman/Roboto-Medium-webfont.svg?562487d1#roboto') format('svg');
+  src: url('../../fonts/roboto_medium_macroman/Roboto-Medium-webfont.eot?5627763b');
+  src: url('../../fonts/roboto_medium_macroman/Roboto-Medium-webfont.eot?5627763b#iefix') format('embedded-opentype'), url('../../fonts/roboto_medium_macroman/Roboto-Medium-webfont.woff?5627763b') format('woff'), url('../../fonts/roboto_medium_macroman/Roboto-Medium-webfont.ttf?5627763b') format('truetype'), url('../../fonts/roboto_medium_macroman/Roboto-Medium-webfont.svg?5627763b#roboto') format('svg');
 }
 @font-face {
   font-family: "roboto";
   font-weight: 700;
   font-style: normal;
-  src: url('../../fonts/roboto_bold_macroman/Roboto-Bold-webfont.eot?562487d1');
-  src: url('../../fonts/roboto_bold_macroman/Roboto-Bold-webfont.eot?562487d1#iefix') format('embedded-opentype'), url('../../fonts/roboto_bold_macroman/Roboto-Bold-webfont.woff?562487d1') format('woff'), url('../../fonts/roboto_bold_macroman/Roboto-Bold-webfont.ttf?562487d1') format('truetype'), url('../../fonts/roboto_bold_macroman/Roboto-Bold-webfont.svg?562487d1#roboto') format('svg');
+  src: url('../../fonts/roboto_bold_macroman/Roboto-Bold-webfont.eot?5627763b');
+  src: url('../../fonts/roboto_bold_macroman/Roboto-Bold-webfont.eot?5627763b#iefix') format('embedded-opentype'), url('../../fonts/roboto_bold_macroman/Roboto-Bold-webfont.woff?5627763b') format('woff'), url('../../fonts/roboto_bold_macroman/Roboto-Bold-webfont.ttf?5627763b') format('truetype'), url('../../fonts/roboto_bold_macroman/Roboto-Bold-webfont.svg?5627763b#roboto') format('svg');
 }
 /* line 5, /var/www/html/templates/g5_hydrogen/scss/hydrogen/_typography.scss */
 body {
@@ -973,7 +973,7 @@ input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:fo
     height: 203px;
     position: absolute;
     z-index: 1;
-    background: url('../../images/macbook.png?562487d1');
+    background: url('../../images/macbook.png?5627763b');
   }
   /* line 31, /var/www/html/templates/g5_hydrogen/scss/hydrogen/_sample.scss */
   .sample-content .device-promo .macbook .macbook-color {
@@ -990,7 +990,7 @@ input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:fo
     height: 203px;
     position: absolute;
     z-index: 2;
-    background: url('../../images/ipad.png?562487d1');
+    background: url('../../images/ipad.png?5627763b');
   }
   /* line 46, /var/www/html/templates/g5_hydrogen/scss/hydrogen/_sample.scss */
   .sample-content .device-promo .ipad .ipad-color {
@@ -1007,7 +1007,7 @@ input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:fo
     height: 203px;
     position: absolute;
     z-index: 3;
-    background: url('../../images/iphone.png?562487d1');
+    background: url('../../images/iphone.png?5627763b');
   }
   /* line 61, /var/www/html/templates/g5_hydrogen/scss/hydrogen/_sample.scss */
   .sample-content .device-promo .iphone .iphone-color {
