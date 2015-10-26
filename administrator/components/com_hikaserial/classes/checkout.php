@@ -40,7 +40,7 @@ class hikaserialCheckoutClass extends hikaserialClass {
 
 			if(count($serials) == 1) {
 				$serial = reset($serials);
-			} else {
+			} else if(!empty($serials)) {
 				$assigned_status = $config->get('assigned_serial_status', 'assigned');
 				foreach($serials as $s) {
 					if(($s->serial_user_id == $user_id || $s->serial_user_id ==  0 || $user_id == 0) && ($s->serial_status == $assigned_status)) {
@@ -68,7 +68,7 @@ class hikaserialCheckoutClass extends hikaserialClass {
 
 			$cart = $controller->initCart();
 			$coupon_ret = false;
-			if(empty($cart->coupon)) {
+			if(empty($cart->coupon) || ($coupon == 1 && $qty == 0)) {
 				$class = hikaserial::get('shop.class.cart');
 				if($class->update($coupon, $qty, 0, 'coupon')) {
 					if(strpos($controller->checkout_workflow, 'shipping') !==false) {
