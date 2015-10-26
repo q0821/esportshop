@@ -25,6 +25,8 @@ children:
             title: Untitled
             attributes:
               size: 50
+              extra: {  }
+              fixed: '0'
             children:
               -
                 id: 42949d34-e70f-9b55-655a-ba73cdd5ea8b
@@ -33,6 +35,7 @@ children:
                 title: Logo
                 attributes:
                   enabled: 1
+                  url: /
                 children: {  }
           -
             id: 23853084-b70a-7e7d-0346-83c76ed6f2e4
@@ -71,9 +74,9 @@ children:
             subtype: false
             title: Untitled
             attributes:
+              size: 100
               extra: {  }
               fixed: '0'
-              size: 100
             children:
               -
                 id: 09da9b3f-9833-4ab9-8900-3088768ee245
@@ -162,6 +165,32 @@ children:
                 title: Pagecontent
                 attributes:
                   enabled: 1
+                children: {  }
+      -
+        id: 387d630e-7c96-417d-9d79-98fa0257bb33
+        type: grid
+        subtype: false
+        title: Untitled
+        attributes: {  }
+        children:
+          -
+            id: f9b56bb8-dfa4-4aac-a63e-6dc160cbe771
+            type: block
+            subtype: false
+            title: Untitled
+            attributes:
+              extra: {  }
+              fixed: '0'
+              size: 100
+            children:
+              -
+                id: 43a022c5-7283-4d50-8754-81b68df1dd22
+                type: position
+                subtype: module
+                title: 'Module Instance'
+                attributes:
+                  enabled: 1
+                  module_id: '96'
                 children: {  }
   -
     id: 4252a8e9-2acb-2a17-8502-9cb76b98d9c8

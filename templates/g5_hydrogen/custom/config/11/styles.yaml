@@ -1,0 +1,12 @@
+preset: preset2
+accent:
+  color-1: '#3180c2'
+  color-2: '#ef6c00'
+header:
+  background: '#1867a9'
+navigation:
+  background: '#3180c2'
+showcase:
+  background: '#142d53'
+offcanvas:
+  background: '#142d53'

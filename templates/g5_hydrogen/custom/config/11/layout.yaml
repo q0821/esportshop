@@ -1,0 +1,370 @@
+preset:
+  image: 'gantry-admin://images/layouts/2-col-left.png'
+  name: 2_column_-_left
+  timestamp: 1445426747
+children:
+  -
+    id: ebd9cc6a-63fc-6048-11f7-ff6821cc1a08
+    type: section
+    subtype: false
+    title: Header
+    attributes:
+      boxed: 0
+    children:
+      -
+        id: 6cbfcb91-004d-a282-7a2e-b28f6f926ea5
+        type: grid
+        subtype: false
+        title: Untitled
+        attributes: {  }
+        children:
+          -
+            id: 4ce81260-776e-eb19-01cc-4172f874482e
+            type: block
+            subtype: false
+            title: Untitled
+            attributes:
+              size: 50
+              extra: {  }
+              fixed: '0'
+            children:
+              -
+                id: 42949d34-e70f-9b55-655a-ba73cdd5ea8b
+                type: particle
+                subtype: logo
+                title: Logo
+                attributes:
+                  enabled: 1
+                  url: /
+                children: {  }
+          -
+            id: 23853084-b70a-7e7d-0346-83c76ed6f2e4
+            type: block
+            subtype: false
+            title: Untitled
+            attributes:
+              size: 50
+            children:
+              -
+                id: 4186ccf1-3ecb-a543-9763-6ce024691330
+                type: particle
+                subtype: menu
+                title: Menu
+                attributes:
+                  enabled: 1
+                children: {  }
+  -
+    id: 54ab3dc2-999b-33ac-8ada-0cb2c65d21c8
+    type: section
+    subtype: false
+    title: Navigation
+    attributes:
+      boxed: 0
+    children:
+      -
+        id: f6f81db3-45a5-4632-8fc4-0186b213ad66
+        type: grid
+        subtype: false
+        title: Untitled
+        attributes: {  }
+        children:
+          -
+            id: ba827e30-a9c4-4c25-b86d-b258c0e941e2
+            type: block
+            subtype: false
+            title: Untitled
+            attributes:
+              size: 100
+              extra: {  }
+              fixed: '0'
+            children:
+              -
+                id: 09da9b3f-9833-4ab9-8900-3088768ee245
+                type: particle
+                subtype: menu
+                title: Menu
+                attributes:
+                  enabled: 1
+                  menu: product-menu
+                children: {  }
+  -
+    id: c86ea17e-805f-5768-f935-4dada7b6532c
+    type: container
+    subtype: false
+    title: Untitled
+    attributes:
+      boxed: 0
+    children:
+      -
+        id: 9fbfa7c0-77b1-3646-c5fb-63607d827242
+        type: grid
+        subtype: false
+        title: Untitled
+        attributes: {  }
+        children:
+          -
+            id: 146ec67b-4aa9-b849-1b2f-993516498580
+            type: block
+            subtype: false
+            title: Untitled
+            attributes:
+              size: 20
+            children:
+              -
+                id: 0cc3a107-b543-cd21-8794-9bcec1901c10
+                type: section
+                subtype: false
+                title: Sidebar
+                attributes: {  }
+                children:
+                  -
+                    id: 3095abb2-469e-4a63-9aff-29c00bc8b5b1
+                    type: grid
+                    subtype: false
+                    title: Untitled
+                    attributes: {  }
+                    children:
+                      -
+                        id: 25cb23db-d6b3-4533-b66a-7b32694e7834
+                        type: block
+                        subtype: false
+                        title: Untitled
+                        attributes:
+                          extra: {  }
+                          fixed: '0'
+                          size: 100
+                        children:
+                          -
+                            id: c8eb07b2-c205-4498-8b38-d4808882e51a
+                            type: position
+                            subtype: module
+                            title: 'Module Instance'
+                            attributes:
+                              enabled: 1
+                              module_id: '120'
+                            children: {  }
+          -
+            id: 1898a391-b8eb-e6aa-8e26-1382664b6c0e
+            type: block
+            subtype: false
+            title: Untitled
+            attributes:
+              size: 80
+            children:
+              -
+                id: fe9a64f6-3ccf-4012-bf68-ad4c8af3df31
+                type: section
+                subtype: false
+                title: Main
+                attributes:
+                  boxed: '1'
+                  class: ''
+                  extra: {  }
+                children:
+                  -
+                    id: cc24cb9e-74d2-f1f2-daaa-f5b0d7728b17
+                    type: grid
+                    subtype: false
+                    title: Untitled
+                    attributes: {  }
+                    children:
+                      -
+                        id: d28ef914-ba2f-0ef2-1c95-b2c7d83971f0
+                        type: block
+                        subtype: false
+                        title: Untitled
+                        attributes:
+                          size: 100
+                        children:
+                          -
+                            id: c180a7d2-63f3-3ad0-320f-4a02899c62cc
+                            type: position
+                            subtype: false
+                            title: Breadcrumbs
+                            attributes:
+                              enabled: 1
+                              key: breadcrumbs
+                              title: Breadcrumbs
+                            children: {  }
+                  -
+                    id: 2e9c0629-7e0d-52a4-6273-6c1766275c3d
+                    type: grid
+                    subtype: false
+                    title: Untitled
+                    attributes: {  }
+                    children:
+                      -
+                        id: 87e946cc-5643-8cf7-7975-588f93eccbe5
+                        type: block
+                        subtype: false
+                        title: Untitled
+                        attributes:
+                          size: 100
+                        children:
+                          -
+                            id: 39e6004c-2de9-f132-a697-1c855f2ad5ce
+                            type: pagecontent
+                            subtype: system-messages
+                            title: 'System Messages'
+                            attributes:
+                              enabled: 1
+                            children: {  }
+                  -
+                    id: e21a738d-3fb6-8983-0ec3-bdbc7175ce8a
+                    type: grid
+                    subtype: false
+                    title: Untitled
+                    attributes: {  }
+                    children:
+                      -
+                        id: 249a5823-c61b-42cd-6ed1-b8c313712b5e
+                        type: block
+                        subtype: false
+                        title: Untitled
+                        attributes:
+                          size: 100
+                        children:
+                          -
+                            id: fc877bdd-d1d4-8cda-fc0a-6afba2aecdbc
+                            type: pagecontent
+                            subtype: false
+                            title: Pagecontent
+                            attributes:
+                              enabled: 1
+                            children: {  }
+  -
+    id: 4252a8e9-2acb-2a17-8502-9cb76b98d9c8
+    type: section
+    subtype: false
+    title: Footer
+    attributes:
+      boxed: 0
+    children:
+      -
+        id: 055f5cb2-007e-56b6-3462-ce2607be3c04
+        type: grid
+        subtype: false
+        title: Untitled
+        attributes: {  }
+        children:
+          -
+            id: 482695fa-2465-a7a1-f42e-181d6b73038d
+            type: block
+            subtype: false
+            title: Untitled
+            attributes:
+              size: 100
+            children:
+              -
+                id: 3f45ab6f-9632-929f-dc4e-83cd4cba5f79
+                type: position
+                subtype: false
+                title: Footer
+                attributes:
+                  enabled: 1
+                  key: footer
+                  title: Footer
+                children: {  }
+      -
+        id: c5ad503e-9130-7f38-4e4c-61c65c1d978e
+        type: grid
+        subtype: false
+        title: Untitled
+        attributes: {  }
+        children:
+          -
+            id: 3dd276e1-7f35-5610-5352-db6c3e00648d
+            type: block
+            subtype: false
+            title: Untitled
+            attributes:
+              size: 40
+            children:
+              -
+                id: 0281577f-4d5f-c4f3-c57a-6eec35f3b8a6
+                type: particle
+                subtype: copyright
+                title: Copyright
+                attributes:
+                  enabled: 1
+                children: {  }
+          -
+            id: cc0f0c68-89c3-1bae-58f8-383e4cbb1bb6
+            type: block
+            subtype: false
+            title: Untitled
+            attributes:
+              size: 30
+            children:
+              -
+                id: dbb5a844-c48a-1e47-3936-c9d22dbf5a32
+                type: spacer
+                subtype: false
+                title: Spacer
+                attributes:
+                  enabled: 1
+                children: {  }
+          -
+            id: 2dddc12d-f6a6-55e3-5454-0b842b5d4455
+            type: block
+            subtype: false
+            title: Untitled
+            attributes:
+              size: 30
+            children:
+              -
+                id: 780f43e5-6136-4329-5f6f-e690b0107e7f
+                type: particle
+                subtype: branding
+                title: Branding
+                attributes:
+                  enabled: 1
+                children: {  }
+  -
+    id: 8b712454-38f5-b983-8312-2e18cac173f8
+    type: offcanvas
+    subtype: false
+    title: Offcanvas
+    attributes:
+      name: 'Offcanvas Section'
+      boxed: 0
+    children:
+      -
+        id: 2ceb0373-7b8d-0567-a194-b5facf634b90
+        type: grid
+        subtype: false
+        title: Untitled
+        attributes: {  }
+        children:
+          -
+            id: 8d82a596-e200-5d6b-d75d-ee55ef12a24c
+            type: block
+            subtype: false
+            title: Untitled
+            attributes:
+              size: 100
+            children:
+              -
+                id: 32c161f4-11b4-c5f9-5109-b598e65dd735
+                type: particle
+                subtype: mobile-menu
+                title: Mobile-menu
+                attributes:
+                  enabled: 1
+                children: {  }
+  -
+    id: a596a98c-2aa2-4489-a577-f79b8c780c57
+    type: atoms
+    subtype: false
+    title: Atoms
+    attributes:
+      name: 'Atoms Section'
+      boxed: 0
+    children:
+      -
+        id: fda07f2c-0cdc-49f4-8bfa-cebb73c7af96
+        type: grid
+        subtype: false
+        title: Untitled
+        attributes: {  }
+        children: {  }

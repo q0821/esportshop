@@ -1,0 +1,9 @@
+name: 11
+timestamp: 1445782817
+preset:
+  image: 'gantry-admin://images/layouts/2-col-left.png'
+  name: 2_column_-_left
+  timestamp: 1445426747
+positions:
+  breadcrumbs: Breadcrumbs
+  footer: Footer
