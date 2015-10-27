@@ -8,14 +8,48 @@ ordering:
   mycart:
     __module-MfJJJ: ''
 items:
+  home:
+    id: 103
+    hash: ''
+    dropdown_hide: ''
+    width: auto
+    class: ''
+    icon: 'fa fa-home'
+  registration:
+    id: 154
+    hash: ''
+    dropdown_hide: '0'
+    width: auto
+    class: ''
+    icon: 'fa fa-user-plus'
   login:
     id: 158
-    columns:
-      - 100
+    hash: ''
+    dropdown_hide: '0'
+    width: auto
+    class: ''
+    icon: 'fa fa-sign-in'
+  logout:
+    id: 162
+    hash: ''
+    dropdown_hide: '0'
+    width: auto
+    class: ''
+    icon: 'fa fa-sign-out'
+  member:
+    id: 160
+    hash: ''
+    dropdown_hide: '0'
+    width: auto
+    class: ''
+    icon: 'fa fa-user'
   mycart:
     id: 159
-    columns:
-      - 100
+    hash: ''
+    dropdown_hide: '0'
+    width: auto
+    class: ''
+    icon: 'fa fa-shopping-cart'
   login/__module-uC7Wk:
     type: particle
     particle: module

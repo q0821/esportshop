@@ -1,10 +1,12 @@
 name: 9
-timestamp: 1445926382
+timestamp: 1445940387
 preset:
-  image: 'gantry-admin://images/layouts/default.png'
-  name: default
-  timestamp: 1445234641
+  image: 'gantry-admin://images/layouts/home.png'
+  name: home
+  timestamp: 1445336231
 positions:
+  search: Search
+  navigation: 'Module Position'
   breadcrumbs: Breadcrumbs
   main-bottom: 'Module Position'
   footer: Footer

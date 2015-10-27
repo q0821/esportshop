@@ -8,4 +8,114 @@
    http://docs.gantry.org/gantry5/tutorials/adding-a-custom-style-sheet
  */
 
-/* @import "custom.scss" */
+@import "https://fonts.googleapis.com/css?family=Pontano+Sans";
+/* line 15, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+body {
+  font-family: 'Pontano Sans', sans-serif;
+}
+/* line 17, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+body .g-content {
+  margin: 0;
+}
+/* line 20, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+body .fa {
+  font-size: 16px;
+}
+/* line 23, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+body a {
+  color: #666;
+}
+/* line 25, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+body a:hover {
+  color: #000;
+}
+/* line 28, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+body a:active {
+  color: #000;
+}
+/* line 34, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+#g-header {
+  background: #000;
+  height: 85px;
+}
+/* line 37, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+#g-header .g-content {
+  padding-top: 0;
+}
+/* line 39, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+#g-header .g-content .gantry-logo img {
+  width: auto;
+}
+/* line 42, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+#g-header .g-content .search {
+  padding-top: 25px;
+}
+/* line 44, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+#g-header .g-content .search input.search-query {
+  border-radius: 0px;
+  width: 80%;
+  font-size: 15px;
+  padding: 6px 10px;
+}
+/* line 50, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+#g-header .g-content .search .button {
+  padding: 1px 12px 2px;
+  background: #333;
+  border-radius: 0px;
+}
+/* line 55, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+#g-header .g-content .search .fa {
+  font-size: 24px;
+}
+/* line 59, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 60, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+#g-header .g-content .g-main-nav .g-menu-item {
+  height: 85px;
+}
+/* line 62, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+#g-header .g-content .g-main-nav .g-menu-item .g-menu-item-container {
+  padding: 15px 0.5rem;
+}
+/* line 64, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+#g-header .g-content .g-main-nav .g-menu-item .g-menu-item-container .fa {
+  display: block;
+  font-size: 30px;
+  text-align: center;
+}
+/* line 69, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+#g-header .g-content .g-main-nav .g-menu-item .g-menu-item-container .g-menu-item-title {
+  font-size: 15px;
+}
+/* line 72, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+#g-header .g-content .g-main-nav .g-menu-item .g-menu-item-container .g-menu-parent-indicator:after {
+  width: 1rem;
+}
+/* line 77, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+#g-header .g-content .g-main-nav li:not(.g-menu-item-type-particle):not(.g-menu-item-type-module):hover {
+  background: none;
+  color: #fff;
+}
+/* line 85, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 86, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+#g-navigation .g-main-nav {
+  margin: 0;
+}
+/* line 91, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+#g-feature {
+  padding: 0;
+  background: #efefef;
+}
+/* line 94, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+#g-feature .breadcrumb {
+  margin: 0;
+  padding: 0;
+  background: none;
+}
+/* line 101, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+#g-main {
+  padding-top: 0;
+}
+/* line 103, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+#g-main .g-content {
+  padding-top: 0;
+}

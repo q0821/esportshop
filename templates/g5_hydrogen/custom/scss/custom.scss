@@ -1,0 +1,128 @@
+@import "https://fonts.googleapis.com/css?family=Pontano+Sans";
+$font15 : 15px;
+$font18 : 18px;
+$font24 : 24px;
+$font30 : 30px;
+$font36 : 36px;
+$color000 : #000000;
+$colorccc : #cccccc;
+$color333 : #333333;
+$color666 : #666666;
+$colorfff : #ffffff;
+$colorefr : #efefef;
+
+
+body {
+    font-family: 'Pontano Sans', sans-serif;
+    .g-content{
+        margin: 0;
+    }
+    .fa{
+        font-size: 16px;
+    }
+    a{
+        color: $color666;
+        &:hover{
+            color: $color000;
+        }
+        &:active{
+            color: $color000;
+        }
+    }
+}
+
+#g-header{
+    background: $color000;
+    height: 85px;
+    .g-content{
+        padding-top: 0;
+        .gantry-logo img{
+            width: auto;
+        }
+        .search{
+            padding-top: 25px;
+            input.search-query{
+                border-radius: 0px;
+                width: 80%;
+                font-size: $font15;
+                padding: 6px 10px;
+            }
+            .button{
+                padding: 1px 12px 2px;
+                background: $color333;
+                border-radius: 0px;
+            }
+            .fa{
+                font-size: $font24;
+            }
+        }
+        .g-main-nav{
+            .g-menu-item{
+                height: 85px;
+                .g-menu-item-container{
+                    padding: 15px 0.5rem;
+                    .fa{
+                        display: block;
+                        font-size: $font30;
+                        text-align: center;
+                    }
+                    .g-menu-item-title{
+                        font-size: $font15;
+                    }
+                    .g-menu-parent-indicator:after{
+                        width: 1rem;
+                    }
+                }
+            }
+            li:not(.g-menu-item-type-particle):not(.g-menu-item-type-module):hover{
+                background: none;
+                color: $colorfff;
+            }
+        }
+    }
+}
+
+#g-navigation{
+    .g-main-nav{
+        margin: 0;
+    }
+}
+
+#g-feature{
+    padding: 0;
+    background: $colorefr;
+    .breadcrumb{
+        margin: 0;
+        padding: 0;
+        background: none;
+    }
+}
+
+#g-main{
+    padding-top: 0;
+    .g-content{
+        padding-top: 0;
+    }
+}
+
+
+
+@media (min-width:1200px){
+
+}
+
+@media (min-width:992px) and (max-width:1199px){
+
+}
+
+@media (min-width:768px) and (max-width:991px){
+
+}
+
+@media (min-width:600px) and (max-width:767px){
+
+}
+
+@media (max-width:599px){
+
+}
