@@ -198,7 +198,7 @@ class hikashopFieldClass extends hikashopClass {
 
 			static $categories = array();
 			$parents = array();
-			if(!isset($categories[$id]) && is_numeric($id)) {
+			if(!isset($categories[$id]) && !is_array($data)) {				
 				$categories[$id]['originals'] = array();
 				$categories[$id]['parents'] = array();
 				$categories[$id]['products'] = array($id);
