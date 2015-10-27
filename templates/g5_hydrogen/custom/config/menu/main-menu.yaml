@@ -1,0 +1,40 @@
+ordering:
+  home: ''
+  registration: ''
+  login:
+    __module-uC7Wk: ''
+  logout: ''
+  member: ''
+  mycart:
+    __module-MfJJJ: ''
+items:
+  login:
+    id: 158
+    columns:
+      - 100
+  mycart:
+    id: 159
+    columns:
+      - 100
+  login/__module-uC7Wk:
+    type: particle
+    particle: module
+    title: 登入
+    options:
+      particle:
+        enabled: '1'
+        module_id: '118'
+        chrome: ''
+      block:
+        extra: {  }
+  mycart/__module-MfJJJ:
+    type: particle
+    particle: module
+    title: 購物車模組
+    options:
+      particle:
+        enabled: '1'
+        module_id: '98'
+        chrome: ''
+      block:
+        extra: {  }
