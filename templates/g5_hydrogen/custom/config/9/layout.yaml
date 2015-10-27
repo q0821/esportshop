@@ -1,7 +1,7 @@
 preset:
-  image: 'gantry-admin://images/layouts/default.png'
-  name: default
-  timestamp: 1445234641
+  image: 'gantry-admin://images/layouts/home.png'
+  name: home
+  timestamp: 1445336231
 children:
   -
     id: ebd9cc6a-63fc-6048-11f7-ff6821cc1a08
@@ -9,7 +9,9 @@ children:
     subtype: false
     title: Header
     attributes:
-      boxed: 0
+      boxed: '0'
+      class: ''
+      extra: {  }
     children:
       -
         id: 6cbfcb91-004d-a282-7a2e-b28f6f926ea5
@@ -19,12 +21,32 @@ children:
         attributes: {  }
         children:
           -
+            id: 9e947f39-5f8a-4502-9cea-6be27a4f7f80
+            type: block
+            subtype: false
+            title: Untitled
+            attributes:
+              size: 33.3
+              extra: {  }
+              fixed: '0'
+            children:
+              -
+                id: 6366111e-9d2b-4c3f-9147-806c0edc7c52
+                type: position
+                subtype: position
+                title: Search
+                attributes:
+                  enabled: 1
+                  key: search
+                  title: Search
+                children: {  }
+          -
             id: 4ce81260-776e-eb19-01cc-4172f874482e
             type: block
             subtype: false
             title: Untitled
             attributes:
-              size: 50
+              size: 33.3
               extra: {  }
               fixed: '0'
             children:
@@ -43,7 +65,7 @@ children:
             subtype: false
             title: Untitled
             attributes:
-              size: 50
+              size: 33.3
             children:
               -
                 id: 4186ccf1-3ecb-a543-9763-6ce024691330
@@ -59,7 +81,9 @@ children:
     subtype: false
     title: Navigation
     attributes:
-      boxed: 0
+      boxed: '0'
+      class: ''
+      extra: {  }
     children:
       -
         id: f6f81db3-45a5-4632-8fc4-0186b213ad66
@@ -87,16 +111,50 @@ children:
                   enabled: 1
                   menu: product-menu
                 children: {  }
+      -
+        id: 02dc6591-ae51-4c82-bbfb-ec72a82f8101
+        type: grid
+        subtype: false
+        title: Untitled
+        attributes: {  }
+        children:
+          -
+            id: 807e872f-4707-44cc-befd-94a3d3824e34
+            type: block
+            subtype: false
+            title: Untitled
+            attributes:
+              extra: {  }
+              fixed: '0'
+              size: 100
+            children:
+              -
+                id: e1270988-8f5f-49b4-a738-4aebbca129bd
+                type: position
+                subtype: position
+                title: 'Module Position'
+                attributes:
+                  enabled: 1
+                  key: navigation
+                children: {  }
   -
-    id: fe9a64f6-3ccf-4012-bf68-ad4c8af3df31
+    id: 9b92a939-3655-2198-622e-1cbe13f5d256
     type: section
     subtype: false
-    title: Main
+    title: Showcase
+    attributes:
+      boxed: 0
+    children: {  }
+  -
+    id: 6f818e8f-6785-89b4-df07-0273b689493d
+    type: section
+    subtype: false
+    title: Feature
     attributes:
       boxed: 0
     children:
       -
-        id: cc24cb9e-74d2-f1f2-daaa-f5b0d7728b17
+        id: eda49761-29b9-42fc-9ae0-18d9ad301e3a
         type: grid
         subtype: false
         title: Untitled
@@ -120,6 +178,14 @@ children:
                   key: breadcrumbs
                   title: Breadcrumbs
                 children: {  }
+  -
+    id: fe9a64f6-3ccf-4012-bf68-ad4c8af3df31
+    type: section
+    subtype: false
+    title: Main
+    attributes:
+      boxed: 0
+    children:
       -
         id: 2e9c0629-7e0d-52a4-6273-6c1766275c3d
         type: grid
@@ -179,9 +245,9 @@ children:
             subtype: false
             title: Untitled
             attributes:
+              size: 100
               extra: {  }
               fixed: '0'
-              size: 100
             children:
               -
                 id: 43a022c5-7283-4d50-8754-81b68df1dd22
@@ -191,7 +257,20 @@ children:
                 attributes:
                   enabled: 1
                   module_id: '96'
+                  title: 'Module Instance'
+                  key: module-instance
                 children: {  }
+  -
+    id: 9fe65519-28ea-80d5-723c-1ba2a45646f6
+    type: section
+    subtype: false
+    title: Subfeature
+    attributes:
+      class: flush
+      extra: ''
+      enabled: 0
+      boxed: 0
+    children: {  }
   -
     id: 4252a8e9-2acb-2a17-8502-9cb76b98d9c8
     type: section
@@ -290,7 +369,7 @@ children:
       boxed: 0
     children:
       -
-        id: 2ceb0373-7b8d-0567-a194-b5facf634b90
+        id: be212bb8-40f3-4f78-9c67-2e5fb94c7c30
         type: grid
         subtype: false
         title: Untitled

@@ -24,9 +24,9 @@ children:
             subtype: false
             title: Untitled
             attributes:
+              size: 50
               extra: {  }
               fixed: '0'
-              size: 50
             children:
               -
                 id: 956baa63-d2e1-4665-84d1-de3caa249501
@@ -74,9 +74,9 @@ children:
             subtype: false
             title: Untitled
             attributes:
+              size: 100
               extra: {  }
               fixed: '0'
-              size: 100
             children:
               -
                 id: 7033b5b9-201e-4278-9082-d2f651e05399

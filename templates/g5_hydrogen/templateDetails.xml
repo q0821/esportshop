@@ -42,6 +42,8 @@
         <position>debug</position>
         <position>footer</position>
         <position>header</position>
+        <position>navigation</position>
+        <position>search</position>
     </positions>
 
     <config>
