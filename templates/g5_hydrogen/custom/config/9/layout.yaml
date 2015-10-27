@@ -174,7 +174,7 @@ children:
         attributes: {  }
         children:
           -
-            id: f9b56bb8-dfa4-4aac-a63e-6dc160cbe771
+            id: c2d1fb5c-5e10-4ad4-8e32-3c7b5da6c2e7
             type: block
             subtype: false
             title: Untitled
@@ -184,13 +184,13 @@ children:
               size: 100
             children:
               -
-                id: 43a022c5-7283-4d50-8754-81b68df1dd22
+                id: a999c9c4-b73b-41f3-a488-af8a646b598d
                 type: position
-                subtype: module
-                title: 'Module Instance'
+                subtype: position
+                title: 'Module Position'
                 attributes:
                   enabled: 1
-                  module_id: '96'
+                  key: main-bottom
                 children: {  }
   -
     id: 4252a8e9-2acb-2a17-8502-9cb76b98d9c8
