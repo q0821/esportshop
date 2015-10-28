@@ -1,8 +1,10 @@
 name: 10
-timestamp: 1445961923
+timestamp: 1446012644
 preset:
   image: 'gantry-admin://images/layouts/home.png'
   name: home
   timestamp: 1445426747
 positions:
+  search: Search
+  navigation: 'Module Position'
   footer: Footer

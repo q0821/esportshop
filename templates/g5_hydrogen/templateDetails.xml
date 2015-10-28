@@ -38,8 +38,11 @@
     </files>
 
     <positions>
+        <position>About</position>
+        <position>Sitemap</position>
         <position>breadcrumbs</position>
         <position>debug</position>
+        <position>facebookfans</position>
         <position>footer</position>
         <position>header</position>
         <position>module-instance</position>

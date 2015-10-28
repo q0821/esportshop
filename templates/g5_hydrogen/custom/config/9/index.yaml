@@ -1,5 +1,5 @@
 name: 9
-timestamp: 1446011950
+timestamp: 1446020340
 preset:
   image: 'gantry-admin://images/layouts/home.png'
   name: home
@@ -9,4 +9,6 @@ positions:
   navigation: 'Module Position'
   breadcrumbs: Breadcrumbs
   module-instance: 'Module Position'
-  footer: Footer
+  About: About
+  Sitemap: Sitemap
+  facebookfans: facebookfans
