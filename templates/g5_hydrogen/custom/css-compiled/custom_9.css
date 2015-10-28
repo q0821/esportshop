@@ -9,113 +9,223 @@
  */
 
 @import "https://fonts.googleapis.com/css?family=Pontano+Sans";
-/* line 15, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 18, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 body {
   font-family: 'Pontano Sans', sans-serif;
 }
-/* line 17, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 20, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 body .g-content {
   margin: 0;
 }
-/* line 20, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 23, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 body .fa {
   font-size: 16px;
 }
-/* line 23, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 26, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 body a {
   color: #666;
 }
-/* line 25, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 28, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 body a:hover {
   color: #000;
 }
-/* line 28, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 31, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 body a:active {
   color: #000;
 }
-/* line 34, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 35, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+body .button {
+  background: #000;
+  border-radius: 0px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  color: #fff !important;
+  margin: 0;
+  padding: 8px 15px;
+}
+/* line 46, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+h1, h2, h3, h4, h5, p, div, a, table, tbody, tr, td, span {
+  font-family: 'Pontano Sans', sans-serif;
+  font-weight: normal;
+}
+/* line 51, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+h1 {
+  font-size: 36px;
+}
+/* line 52, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+h2 {
+  font-size: 30px;
+}
+/* line 53, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+h3 {
+  font-size: 24px;
+}
+/* line 54, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+h4 {
+  font-size: 18px;
+}
+/* line 55, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+p {
+  font-size: 15px;
+  margin: 0.5rem 0;
+}
+/* line 57, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-header {
   background: #000;
   height: 85px;
 }
-/* line 37, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 60, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-header .g-content {
   padding-top: 0;
 }
-/* line 39, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 62, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-header .g-content .gantry-logo img {
   width: auto;
 }
-/* line 42, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 65, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-header .g-content .search {
   padding-top: 25px;
 }
-/* line 44, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 67, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-header .g-content .search input.search-query {
   border-radius: 0px;
   width: 80%;
   font-size: 15px;
   padding: 6px 10px;
 }
-/* line 50, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 73, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-header .g-content .search .button {
   padding: 1px 12px 2px;
   background: #333;
   border-radius: 0px;
 }
-/* line 55, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 78, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-header .g-content .search .fa {
   font-size: 24px;
 }
-/* line 59, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-/* line 60, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 82, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 83, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-header .g-content .g-main-nav .g-menu-item {
   height: 85px;
 }
-/* line 62, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 85, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-header .g-content .g-main-nav .g-menu-item .g-menu-item-container {
   padding: 15px 0.5rem;
 }
-/* line 64, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 87, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-header .g-content .g-main-nav .g-menu-item .g-menu-item-container .fa {
   display: block;
   font-size: 30px;
   text-align: center;
 }
-/* line 69, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 92, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-header .g-content .g-main-nav .g-menu-item .g-menu-item-container .g-menu-item-title {
   font-size: 15px;
 }
-/* line 72, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 95, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-header .g-content .g-main-nav .g-menu-item .g-menu-item-container .g-menu-parent-indicator:after {
   width: 1rem;
 }
-/* line 77, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 100, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-header .g-content .g-main-nav li:not(.g-menu-item-type-particle):not(.g-menu-item-type-module):hover {
   background: none;
   color: #fff;
 }
-/* line 85, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-/* line 86, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-#g-navigation .g-main-nav {
-  margin: 0;
+/* line 108, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+#g-navigation {
+  background: #000;
+  background: -moz-radial-gradient(center, ellipse cover, #000 0%, #222 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #000), color-stop(100%, #222));
+  background: -webkit-radial-gradient(center, ellipse cover, #000 0%, #222 100%);
+  background: -o-radial-gradient(center, ellipse cover, #000 0%, #222 100%);
+  background: -ms-radial-gradient(center, ellipse cover, #000 0%, #222 100%);
+  background: radial-gradient(ellipse at center, #000 0%, #222 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$color000, endColorstr=$color222,GradientType=1);
 }
-/* line 91, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 117, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 118, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 119, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+#g-navigation .hikashop_category_information .hikashop_category .hikashop_subcontainer {
+  background: none;
+  border-radius: 0px;
+  height: auto !important;
+}
+/* line 124, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+#g-navigation .hikashop_category_information .hikashop_category .thumbnail {
+  border: 0;
+}
+/* line 126, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+#g-navigation .hikashop_category_information .hikashop_category .thumbnail .hikashop_category_image {
+  height: auto !important;
+}
+/* line 134, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-feature {
   padding: 0;
   background: #efefef;
 }
-/* line 94, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 137, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-feature .breadcrumb {
   margin: 0;
   padding: 0;
   background: none;
 }
-/* line 101, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 144, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-main {
   padding-top: 0;
 }
-/* line 103, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 146, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-main .g-content {
   padding-top: 0;
+}
+/* line 149, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 150, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+#g-main .g-content .hikashop_category_information h2 {
+  font-size: 30px;
+  color: #000;
+  font-weight: normal;
+}
+/* line 159, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+#g-subfeature {
+  padding: 1rem 0;
+  background: #111;
+}
+/* line 162, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+#g-subfeature h3 {
+  color: #fff;
+  border-bottom: 1px solid #666;
+  padding-bottom: 15px;
+  margin: 0 0 20px;
+}
+/* line 168, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+#g-subfeature h4 {
+  margin: 0rem 0 0.5rem 0;
+}
+/* line 170, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+#g-subfeature h4 a {
+  color: #ccc;
+}
+/* line 172, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+#g-subfeature h4 a:hover {
+  color: #fff;
+}
+/* line 177, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+#g-subfeature p {
+  margin: 0.3rem 0;
+}
+/* line 179, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+#g-subfeature p a {
+  color: #999;
+}
+/* line 181, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+#g-subfeature p a:hover {
+  color: #fff;
+}
+/* line 186, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 187, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+#g-subfeature .subfootericon img {
+  padding: 15px;
+}
+/* line 193, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+#g-footer {
+  background: #000;
 }

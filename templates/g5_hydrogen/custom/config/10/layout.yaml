@@ -19,12 +19,31 @@ children:
         attributes: {  }
         children:
           -
+            id: fbcd399d-b22c-4b3d-86f7-64a6faf26d02
+            type: block
+            subtype: false
+            title: Untitled
+            attributes:
+              extra: {  }
+              fixed: '0'
+              size: 33.3
+            children:
+              -
+                id: 508d65b4-1204-453f-8a0e-7e19fe06f1aa
+                type: position
+                subtype: position
+                title: Search
+                attributes:
+                  enabled: 1
+                  key: search
+                children: {  }
+          -
             id: cabcb626-d75e-4861-90a0-471d6fe30b86
             type: block
             subtype: false
             title: Untitled
             attributes:
-              size: 50
+              size: 33.3
               extra: {  }
               fixed: '0'
             children:
@@ -43,7 +62,7 @@ children:
             subtype: false
             title: Untitled
             attributes:
-              size: 50
+              size: 33.3
             children:
               -
                 id: b681eafb-e4a0-e4a4-312b-9a650fb7421a
@@ -69,7 +88,7 @@ children:
         attributes: {  }
         children:
           -
-            id: beb5fff0-da1b-4abd-8544-a7a9b9db98bc
+            id: 09f2f915-e619-4c53-8f41-a088f0792532
             type: block
             subtype: false
             title: Untitled
@@ -79,13 +98,14 @@ children:
               fixed: '0'
             children:
               -
-                id: 7033b5b9-201e-4278-9082-d2f651e05399
-                type: particle
-                subtype: menu
-                title: Menu
+                id: 070c04f0-ba17-41f7-88a9-c4f74152429e
+                type: position
+                subtype: position
+                title: 'Module Position'
                 attributes:
                   enabled: 1
-                  menu: product-menu
+                  key: navigation
+                  title: 'Module Position'
                 children: {  }
   -
     id: 9b92a939-3655-2198-622e-1cbe13f5d256

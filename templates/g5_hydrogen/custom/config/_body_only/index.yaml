@@ -1,7 +1,7 @@
 name: _body_only
-timestamp: 1445426747
+timestamp: 1445336231
 preset:
   image: 'gantry-admin://images/layouts/body-only.png'
   name: _body_only
-  timestamp: 1445426747
+  timestamp: 1445336231
 positions: {  }

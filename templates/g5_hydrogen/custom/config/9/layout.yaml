@@ -241,11 +241,77 @@ children:
     subtype: false
     title: Subfeature
     attributes:
-      class: flush
-      extra: ''
-      enabled: 0
-      boxed: 0
-    children: {  }
+      boxed: '0'
+      class: ''
+      extra: {  }
+    children:
+      -
+        id: 477f7699-4851-4592-82a6-a5781bab5776
+        type: grid
+        subtype: false
+        title: Untitled
+        attributes: {  }
+        children:
+          -
+            id: ffcd5e48-09b2-409b-b3b5-f3589ac92bba
+            type: block
+            subtype: false
+            title: Untitled
+            attributes:
+              size: 27
+              extra: {  }
+              fixed: '0'
+            children:
+              -
+                id: a97f8cc8-4174-4e46-9f69-a49f558d0487
+                type: position
+                subtype: position
+                title: About
+                attributes:
+                  enabled: 1
+                  key: About
+                  title: About
+                children: {  }
+          -
+            id: 14898674-34c5-4e89-9000-6c675c897baf
+            type: block
+            subtype: false
+            title: Untitled
+            attributes:
+              size: 40
+              extra: {  }
+              fixed: '0'
+            children:
+              -
+                id: 94040461-a67b-40d4-8330-088e168b5612
+                type: position
+                subtype: position
+                title: Sitemap
+                attributes:
+                  enabled: 1
+                  key: Sitemap
+                  title: Sitemap
+                children: {  }
+          -
+            id: 482695fa-2465-a7a1-f42e-181d6b73038d
+            type: block
+            subtype: false
+            title: Untitled
+            attributes:
+              size: 33
+              extra: {  }
+              fixed: '0'
+            children:
+              -
+                id: 3f45ab6f-9632-929f-dc4e-83cd4cba5f79
+                type: position
+                subtype: false
+                title: facebookfans
+                attributes:
+                  enabled: 1
+                  key: facebookfans
+                  title: facebookfans
+                children: {  }
   -
     id: 4252a8e9-2acb-2a17-8502-9cb76b98d9c8
     type: section
@@ -254,31 +320,6 @@ children:
     attributes:
       boxed: 0
     children:
-      -
-        id: 055f5cb2-007e-56b6-3462-ce2607be3c04
-        type: grid
-        subtype: false
-        title: Untitled
-        attributes: {  }
-        children:
-          -
-            id: 482695fa-2465-a7a1-f42e-181d6b73038d
-            type: block
-            subtype: false
-            title: Untitled
-            attributes:
-              size: 100
-            children:
-              -
-                id: 3f45ab6f-9632-929f-dc4e-83cd4cba5f79
-                type: position
-                subtype: false
-                title: Footer
-                attributes:
-                  enabled: 1
-                  key: footer
-                  title: Footer
-                children: {  }
       -
         id: c5ad503e-9130-7f38-4e4c-61c65c1d978e
         type: grid

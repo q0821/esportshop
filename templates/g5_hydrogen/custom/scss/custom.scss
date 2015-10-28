@@ -5,9 +5,12 @@ $font24 : 24px;
 $font30 : 30px;
 $font36 : 36px;
 $color000 : #000000;
-$colorccc : #cccccc;
+$color111 : #111111;
+$color222 : #222222;
 $color333 : #333333;
 $color666 : #666666;
+$color999 : #999999;
+$colorccc : #cccccc;
 $colorfff : #ffffff;
 $colorefr : #efefef;
 
@@ -29,7 +32,27 @@ body {
             color: $color000;
         }
     }
+    .button{
+        background: $color000;
+        border-radius: 0px;
+        border: 1px solid $colorccc;
+        font-size: $font15;
+        color: $colorfff !important;
+        margin: 0;
+        padding: 8px 15px;
+    }
 }
+
+h1, h2, h3, h4, h5, p, div, a,table, tbody, tr, td, span {
+    font-family: 'Pontano Sans', sans-serif;
+    font-weight: normal;
+}
+
+h1{ font-size: $font36;}
+h2{ font-size: $font30;}
+h3{ font-size: $font24;}
+h4{ font-size: $font18;}
+p{ font-size: $font15; margin: 0.5rem 0;}
 
 #g-header{
     background: $color000;
@@ -83,8 +106,28 @@ body {
 }
 
 #g-navigation{
-    .g-main-nav{
-        margin: 0;
+    background: $color000;
+    background: -moz-radial-gradient(center, ellipse cover, $color000 0%, $color222 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,$color000), color-stop(100%,$color222));
+    background: -webkit-radial-gradient(center, ellipse cover, $color000 0%,$color222 100%);
+    background: -o-radial-gradient(center, ellipse cover, $color000 0%,$color222 100%);
+    background: -ms-radial-gradient(center, ellipse cover, $color000 0%,$color222 100%);
+    background: radial-gradient(ellipse at center, $color000 0%,$color222 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$color000, endColorstr=$color222,GradientType=1 );
+    .hikashop_category_information{
+        .hikashop_category{
+            .hikashop_subcontainer{
+                background: none;
+                border-radius: 0px;
+                height: auto !important;
+            }
+            .thumbnail{
+                border: 0;
+                .hikashop_category_image{
+                    height: auto !important;
+                }
+            }
+        }
     }
 }
 
@@ -102,9 +145,54 @@ body {
     padding-top: 0;
     .g-content{
         padding-top: 0;
+        //分類
+        .hikashop_category_information{
+            h2{
+                font-size: $font30;
+                color: $color000;
+                font-weight: normal;
+            }
+        }
     }
 }
 
+#g-subfeature{
+    padding: 1.0rem 0;
+    background: $color111;
+    h3{
+        color: $colorfff;
+        border-bottom: 1px solid $color666;
+        padding-bottom: 15px;
+        margin: 0 0 20px;
+    }
+    h4{
+        margin: 0.0rem 0 0.5rem 0;
+        a{
+            color: $colorccc;
+            &:hover{
+                color: $colorfff;
+            }
+        }
+    }
+    p{
+        margin: 0.3rem 0;
+        a{
+            color: $color999;
+            &:hover{
+                color: $colorfff;
+            }
+        }
+    } 
+    .subfootericon{
+        img{
+            padding: 15px;
+        }
+    }
+}
+
+#g-footer{
+    background: $color000;
+}
 
 
 @media (min-width:1200px){
