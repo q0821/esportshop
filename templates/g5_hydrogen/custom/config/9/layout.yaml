@@ -86,32 +86,6 @@ children:
       extra: {  }
     children:
       -
-        id: f6f81db3-45a5-4632-8fc4-0186b213ad66
-        type: grid
-        subtype: false
-        title: Untitled
-        attributes: {  }
-        children:
-          -
-            id: ba827e30-a9c4-4c25-b86d-b258c0e941e2
-            type: block
-            subtype: false
-            title: Untitled
-            attributes:
-              size: 100
-              extra: {  }
-              fixed: '0'
-            children:
-              -
-                id: 09da9b3f-9833-4ab9-8900-3088768ee245
-                type: particle
-                subtype: menu
-                title: Menu
-                attributes:
-                  enabled: 1
-                  menu: product-menu
-                children: {  }
-      -
         id: 02dc6591-ae51-4c82-bbfb-ec72a82f8101
         type: grid
         subtype: false
@@ -124,9 +98,9 @@ children:
             subtype: false
             title: Untitled
             attributes:
+              size: 100
               extra: {  }
               fixed: '0'
-              size: 100
             children:
               -
                 id: e1270988-8f5f-49b4-a738-4aebbca129bd
@@ -136,6 +110,7 @@ children:
                 attributes:
                   enabled: 1
                   key: navigation
+                  title: 'Module Position'
                 children: {  }
   -
     id: 9b92a939-3655-2198-622e-1cbe13f5d256
@@ -257,7 +232,7 @@ children:
                 attributes:
                   enabled: 1
                   module_id: '96'
-                  title: 'Module Instance'
+                  title: 'Module Position'
                   key: module-instance
                 children: {  }
   -
