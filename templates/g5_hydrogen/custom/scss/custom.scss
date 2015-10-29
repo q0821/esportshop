@@ -11,8 +11,9 @@ $color333 : #333333;
 $color666 : #666666;
 $color999 : #999999;
 $colorccc : #cccccc;
+$colorddd : #dddddd;
 $colorfff : #ffffff;
-$colorefr : #efefef;
+$colorefr : #f9f9f9;
 
 
 body {
@@ -32,14 +33,30 @@ body {
             color: $color000;
         }
     }
-    .button{
+    .button, .btn{
         background: $color000;
         border-radius: 0px;
-        border: 1px solid $colorccc;
         font-size: $font15;
-        color: $colorfff !important;
+        color: $colorfff;
         margin: 0;
         padding: 8px 15px;
+        border: 1px solid $colorccc;
+        &:hover{
+            color: $color000;
+        }
+    }
+    .btn-primary:hover{
+        background: $colorddd;
+    }
+    hr{
+        margin: 1.0rem 0;
+    }
+    input{
+        font-size: $font15;
+        border-radius: 0;
+    }
+    .control-group{
+        margin-bottom: 20px;
     }
 }
 
@@ -48,11 +65,30 @@ h1, h2, h3, h4, h5, p, div, a,table, tbody, tr, td, span {
     font-weight: normal;
 }
 
-h1{ font-size: $font36;}
-h2{ font-size: $font30;}
-h3{ font-size: $font24;}
-h4{ font-size: $font18;}
-p{ font-size: $font15; margin: 0.5rem 0;}
+h1{ 
+    font-size: $font36; 
+    color: $color000;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $colorddd;
+}
+h2{ 
+    font-size: $font30;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $colorddd;
+}
+h3{ 
+    font-size: $font24; 
+    margin: 0.75rem 0;
+}
+h4{ 
+    font-size: $font18;
+}
+p{ 
+    font-size: $font15; 
+    margin: 0.5rem 0;
+}
+
+
 
 #g-header{
     background: $color000;
@@ -70,20 +106,22 @@ p{ font-size: $font15; margin: 0.5rem 0;}
                 font-size: $font15;
                 padding: 6px 10px;
             }
-            .button{
+            .button ,.btn{
                 padding: 1px 12px 2px;
                 background: $color333;
                 border-radius: 0px;
+                border: 0;
             }
             .fa{
                 font-size: $font24;
             }
         }
         .g-main-nav{
+            padding-top: 7px;
             .g-menu-item{
-                height: 85px;
                 .g-menu-item-container{
-                    padding: 15px 0.5rem;
+                    padding: 0.5rem 0.5rem;
+                    color: $colorccc;
                     .fa{
                         display: block;
                         font-size: $font30;
@@ -95,11 +133,113 @@ p{ font-size: $font15; margin: 0.5rem 0;}
                     .g-menu-parent-indicator:after{
                         width: 1rem;
                     }
+                    &:hover{
+                        color: $colorfff;
+                    }
+                }
+                .g-dropdown{
+                    background: rgba(0,0,0,0.8);
+                    padding: 0 10px 10px 10px;
+                    left: none;
+                    right: 0;
                 }
             }
-            li:not(.g-menu-item-type-particle):not(.g-menu-item-type-module):hover{
+            li:not(.g-menu-item-type-particle):not(.g-menu-item-type-module):hover,
+            li:not(.g-menu-item-type-particle):not(.g-menu-item-type-module).active,
+            li:not(.g-menu-item-type-particle):not(.g-menu-item-type-module).active.g-selected{
                 background: none;
-                color: $colorfff;
+                > .g-menu-item-container{
+                    color: $colorfff;
+                }
+            }
+            .g-menu-item-type-component{
+                .g-dropdown{
+                    width: 230px;
+                    .sourcecoast{
+                        form{
+                            margin: 0;
+                        }
+                        .btn{
+                            border: 1px solid $color666;
+                            border-radius: 0;
+                            background: none;
+                            width: 43%;
+                            margin-right: 10px;
+                            font-size: 16px;
+                            &:hover{
+                                border: 1px solid $colorccc;
+                                -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255,255,255,.6);
+                                -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255,255,255,.6);
+                                box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255, 255,255, .6);
+                            }
+                        }
+                        .sclogin-joomla-login{
+                            border-bottom: 1px solid $color666;
+                            margin-bottom: 10px;
+                            input.input-block-level{
+                                width: 93% !important;
+                                border-radius: 0;
+                                border-top: 0;
+                                border-left: 0;
+                                border-right: 0;
+                                background: none;
+                                border-bottom: 1px solid $color666;
+                                color: $colorfff;
+                                &:focus{
+                                    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255,255,255,.6);
+                                    -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255,255,255,.6);
+                                    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255, 255,255, .6);
+                                }
+                            }
+                            .control-group{
+                                margin-bottom: 15px;
+                            }
+                        }
+                        .sclogin-social-login .pull-left{
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+            .g-menu-item-type-separator{
+                .g-dropdown{
+                    width: 400px;
+                    form{
+                        margin: 0;
+                    }
+                    .button{
+                        border: 1px solid $color666;
+                        border-radius: 0;
+                        background: none;
+                        width: 43%;
+                        margin-right: 10px;
+                        font-size: 16px;
+                        margin-top: 15px;
+                        &:hover{
+                            border: 1px solid $colorccc;
+                            -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255,255,255,.6);
+                            -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255,255,255,.6);
+                            box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255, 255,255, .6);
+                            color: $colorfff;
+                        }
+                    }
+                    #hikashop_cart_module{
+                        table{
+                            border-color: $color666;
+                            thead{
+                                tr{
+                                    th{
+                                        background: $color000;
+                                    }
+                                }
+                            }
+                            td{
+                                border-color: $color666;
+                                width: 36%;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
@@ -108,23 +248,60 @@ p{ font-size: $font15; margin: 0.5rem 0;}
 #g-navigation{
     background: $color000;
     background: -moz-radial-gradient(center, ellipse cover, $color000 0%, $color222 100%);
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,$color000), color-stop(100%,$color222));
     background: -webkit-radial-gradient(center, ellipse cover, $color000 0%,$color222 100%);
     background: -o-radial-gradient(center, ellipse cover, $color000 0%,$color222 100%);
     background: -ms-radial-gradient(center, ellipse cover, $color000 0%,$color222 100%);
     background: radial-gradient(ellipse at center, $color000 0%,$color222 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$color000, endColorstr=$color222,GradientType=1 );
-    .hikashop_category_information{
-        .hikashop_category{
-            .hikashop_subcontainer{
-                background: none;
-                border-radius: 0px;
-                height: auto !important;
-            }
-            .thumbnail{
+    .g-content{
+        padding: 0 0.938rem;
+        .hikashop_category_information{
+            .thumbnails{
                 border: 0;
-                .hikashop_category_image{
-                    height: auto !important;
+                margin: 0;
+                .hikashop_category {
+                    margin: 0;
+                    width: auto;
+                    .hikashop_container{
+                        margin: 0;
+                        .hikashop_subcontainer{
+                            background: none;
+                            border: 0;
+                            text-align: left;
+                            border-radius: 0;
+                            padding: 0.7rem 1.2rem;
+                            .hikashop_category_list{
+                                display: none;
+                            }
+                            .hikashop_category_name{
+                                color: $colorccc;
+                            }
+                            &:after{
+                                cursor: pointer;
+                                width: 1.0rem;
+                                opacity: 0.8;
+                                font-family: FontAwesome;
+                                content: "\f078";
+                                text-align: right;
+                            }
+                            &:hover{
+                                .hikashop_category_list{
+                                    position: absolute;
+                                    display: block;
+                                    left: 0;
+                                    top: 40px;
+                                    padding: 0 15px 25px 15px;
+                                    list-style: none;
+                                    margin: 0;
+                                    background: rgba(0, 0, 0, 0.8);
+                                    .hikashop_category_list_item{
+                                        padding: 15px 15px;
+                                        border-bottom: 1px solid $color666;
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -138,11 +315,37 @@ p{ font-size: $font15; margin: 0.5rem 0;}
         margin: 0;
         padding: 0;
         background: none;
+        .active{
+            color: $color000;
+        }
+        li{
+            span{
+                color: $color000;
+            }
+            a{
+                span{
+                    color: $color666;
+                }
+            }
+            .divider{
+                padding: 0 10px;
+                img{
+                    display: none;
+                }
+                &:after{
+                    cursor: pointer;
+                    width: 1.0rem;
+                    opacity: 0.8;
+                    font-family: FontAwesome;
+                    content: "\f105";
+                    text-align: right;
+                }
+            }
+        }
     }
 }
 
 #g-main{
-    padding-top: 0;
     .g-content{
         padding-top: 0;
         //分類
@@ -156,9 +359,248 @@ p{ font-size: $font15; margin: 0.5rem 0;}
     }
 }
 
+//會員註冊
+.view-registration{
+    #g-main{
+        .registration{
+            width: 320px;
+            margin: 0 auto;
+            .form-horizontal {
+                border-radius: 0;
+                background: none;
+                box-shadow: none;
+                input{
+                    border-radius: 0;
+                    font-size: $font15;
+                    width: 94%;
+                }
+                legend{
+                    margin: 0;
+                    font-size: 2rem;
+                }
+                .control-group{
+                    margin-bottom: 10px;
+                    .control-label{
+                        width: auto;
+                        margin-right: 10px;
+                        text-align: left;
+                        float: none;
+                    }
+                    .controls{
+                        margin-left: 0;
+                    }
+                    .btn{
+                        width: 49%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//會員登入
+.view-login{
+    #g-main{
+        .login{
+            width: 320px;
+            margin: 0 auto;
+            .form-horizontal {
+                padding: 35px 20px 20px;
+                border-radius: 0;
+                background: none;
+                box-shadow: 0;
+                input{
+                    border-radius: 0;
+                    font-size: $font15;
+                }
+                .control-label{
+                    width: auto;
+                    margin-right: 10px;
+                }
+                .controls{
+                    margin-left: 0;
+                }
+                .btn{
+                    width: 97%;
+                }
+            }
+        }
+        .nav-stacked{
+            width: 320px;
+            margin: 0 auto;
+        }
+    }
+}
+
+//結帳頁面 checkout page
+.view-checkout{
+    #g-main{
+        #hikashop_checkout_page{
+            h1{
+
+            }
+            legend{
+                font-size: 30px;
+                padding-bottom: 10px;
+                border-bottom: 1px solid $colorddd;
+            }
+            #hikashop_checkout_login{
+                #hikashop_checkout_login_left_part{
+                    .add-on{
+                        border-radius: 0;
+                        background: none;
+                        i{
+                            font-size: $font15;
+                        }
+                        label{
+                            position: relative;
+                            width: 50px;
+                            overflow: visible;
+                        }
+                    }
+                    .input-small{
+                        width: 69%;
+                        font-size: 16px;
+                        border: 1px solid #ccc;
+                    }
+                    .hasTooltip{
+                        border-radius: 0;
+                        background: none;
+                        border-color: #ccc;
+                        padding: 6px 12px 7px;
+                    }
+                    #form-login-submit{
+                        input{
+                            width: 80%;
+                        }
+                    }
+                }
+                #hikashop_checkout_login_right_part{
+                    .form-horizontal{
+                        .control-label{
+                            width: 25%;
+                        }
+                        .controls{
+                            margin-left: 28%;
+                            input{
+                                border-radius: 0;
+                                width: 80%;
+                            }
+                        }
+                    }
+                }
+            }
+
+            #hikashop_checkout_address_billing_only{
+                margin-bottom: 25px;
+            }
+            #hikashop_payment_methods{
+                margin-bottom: 25px;
+                border-bottom: 1px solid $colorddd;
+                table{
+                    border: 0;
+                    td{
+                        border: 0;
+                        .hikashop_checkout_payment_description{
+                            display: inline-block;
+                            margin-left: 10px;
+                        }
+                        .btn-primary.active{
+                            background: $color000;
+                            border-radius: 0;
+                            padding: 7px 12px;
+                            font-size: $font15;
+                            &:hover{
+                                background: $colorddd;
+                            }
+                        }
+                    }
+                }
+            }
+            #hikashop_checkout_coupon{
+                #hikashop_checkout_coupon_input{
+                    margin-bottom: 5px;
+                    font-size: $font18;
+                    border-radius: 0;
+                }
+                .hikashop_cart_input_button{
+                    margin-bottom: 5px;
+                }
+            }
+            #hikashop_checkout_cart{
+                margin-bottom: 25px;
+                table td{
+                    padding: 15px;
+                }
+                .hikashop_cart_product_image_value{
+                    width: 34%;
+                }
+                .hikashop_cart_product_name_value{
+                    p{
+                        margin: 0;
+                    }
+                }
+                .hikashop_cart_product_price_value{
+                    width: 10%;
+                }
+                .hikashop_cart_product_quantity_value{
+                    width: 15%;
+                    input{
+                        font-size: $font15;
+                        border-radius: 0;
+                        margin-bottom: 3px;
+                        width: 50px;
+                    }
+                    .hikashop_cart_product_quantity_refresh,
+                    .hikashop_cart_product_quantity_delete{
+                        display: inline-block;
+                        border: 1px solid #ccc;
+                        padding: 5px 8px;
+                        a{
+                            .fa{
+                                font-size: $font18;
+                            }
+                        }
+                    }
+                }
+                .hikashop_cart_total_value{
+                    width: 10%;
+                    .hikashop_checkout_cart_final_total{
+                        color: #ff0000;
+                        font-weight: bold;
+                    }
+                }
+            }
+            #hikashop_checkout_additional_info{
+                margin-bottom: 25px;
+                table{
+                    background: #f9f9f9;
+                    border: 0;
+                    td{
+                        border: 0;
+                        textarea{
+                            font-size: $font15;
+                            width: 99%;
+                        }
+                    }
+                }
+            }
+            #hikashop_checkout_status{
+                .label-info{
+                    font-size: $font15;
+                    padding: 10px 10px;
+                    background: #000;
+                    border-radius: 0;
+                }
+            }
+        }
+    }
+}
+
 #g-subfeature{
     padding: 1.0rem 0;
     background: $color111;
+    color: $color999;
     h3{
         color: $colorfff;
         border-bottom: 1px solid $color666;
@@ -188,10 +630,16 @@ p{ font-size: $font15; margin: 0.5rem 0;}
             padding: 15px;
         }
     }
+    .customsitemap{
+        padding-left: 25px;
+    }
 }
 
 #g-footer{
     background: $color000;
+    .g-content{
+        color: $color999;
+    }
 }
 
 
