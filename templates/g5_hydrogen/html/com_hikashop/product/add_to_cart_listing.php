@@ -91,7 +91,6 @@ if($this->config->get('show_quantity_field') < 2) {
 	}
 	$this->setLayout('quantity');
 	echo $this->loadTemplate();
-
 	if(!empty($this->ajax) && $this->config->get('redirect_url_after_add_cart','stay_if_cart') == 'ask_user') {
 ?>
 		<input type="hidden" name="popup" value="1"/>
