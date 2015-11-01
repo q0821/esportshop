@@ -39,7 +39,6 @@ if($this->config->get('thumbnail',1)){ ?>
 </div>
 <!-- EO PRODUCT IMG -->
 <?php } ?>
-
 <!-- PRODUCT NAME -->
 <span class="hikashop_product_name">
 	<?php if($this->params->get('link_to_product_page',1)){ ?>
@@ -51,7 +50,6 @@ if($this->config->get('thumbnail',1)){ ?>
 	<?php } ?>
 </span>
 <!-- EO PRODUCT NAME -->
-
 <!-- PRODUCT CODE -->
 	<span class='hikashop_product_code_list'>
 		<?php if ($this->config->get('show_code')) { ?>
@@ -65,9 +63,7 @@ if($this->config->get('thumbnail',1)){ ?>
 		<?php } ?>
 	</span>
 <!-- EO PRODUCT CODE -->
-
 <?php if(!empty($this->row->extraData->afterProductName)) { echo implode("\r\n",$this->row->extraData->afterProductName); } ?>
-
 <!-- COMPARISON AREA -->
 <?php
 if(JRequest::getVar('hikashop_front_end_main',0) && JRequest::getVar('task')=='listing' && $this->params->get('show_compare')) { ?>
@@ -76,13 +72,11 @@ if(JRequest::getVar('hikashop_front_end_main',0) && JRequest::getVar('task')=='l
 		$js = 'setToCompareList('.$this->row->product_id.',\''.$this->escape($this->row->product_name).'\',this); return false;';
 		echo $this->cart->displayButton(JText::_('ADD_TO_COMPARE_LIST'),'compare',$this->params,$link,$js,'',0,1,'hikashop_compare_button');
 ?>
-
 <?php } else { ?>
 	<input type="checkbox" class="hikashop_compare_checkbox" id="hikashop_listing_chk_<?php echo $this->row->product_id;?>" onchange="setToCompareList(<?php echo $this->row->product_id;?>,'<?php echo $this->escape($this->row->product_name); ?>',this);"><label for="hikashop_listing_chk_<?php echo $this->row->product_id;?>"><?php echo JText::_('ADD_TO_COMPARE_LIST'); ?></label>
 <?php }
 } ?>
 <!-- EO COMPARISON AREA -->
-
 <!-- PRODUCT PRICE -->
 <?php
 if($this->params->get('show_price','-1')=='-1'){
@@ -95,7 +89,6 @@ if($this->params->get('show_price')){
 }
 ?>
 <!-- EO PRODUCT PRICE -->
-
 <!-- PRODUCT VOTE -->
 <?php
 if($this->params->get('show_vote_product')){
@@ -104,7 +97,6 @@ if($this->params->get('show_vote_product')){
 }
 ?>
 <!-- EO PRODUCT VOTE -->
-
 <!-- ADD TO CART BUTTON AREA -->
 <?php
 if($this->params->get('add_to_cart') || $this->params->get('add_to_wishlist')){
@@ -112,5 +104,4 @@ if($this->params->get('add_to_cart') || $this->params->get('add_to_wishlist')){
 	echo $this->loadTemplate();
 }?>
 <!-- EO ADD TO CART BUTTON AREA -->
-
 <?php if(!empty($this->row->extraData->bottom)) { echo implode("\r\n",$this->row->extraData->bottom); } ?>
