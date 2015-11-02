@@ -42,10 +42,6 @@ defined('_JEXEC') or die('Restricted access');
 
 	if(!empty($this->element->extraData->leftEnd)) { echo implode("\r\n",$this->element->extraData->leftEnd); }
 	?>
-	<?php
-        $this->setLayout('show_block_social');
-        echo $this->loadTemplate();
-    ?>
 </div>
 
 <div id="hikashop_product_right_part" class="hikashop_product_right_part <?php echo HK_GRID_COL_6; ?>">
@@ -181,6 +177,20 @@ defined('_JEXEC') or die('Restricted access');
 	<span id="hikashop_product_id_main" class="hikashop_product_id_main">
 		<input type="hidden" name="product_id" value="<?php echo $this->element->product_id; ?>" />
 	</span>
+	
+	<div class="social_share">
+	<span>
+    <script type="text/javascript" src="//media.line.me/js/line-button.js?v=20140411" ></script>
+    <script type="text/javascript">
+    new media_line_me.LineButton({"pc":false,"lang":"zh-hant","type":"a"});
+    </script>
+    </span>
+    <?php
+        $this->setLayout('show_block_social');
+        echo $this->loadTemplate();
+    ?>
+    </div>
+	
 	<?php
 	if(!empty($this->element->extraData->rightEnd))
 		echo implode("\r\n",$this->element->extraData->rightEnd);

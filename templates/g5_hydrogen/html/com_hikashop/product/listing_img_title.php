@@ -50,6 +50,15 @@ if($this->config->get('thumbnail',1)){ ?>
 	<?php } ?>
 </span>
 <!-- EO PRODUCT NAME -->
+<!-- PRODUCT DESCRIPTION -->
+<div class="hikashop_product_desc" style="text-align:<?php echo $this->align; ?>">
+	<?php
+	echo preg_replace('#<hr *id="system-readmore" */>.*#is','',$this->row->product_description);
+	?>
+	</div>
+	</div>
+</div>
+<!-- EO PRODUCT DESCRIPTION -->
 <!-- PRODUCT CODE -->
 	<span class='hikashop_product_code_list'>
 		<?php if ($this->config->get('show_code')) { ?>
@@ -65,9 +74,10 @@ if($this->config->get('thumbnail',1)){ ?>
 <!-- EO PRODUCT CODE -->
 <?php if(!empty($this->row->extraData->afterProductName)) { echo implode("\r\n",$this->row->extraData->afterProductName); } ?>
 <!-- COMPARISON AREA -->
+<br />
 <?php
 if(JRequest::getVar('hikashop_front_end_main',0) && JRequest::getVar('task')=='listing' && $this->params->get('show_compare')) { ?>
-	<br/><?php
+	<?php
 	if( $this->params->get('show_compare') == 1 ) {
 		$js = 'setToCompareList('.$this->row->product_id.',\''.$this->escape($this->row->product_name).'\',this); return false;';
 		echo $this->cart->displayButton(JText::_('ADD_TO_COMPARE_LIST'),'compare',$this->params,$link,$js,'',0,1,'hikashop_compare_button');

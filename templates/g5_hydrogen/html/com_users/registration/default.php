@@ -28,8 +28,10 @@ JHtml::_('behavior.formvalidator');
 				<?php // If the fieldset has a label set, display it as the legend. ?>
 				<?php if (isset($fieldset->label)): ?>
 					<legend><?php echo JText::_($fieldset->label);?></legend>
+					<hr />
 				<?php endif;?>
-				{JFBCLogin text=Facebook 註冊}
+				{JFBCLogin text=用Facebook註冊：}
+                    <h5>或者</h5>
 				<?php // Iterate through the fields in the set and display them. ?>
 				<?php foreach ($fields as $field) : ?>
 					<?php // If the field is hidden, just display the input. ?>

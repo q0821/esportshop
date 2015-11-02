@@ -16,7 +16,6 @@ $colorfff : #ffffff;
 $colorefr : #f9f9f9;
 $colorf00 : #ff0000;
 
-
 body {
     font-family: 'Pontano Sans', sans-serif;
     .g-content{
@@ -50,7 +49,8 @@ body {
         background: $colorddd;
     }
     hr{
-        margin: 1.0rem 0;
+        margin: 1.0rem 0 1.25rem;
+        border-bottom: 1px solid #e3e3e3;
     }
     input{
         font-size: $font15;
@@ -85,6 +85,10 @@ h4{
     font-size: $font18;
     margin: 0.75rem 0;
 }
+h5{
+    margin: 0.75rem 0;
+}
+
 p{ 
     font-size: $font15; 
     margin: 0.5rem 0;
@@ -168,6 +172,8 @@ p{
                             width: 43%;
                             margin-right: 10px;
                             font-size: 16px;
+                            box-shadow: none;
+                            text-shadow: none;
                             &:hover{
                                 border: 1px solid $colorccc;
                                 -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255,255,255,.6);
@@ -217,6 +223,8 @@ p{
                         margin-right: 10px;
                         font-size: 16px;
                         margin-top: 15px;
+                        box-shadow: none;
+                        text-shadow: none;
                         &:hover{
                             border: 1px solid $colorccc;
                             -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255,255,255,.6);
@@ -238,6 +246,9 @@ p{
                             td{
                                 border-color: $color666;
                                 width: 36%;
+                            }
+                            .hikashop_product_price{
+                                color: $colorf00;
                             }
                         }
                     }
@@ -349,7 +360,7 @@ p{
 }
 
 //商品分類
-.view-category{
+.view-category, .view-product{
     #g-main{
         .g-content{
             padding-top: 0;
@@ -388,6 +399,14 @@ p{
                                     font-size: $font18;
                                     &:hover{
                                         color: $colorf00;
+                                    }
+                                }
+                            }
+                            .hikashop_product_desc{
+                                .text_container{
+                                    color: $colorf00!important;
+                                    .tl{
+                                        text-align: center!important;
                                     }
                                 }
                             }
@@ -607,6 +626,24 @@ p{
                 border-radius: 0;
                 background: none;
                 box-shadow: none;
+                h5{
+                    &:before{
+                        content: " ";
+                        border-top: 1px solid #e5e5e5;
+                        width: 40%;
+                        display: inline-block;
+                        vertical-align: middle;
+                        margin-right: 10px;
+                    }
+                    &:after{
+                        content: " ";
+                        border-top: 1px solid #e5e5e5;
+                        width: 40%;
+                        display: inline-block;
+                        vertical-align: middle;
+                        margin-left: 10px;
+                    }
+                }
                 input{
                     border-radius: 0;
                     font-size: $font15;
@@ -643,10 +680,10 @@ p{
             width: 320px;
             margin: 0 auto;
             .form-horizontal {
-                padding: 35px 20px 20px;
+                padding: 20px 20px 10px;
                 border-radius: 0;
                 background: none;
-                box-shadow: 0;
+                box-shadow: none;
                 input{
                     border-radius: 0;
                     font-size: $font15;
@@ -661,11 +698,36 @@ p{
                 .btn{
                     width: 97%;
                 }
+                legend{
+                    margin: 0;
+                    font-size: 2rem;
+                }
+                h5{
+                    &:before{
+                        content: " ";
+                        border-top: 1px solid #e5e5e5;
+                        width: 40%;
+                        display: inline-block;
+                        vertical-align: middle;
+                        margin-right: 10px;
+                    }
+                    &:after{
+                        content: " ";
+                        border-top: 1px solid #e5e5e5;
+                        width: 40%;
+                        display: inline-block;
+                        vertical-align: middle;
+                        margin-left: 10px;
+                    }
+                }
             }
         }
         .nav-stacked{
             width: 320px;
             margin: 0 auto;
+            li a{
+                border-radius: 0;
+            }
         }
     }
 }
@@ -880,6 +942,123 @@ p{
     }
 }
 
+#g-offcanvas{
+    background: $color000;
+    a{
+        color: $colorfff;
+        &:hover{
+            color: #85a9e1;
+        }
+    }
+    .g-content{
+        padding: 1.238rem 0.938rem;
+        border-bottom: 1px solid #333;
+    }
+    .search{
+        form{
+            margin: 0;
+        }
+        input.search-query{
+            border-radius: 0px;
+            width: 71%;
+            font-size: $font15;
+            padding: 6px 10px;
+            color: $color000;
+        }
+        .button ,.btn{
+            padding: 4px 12px 3px;
+            background: $color333;
+            border-radius: 0px;
+            border: 0;
+        }
+        .fa{
+            font-size: $font24;
+        }
+    }
+    .category-mobile{
+        .hikashop_category_list{
+            list-style: none;
+            margin: 0.75rem 0 0.75rem 0.75rem;
+            .hikashop_category_list_item{
+                padding: 0px 0 10px;
+                &:before{
+                    cursor: pointer;
+                    width: 1.0rem;
+                    font-family: FontAwesome;
+                    content: "\f105";
+                    text-align: right;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+    #g-mobilemenu-container{
+        margin: 0;
+        ul{
+            background: none;
+            .g-menu-item-container{
+                padding: 0.638rem 1rem 0.638rem 0;
+                font-size: $font18;
+                line-height: 1.2;
+                .fa{
+                    font-size: $font24;
+                }
+                .g-menu-parent-indicator{
+                    right: 0.5rem;
+                }
+            }
+            .g-dropdown{
+                right: -20px;
+                .g-menu-item-container{
+                    padding: 0;
+                    .hikashop_cart_module{
+                        table{
+                            width: 88%;
+                            border-color: $color333;
+                            thead{
+                                tr{
+                                    th{
+                                        background: $color000;
+                                    }
+                                }
+                            }
+                            td{
+                                border-color: $color333;
+                                width: 36%;
+                            }
+                            hr{
+                                margin: 0.5rem 0;
+                                border-bottom: 1px solid $color666;
+                            }
+                            .hikashop_product_price{
+                                color: $colorf00;
+                            }
+                        }
+                        .button{
+                            border: 1px solid $color333;
+                            border-radius: 0;
+                            background: none;
+                            width: 76%;
+                            margin-right: 10px;
+                            font-size: 16px;
+                            margin-top: 20px;
+                            box-shadow: none;
+                            text-shadow: none;
+                            &:hover{
+                                border: 1px solid $colorccc;
+                                -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255,255,255,.6);
+                                -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255,255,255,.6);
+                                box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255, 255,255, .6);
+                                color: $colorfff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 @media (min-width:1200px){
     #g-main{
@@ -909,5 +1088,66 @@ p{
 }
 
 @media (max-width:599px){
+    #g-header{
+        .search{
+            display: none;
+            visibility: hidden;
+        }
+        .search, .logo{
+            .g-content{
+                padding: 0;
+            }
+        }
+    }
+    #g-navigation{
+        display: none;
+        visibility: hidden;
+    }
+    #g-feature{
+        .breadcrumb{
+            li:first-child{
+                display: none;
+            }
+        }
+    }
 
+    .view-category, .view-product{
+        #g-main{
+            .g-content{
+                .hikashop_products_listing_main{
+                    .row-fluid{
+                        .thumbnails{
+                            .hikashop_subcontainer{
+                                .hikashop_product_price_full{
+                                    width: 110px;
+                                    padding: 7px 0px;
+                                }
+                                form{
+                                    box-sizing: content-box;
+                                    .hikashop_product_quantity_change_div_leftright{
+                                        span{
+                                            padding: 0 10px;
+                                        }
+                                        span:last-child{
+                                            padding: 0 9px 8px;
+                                        }
+                                    }
+                                    .hikashop_product_quantity_add_to_cart_div{
+                                        width: 100%;
+                                        display: block;
+                                        margin-top: 15px;
+                                        input{
+                                            box-sizing: border-box;
+                                            width: 96%;
+                                            padding: 9px 0px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

@@ -24,6 +24,7 @@ children:
             subtype: false
             title: Untitled
             attributes:
+              class: search
               extra: {  }
               fixed: '0'
               size: 33.3
@@ -43,9 +44,10 @@ children:
             subtype: false
             title: Untitled
             attributes:
-              size: 33.3
+              class: logo
               extra: {  }
               fixed: '0'
+              size: 33.3
             children:
               -
                 id: 956baa63-d2e1-4665-84d1-de3caa249501

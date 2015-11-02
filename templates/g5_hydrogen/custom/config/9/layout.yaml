@@ -27,6 +27,7 @@ children:
             title: Untitled
             attributes:
               size: 33.3
+              class: search
               extra: {  }
               fixed: '0'
             children:
@@ -47,6 +48,7 @@ children:
             title: Untitled
             attributes:
               size: 33.3
+              class: logo
               extra: {  }
               fixed: '0'
             children:
@@ -385,7 +387,63 @@ children:
       boxed: 0
     children:
       -
-        id: be212bb8-40f3-4f78-9c67-2e5fb94c7c30
+        id: d02b6892-e39b-4437-9b1f-910fb5cafbda
+        type: grid
+        subtype: false
+        title: Untitled
+        attributes: {  }
+        children:
+          -
+            id: 1f598118-4d09-4850-81ee-3546fae1050f
+            type: block
+            subtype: false
+            title: Untitled
+            attributes:
+              size: 100
+              class: search-mobile
+              extra: {  }
+              fixed: '0'
+            children:
+              -
+                id: 6403b1c2-7132-42f6-8e37-491698703c68
+                type: position
+                subtype: module
+                title: 'Module Instance'
+                attributes:
+                  enabled: 1
+                  module_id: '124'
+                  title: 'Module Instance'
+                  key: module-instance
+                children: {  }
+      -
+        id: 4de5eb0f-531b-4775-b48a-31ae62ca4e0a
+        type: grid
+        subtype: false
+        title: Untitled
+        attributes: {  }
+        children:
+          -
+            id: f6568138-188c-4c6e-a21c-2f68dada7f10
+            type: block
+            subtype: false
+            title: Untitled
+            attributes:
+              class: category-mobile
+              extra: {  }
+              fixed: '0'
+              size: 100
+            children:
+              -
+                id: 6451a7c6-1a31-40db-9c0b-829bf293b39a
+                type: position
+                subtype: module
+                title: 'Module Instance'
+                attributes:
+                  enabled: 1
+                  module_id: '184'
+                children: {  }
+      -
+        id: a2b014bd-470c-4e3b-a99f-46618b7d829a
         type: grid
         subtype: false
         title: Untitled

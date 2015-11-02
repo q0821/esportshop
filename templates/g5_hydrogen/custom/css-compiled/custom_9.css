@@ -9,31 +9,31 @@
  */
 
 @import "https://fonts.googleapis.com/css?family=Pontano+Sans";
-/* line 20, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 19, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 body {
   font-family: 'Pontano Sans', sans-serif;
 }
-/* line 22, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 21, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 body .g-content {
   margin: 0;
 }
-/* line 25, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 24, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 body .fa {
   font-size: 16px;
 }
-/* line 28, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 27, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 body a {
   color: #666;
 }
-/* line 30, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 29, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 body a:hover {
   color: #000;
 }
-/* line 33, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 32, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 body a:active {
   color: #000;
 }
-/* line 37, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 36, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 body .button, body .btn {
   background: #000;
   border-radius: 0px;
@@ -43,17 +43,18 @@ body .button, body .btn {
   padding: 9px 15px;
   border: 1px solid #ccc;
 }
-/* line 45, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 44, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 body .button:hover, body .btn:hover {
   color: #000;
 }
-/* line 49, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 48, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 body .btn-primary:hover {
   background: #ddd;
 }
-/* line 52, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 51, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 body hr {
-  margin: 1rem 0;
+  margin: 1rem 0 1.25rem;
+  border-bottom: 1px solid #e3e3e3;
 }
 /* line 55, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 body input {
@@ -93,99 +94,103 @@ h4 {
   margin: 0.75rem 0;
 }
 /* line 88, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+h5 {
+  margin: 0.75rem 0;
+}
+/* line 92, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 p {
   font-size: 15px;
   margin: 0.5rem 0;
 }
-/* line 95, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 99, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-header {
   background: #000;
   height: 85px;
 }
-/* line 98, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 102, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-header .g-content {
   padding-top: 0;
 }
-/* line 100, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 104, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-header .g-content .gantry-logo img {
   width: auto;
 }
-/* line 103, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 107, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-header .g-content .search {
   padding-top: 25px;
 }
-/* line 105, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 109, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-header .g-content .search input.search-query {
   border-radius: 0px;
   width: 80%;
   font-size: 15px;
   padding: 6px 10px;
 }
-/* line 111, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 115, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-header .g-content .search .button, #g-header .g-content .search .btn {
   padding: 1px 12px 2px;
   background: #333;
   border-radius: 0px;
   border: 0;
 }
-/* line 117, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 121, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-header .g-content .search .fa {
   font-size: 24px;
 }
-/* line 121, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 125, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-header .g-content .g-main-nav {
   padding-top: 7px;
 }
-/* line 123, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-/* line 124, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 127, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 128, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-header .g-content .g-main-nav .g-menu-item .g-menu-item-container {
   padding: 0.5rem 0.5rem;
   color: #ccc;
 }
-/* line 127, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 131, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-header .g-content .g-main-nav .g-menu-item .g-menu-item-container .fa {
   display: block;
   font-size: 30px;
   text-align: center;
 }
-/* line 132, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 136, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-header .g-content .g-main-nav .g-menu-item .g-menu-item-container .g-menu-item-title {
   font-size: 15px;
 }
-/* line 135, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 139, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-header .g-content .g-main-nav .g-menu-item .g-menu-item-container .g-menu-parent-indicator:after {
   width: 1rem;
 }
-/* line 138, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 142, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-header .g-content .g-main-nav .g-menu-item .g-menu-item-container:hover {
   color: #fff;
 }
-/* line 142, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 146, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-header .g-content .g-main-nav .g-menu-item .g-dropdown {
   background: rgba(0, 0, 0, 0.8);
   padding: 0 10px 10px 10px;
   left: none;
   right: 0;
 }
-/* line 149, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 153, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-header .g-content .g-main-nav li:not(.g-menu-item-type-particle):not(.g-menu-item-type-module):hover, #g-header .g-content .g-main-nav li:not(.g-menu-item-type-particle):not(.g-menu-item-type-module).active, #g-header .g-content .g-main-nav li:not(.g-menu-item-type-particle):not(.g-menu-item-type-module).active.g-selected {
   background: none;
 }
-/* line 153, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 157, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-header .g-content .g-main-nav li:not(.g-menu-item-type-particle):not(.g-menu-item-type-module):hover > .g-menu-item-container, #g-header .g-content .g-main-nav li:not(.g-menu-item-type-particle):not(.g-menu-item-type-module).active > .g-menu-item-container, #g-header .g-content .g-main-nav li:not(.g-menu-item-type-particle):not(.g-menu-item-type-module).active.g-selected > .g-menu-item-container {
   color: #fff;
 }
-/* line 157, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-/* line 158, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 161, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 162, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-header .g-content .g-main-nav .g-menu-item-type-component .g-dropdown {
   width: 230px;
 }
-/* line 160, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-/* line 161, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 164, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 165, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-header .g-content .g-main-nav .g-menu-item-type-component .g-dropdown .sourcecoast form {
   margin: 0;
 }
-/* line 164, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 168, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-header .g-content .g-main-nav .g-menu-item-type-component .g-dropdown .sourcecoast .btn {
   border: 1px solid #666;
   border-radius: 0;
@@ -193,20 +198,22 @@ p {
   width: 43%;
   margin-right: 10px;
   font-size: 16px;
+  box-shadow: none;
+  text-shadow: none;
 }
-/* line 171, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 177, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-header .g-content .g-main-nav .g-menu-item-type-component .g-dropdown .sourcecoast .btn:hover {
   border: 1px solid #ccc;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(255, 255, 255, .6);
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(255, 255, 255, .6);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(255, 255, 255, .6);
 }
-/* line 178, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 184, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-header .g-content .g-main-nav .g-menu-item-type-component .g-dropdown .sourcecoast .sclogin-joomla-login {
   border-bottom: 1px solid #666;
   margin-bottom: 10px;
 }
-/* line 181, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 187, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-header .g-content .g-main-nav .g-menu-item-type-component .g-dropdown .sourcecoast .sclogin-joomla-login input.input-block-level {
   width: 93% !important;
   border-radius: 0;
@@ -217,30 +224,30 @@ p {
   border-bottom: 1px solid #666;
   color: #fff;
 }
-/* line 190, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 196, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-header .g-content .g-main-nav .g-menu-item-type-component .g-dropdown .sourcecoast .sclogin-joomla-login input.input-block-level:focus {
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(255, 255, 255, .6);
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(255, 255, 255, .6);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(255, 255, 255, .6);
 }
-/* line 196, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 202, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-header .g-content .g-main-nav .g-menu-item-type-component .g-dropdown .sourcecoast .sclogin-joomla-login .control-group {
   margin-bottom: 15px;
 }
-/* line 200, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 206, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-header .g-content .g-main-nav .g-menu-item-type-component .g-dropdown .sourcecoast .sclogin-social-login .pull-left {
   margin: 0;
 }
-/* line 206, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-/* line 207, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 212, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 213, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-header .g-content .g-main-nav .g-menu-item-type-separator .g-dropdown {
   width: 400px;
 }
-/* line 209, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 215, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-header .g-content .g-main-nav .g-menu-item-type-separator .g-dropdown form {
   margin: 0;
 }
-/* line 212, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 218, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-header .g-content .g-main-nav .g-menu-item-type-separator .g-dropdown .button {
   border: 1px solid #666;
   border-radius: 0;
@@ -249,8 +256,10 @@ p {
   margin-right: 10px;
   font-size: 16px;
   margin-top: 15px;
+  box-shadow: none;
+  text-shadow: none;
 }
-/* line 220, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 228, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-header .g-content .g-main-nav .g-menu-item-type-separator .g-dropdown .button:hover {
   border: 1px solid #ccc;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(255, 255, 255, .6);
@@ -258,23 +267,27 @@ p {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(255, 255, 255, .6);
   color: #fff;
 }
-/* line 228, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-/* line 229, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 236, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 237, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-header .g-content .g-main-nav .g-menu-item-type-separator .g-dropdown #hikashop_cart_module table {
   border-color: #666;
 }
-/* line 231, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-/* line 232, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-/* line 233, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 239, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 240, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 241, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-header .g-content .g-main-nav .g-menu-item-type-separator .g-dropdown #hikashop_cart_module table thead tr th {
   background: #000;
 }
-/* line 238, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 246, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-header .g-content .g-main-nav .g-menu-item-type-separator .g-dropdown #hikashop_cart_module table td {
   border-color: #666;
   width: 36%;
 }
 /* line 250, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+#g-header .g-content .g-main-nav .g-menu-item-type-separator .g-dropdown #hikashop_cart_module table .hikashop_product_price {
+  color: #f00;
+}
+/* line 261, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-navigation {
   background: #000;
   background: -moz-radial-gradient(center, ellipse cover, #000 0%, #222 100%);
@@ -284,26 +297,26 @@ p {
   background: radial-gradient(ellipse at center, #000 0%, #222 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$color000, endColorstr=$color222,GradientType=1);
 }
-/* line 258, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 269, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-navigation .g-content {
   padding: 0 0.938rem;
 }
-/* line 260, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-/* line 261, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 271, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 272, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-navigation .g-content .hikashop_category_information .thumbnails {
   border: 0;
   margin: 0;
 }
-/* line 264, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 275, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-navigation .g-content .hikashop_category_information .thumbnails .hikashop_category {
   margin: 0;
   width: auto;
 }
-/* line 267, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 278, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-navigation .g-content .hikashop_category_information .thumbnails .hikashop_category .hikashop_container {
   margin: 0;
 }
-/* line 269, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 280, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-navigation .g-content .hikashop_category_information .thumbnails .hikashop_category .hikashop_container .hikashop_subcontainer {
   background: none;
   border: 0;
@@ -311,15 +324,15 @@ p {
   border-radius: 0;
   padding: 0.7rem 1.2rem;
 }
-/* line 275, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 286, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-navigation .g-content .hikashop_category_information .thumbnails .hikashop_category .hikashop_container .hikashop_subcontainer .hikashop_category_list {
   display: none;
 }
-/* line 278, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 289, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-navigation .g-content .hikashop_category_information .thumbnails .hikashop_category .hikashop_container .hikashop_subcontainer .hikashop_category_name {
   color: #ccc;
 }
-/* line 281, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 292, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-navigation .g-content .hikashop_category_information .thumbnails .hikashop_category .hikashop_container .hikashop_subcontainer:after {
   cursor: pointer;
   width: 1rem;
@@ -328,8 +341,8 @@ p {
   content: "\f078";
   text-align: right;
 }
-/* line 289, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-/* line 290, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 300, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 301, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-navigation .g-content .hikashop_category_information .thumbnails .hikashop_category .hikashop_container .hikashop_subcontainer:hover .hikashop_category_list {
   position: absolute;
   display: block;
@@ -341,45 +354,45 @@ p {
   margin: 0;
   background: rgba(0, 0, 0, 0.8);
 }
-/* line 300, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 311, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-navigation .g-content .hikashop_category_information .thumbnails .hikashop_category .hikashop_container .hikashop_subcontainer:hover .hikashop_category_list .hikashop_category_list_item {
   padding: 15px 15px;
   border-bottom: 1px solid #666;
 }
-/* line 314, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 325, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-feature {
   padding: 0;
   background: #f9f9f9;
 }
-/* line 317, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 328, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-feature .breadcrumb {
   margin: 0;
   padding: 0;
   background: none;
 }
-/* line 321, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 332, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-feature .breadcrumb .active {
   color: #000;
 }
-/* line 324, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-/* line 325, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 335, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 336, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-feature .breadcrumb li span {
   color: #000;
 }
-/* line 328, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-/* line 329, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 339, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 340, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-feature .breadcrumb li a span {
   color: #666;
 }
-/* line 333, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 344, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-feature .breadcrumb li .divider {
   padding: 0 10px;
 }
-/* line 335, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 346, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-feature .breadcrumb li .divider img {
   display: none;
 }
-/* line 338, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 349, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-feature .breadcrumb li .divider:after {
   cursor: pointer;
   width: 1rem;
@@ -388,60 +401,69 @@ p {
   content: "\f105";
   text-align: right;
 }
-/* line 352, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-/* line 353, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-/* line 354, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-.view-category #g-main .g-content {
+/* line 363, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 364, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 365, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+.view-category #g-main .g-content, .view-product #g-main .g-content {
   padding-top: 0;
-}
-/* line 356, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-/* line 357, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-/* line 358, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-.view-category #g-main .g-content .hikashop_categories_listing_main .thumbnails .hikashop_subcontainer {
-  border-color: #ddd;
-  border-radius: 0;
-}
-/* line 361, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-.view-category #g-main .g-content .hikashop_categories_listing_main .thumbnails .hikashop_subcontainer .hikashop_category_image {
-  height: auto !important;
 }
 /* line 367, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 /* line 368, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-.view-category #g-main .g-content .hikashop_products_listing_main h2 {
+/* line 369, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+.view-category #g-main .g-content .hikashop_categories_listing_main .thumbnails .hikashop_subcontainer, .view-product #g-main .g-content .hikashop_categories_listing_main .thumbnails .hikashop_subcontainer {
+  border-color: #ddd;
+  border-radius: 0;
+}
+/* line 372, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+.view-category #g-main .g-content .hikashop_categories_listing_main .thumbnails .hikashop_subcontainer .hikashop_category_image, .view-product #g-main .g-content .hikashop_categories_listing_main .thumbnails .hikashop_subcontainer .hikashop_category_image {
+  height: auto !important;
+}
+/* line 378, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 379, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+.view-category #g-main .g-content .hikashop_products_listing_main h2, .view-product #g-main .g-content .hikashop_products_listing_main h2 {
   font-size: 30px;
   color: #000;
   font-weight: normal;
 }
-/* line 373, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-/* line 374, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-.view-category #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails {
+/* line 384, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 385, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+.view-category #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails, .view-product #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails {
   margin: 0 0 20px;
 }
-/* line 376, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-.view-category #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer {
+/* line 387, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+.view-category #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer, .view-product #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer {
   border-color: #ddd;
   border-radius: 0;
 }
-/* line 379, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-.view-category #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer .hikashop_product_image {
+/* line 390, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+.view-category #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer .hikashop_product_image, .view-product #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer .hikashop_product_image {
   margin-bottom: 5px;
 }
-/* line 381, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-.view-category #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer .hikashop_product_image .hikashop_product_image_subdiv {
+/* line 392, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+.view-category #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer .hikashop_product_image .hikashop_product_image_subdiv, .view-product #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer .hikashop_product_image .hikashop_product_image_subdiv {
   width: 100% !important;
 }
-/* line 385, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-/* line 386, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-.view-category #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer .hikashop_product_name a {
+/* line 396, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 397, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+.view-category #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer .hikashop_product_name a, .view-product #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer .hikashop_product_name a {
   color: #000;
   font-size: 18px;
 }
-/* line 389, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-.view-category #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer .hikashop_product_name a:hover {
+/* line 400, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+.view-category #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer .hikashop_product_name a:hover, .view-product #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer .hikashop_product_name a:hover {
   color: #f00;
 }
-/* line 394, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-.view-category #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer .hikashop_compare_button {
+/* line 405, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 406, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+.view-category #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer .hikashop_product_desc .text_container, .view-product #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer .hikashop_product_desc .text_container {
+  color: #f00 !important;
+}
+/* line 408, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+.view-category #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer .hikashop_product_desc .text_container .tl, .view-product #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer .hikashop_product_desc .text_container .tl {
+  text-align: center !important;
+}
+/* line 413, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+.view-category #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer .hikashop_compare_button, .view-product #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer .hikashop_compare_button {
   background: none;
   color: #000;
   border-top: 0;
@@ -449,12 +471,12 @@ p {
   border-right: 0;
   box-shadow: none;
 }
-/* line 401, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-.view-category #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer .hikashop_compare_button:hover {
+/* line 420, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+.view-category #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer .hikashop_compare_button:hover, .view-product #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer .hikashop_compare_button:hover {
   color: #f00;
 }
-/* line 405, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-.view-category #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer .hikashop_product_price_full {
+/* line 424, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+.view-category #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer .hikashop_product_price_full, .view-product #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer .hikashop_product_price_full {
   float: right;
   margin-right: 10px;
   width: 200px;
@@ -465,50 +487,50 @@ p {
   font-size: 18px;
   line-height: 24px;
 }
-/* line 415, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-.view-category #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer .hikashop_product_price_full .hikashop_product_price {
+/* line 434, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+.view-category #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer .hikashop_product_price_full .hikashop_product_price, .view-product #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer .hikashop_product_price_full .hikashop_product_price {
   color: #f00;
   font-size: 18px;
   line-height: 24px;
 }
-/* line 421, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-.view-category #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer form {
+/* line 440, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+.view-category #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer form, .view-product #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer form {
   margin: 15px 10px 15px 0;
   text-align: right;
 }
-/* line 424, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-.view-category #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer form .hikashop_product_quantity_change_div_leftright {
+/* line 443, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+.view-category #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer form .hikashop_product_quantity_change_div_leftright, .view-product #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer form .hikashop_product_quantity_change_div_leftright {
   margin: 0 2px 0 10px;
 }
-/* line 426, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-.view-category #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer form .hikashop_product_quantity_change_div_leftright span {
+/* line 445, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+.view-category #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer form .hikashop_product_quantity_change_div_leftright span, .view-product #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer form .hikashop_product_quantity_change_div_leftright span {
   border-radius: 0;
   background: none;
   padding: 0 5px;
 }
-/* line 430, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-.view-category #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer form .hikashop_product_quantity_change_div_leftright span a {
+/* line 449, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+.view-category #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer form .hikashop_product_quantity_change_div_leftright span a, .view-product #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer form .hikashop_product_quantity_change_div_leftright span a {
   color: #000;
   font-size: 30px;
 }
-/* line 433, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-.view-category #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer form .hikashop_product_quantity_change_div_leftright span a:hover {
+/* line 452, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+.view-category #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer form .hikashop_product_quantity_change_div_leftright span a:hover, .view-product #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer form .hikashop_product_quantity_change_div_leftright span a:hover {
   color: #f00;
 }
-/* line 437, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-.view-category #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer form .hikashop_product_quantity_change_div_leftright span .hikashop_product_quantity_field_change_plus {
+/* line 456, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+.view-category #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer form .hikashop_product_quantity_change_div_leftright span .hikashop_product_quantity_field_change_plus, .view-product #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer form .hikashop_product_quantity_change_div_leftright span .hikashop_product_quantity_field_change_plus {
   line-height: 38px;
 }
-/* line 440, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-.view-category #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer form .hikashop_product_quantity_change_div_leftright span .hikashop_product_quantity_field_change_minus {
+/* line 459, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+.view-category #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer form .hikashop_product_quantity_change_div_leftright span .hikashop_product_quantity_field_change_minus, .view-product #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer form .hikashop_product_quantity_change_div_leftright span .hikashop_product_quantity_field_change_minus {
   line-height: 27px;
 }
-/* line 444, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-.view-category #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer form .hikashop_product_quantity_change_div_leftright span:last-child {
+/* line 463, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+.view-category #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer form .hikashop_product_quantity_change_div_leftright span:last-child, .view-product #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer form .hikashop_product_quantity_change_div_leftright span:last-child {
   padding: 0 6px 8px;
 }
-/* line 447, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-.view-category #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer form .hikashop_product_quantity_change_div_leftright .hikashop_product_quantity_field {
+/* line 466, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+.view-category #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer form .hikashop_product_quantity_change_div_leftright .hikashop_product_quantity_field, .view-product #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer form .hikashop_product_quantity_change_div_leftright .hikashop_product_quantity_field {
   font-size: 18px;
   line-height: 18px;
   color: #000;
@@ -516,16 +538,16 @@ p {
   width: 15px;
   text-align: right;
 }
-/* line 456, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-.view-category #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer form .hikashop_product_quantity_add_to_cart_div {
+/* line 475, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+.view-category #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer form .hikashop_product_quantity_add_to_cart_div, .view-product #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer form .hikashop_product_quantity_add_to_cart_div {
   display: inline-block;
 }
-/* line 459, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-.view-category #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer form #hikashop_add_wishlist {
+/* line 478, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+.view-category #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer form #hikashop_add_wishlist, .view-product #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer form #hikashop_add_wishlist {
   display: inline-block;
 }
-/* line 461, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-.view-category #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer form #hikashop_add_wishlist input[name="wish"] {
+/* line 480, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+.view-category #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer form #hikashop_add_wishlist input[name="wish"], .view-product #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer form #hikashop_add_wishlist input[name="wish"] {
   background: none;
   color: #000;
   border-top: 0;
@@ -533,45 +555,45 @@ p {
   border-right: 0;
   box-shadow: none;
 }
-/* line 468, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-.view-category #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer form #hikashop_add_wishlist input[name="wish"]:hover {
+/* line 487, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+.view-category #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer form #hikashop_add_wishlist input[name="wish"]:hover, .view-product #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer form #hikashop_add_wishlist input[name="wish"]:hover {
   color: #f00;
 }
-/* line 483, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-/* line 484, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-/* line 485, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 502, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 503, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 504, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-product #g-main .g-content {
   padding-top: 0;
 }
-/* line 487, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-/* line 488, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 506, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 507, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-product #g-main .g-content .hikashop_product_left_part .hikashop_global_image_div {
   margin-bottom: 20px;
 }
-/* line 490, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-/* line 491, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 509, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 510, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-product #g-main .g-content .hikashop_product_left_part .hikashop_global_image_div .hikashop_small_image_div a {
   display: inline-block;
   width: 120px;
   border: 1px solid #ddd;
   margin-right: 10px;
 }
-/* line 496, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 515, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-product #g-main .g-content .hikashop_product_left_part .hikashop_global_image_div .hikashop_small_image_div a .hikashop_child_image {
   padding: 5px;
 }
-/* line 504, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-/* line 505, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-/* line 506, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 523, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 524, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 525, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-product #g-main .g-content .hikashop_product_right_part .hikashop_product_custom_info_main h4 {
   font-size: 24px;
   color: #000;
 }
-/* line 511, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 530, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-product #g-main .g-content .hikashop_product_right_part .hikashop_product_price_main {
   display: block;
 }
-/* line 513, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 532, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-product #g-main .g-content .hikashop_product_right_part .hikashop_product_price_main .hikashop_product_price_full {
   display: block;
   border-bottom: 1px solid #ccc;
@@ -581,50 +603,50 @@ p {
   font-size: 18px;
   line-height: 24px;
 }
-/* line 522, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 541, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-product #g-main .g-content .hikashop_product_right_part .hikashop_product_price_main .hikashop_product_price_full .hikashop_product_price {
   color: #f00;
   font-size: 36px;
   line-height: 1.5;
 }
-/* line 529, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-/* line 530, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 548, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 549, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-product #g-main .g-content .hikashop_product_right_part .hikashop_product_quantity_main .hikashop_product_stock {
   margin: 15px 0px 15px 0;
   text-align: right;
 }
-/* line 533, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 552, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-product #g-main .g-content .hikashop_product_right_part .hikashop_product_quantity_main .hikashop_product_stock .hikashop_product_quantity_change_div_leftright {
   margin: 0 15px 0;
 }
-/* line 535, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 554, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-product #g-main .g-content .hikashop_product_right_part .hikashop_product_quantity_main .hikashop_product_stock .hikashop_product_quantity_change_div_leftright span {
   border-radius: 0;
   background: none;
   padding: 6px 18px;
 }
-/* line 539, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 558, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-product #g-main .g-content .hikashop_product_right_part .hikashop_product_quantity_main .hikashop_product_stock .hikashop_product_quantity_change_div_leftright span a {
   color: #000;
   font-size: 36px;
 }
-/* line 542, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 561, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-product #g-main .g-content .hikashop_product_right_part .hikashop_product_quantity_main .hikashop_product_stock .hikashop_product_quantity_change_div_leftright span a:hover {
   color: #f00;
 }
-/* line 546, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 565, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-product #g-main .g-content .hikashop_product_right_part .hikashop_product_quantity_main .hikashop_product_stock .hikashop_product_quantity_change_div_leftright span .hikashop_product_quantity_field_change_plus {
   line-height: 36px;
 }
-/* line 549, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 568, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-product #g-main .g-content .hikashop_product_right_part .hikashop_product_quantity_main .hikashop_product_stock .hikashop_product_quantity_change_div_leftright span .hikashop_product_quantity_field_change_minus {
   line-height: 36px;
 }
-/* line 553, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 572, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-product #g-main .g-content .hikashop_product_right_part .hikashop_product_quantity_main .hikashop_product_stock .hikashop_product_quantity_change_div_leftright span:last-child {
   padding: 0 15px 12px;
 }
-/* line 556, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 575, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-product #g-main .g-content .hikashop_product_right_part .hikashop_product_quantity_main .hikashop_product_stock .hikashop_product_quantity_change_div_leftright .hikashop_product_quantity_field {
   font-size: 30px;
   line-height: 30px;
@@ -633,20 +655,20 @@ p {
   width: 60px;
   text-align: right;
 }
-/* line 565, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 584, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-product #g-main .g-content .hikashop_product_right_part .hikashop_product_quantity_main .hikashop_product_stock .hikashop_product_quantity_add_to_cart_div {
   display: inline-block;
 }
-/* line 567, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 586, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-product #g-main .g-content .hikashop_product_right_part .hikashop_product_quantity_main .hikashop_product_stock .hikashop_product_quantity_add_to_cart_div input {
   font-size: 24px;
   padding: 14px 30px;
 }
-/* line 572, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 591, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-product #g-main .g-content .hikashop_product_right_part .hikashop_product_quantity_main .hikashop_product_stock #hikashop_add_wishlist {
   display: inline-block;
 }
-/* line 574, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 593, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-product #g-main .g-content .hikashop_product_right_part .hikashop_product_quantity_main .hikashop_product_stock #hikashop_add_wishlist input[name="wish"] {
   background: none;
   color: #000;
@@ -657,342 +679,586 @@ p {
   font-size: 18px;
   padding: 14px 30px;
 }
-/* line 583, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 602, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-product #g-main .g-content .hikashop_product_right_part .hikashop_product_quantity_main .hikashop_product_stock #hikashop_add_wishlist input[name="wish"]:hover {
   color: #f00;
 }
-/* line 591, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 610, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-product #g-main .g-content .hikashop_product_bottom_part {
   border-top: 1px solid #ddd;
   margin-top: 30px;
   padding-top: 5px;
 }
-/* line 601, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-/* line 602, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-/* line 603, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 620, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 621, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 622, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-registration #g-main .registration {
   width: 320px;
   margin: 0 auto;
 }
-/* line 606, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 625, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-registration #g-main .registration .form-horizontal {
   border-radius: 0;
   background: none;
   box-shadow: none;
 }
-/* line 610, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 629, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 630, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+.view-registration #g-main .registration .form-horizontal h5:before {
+  content: " ";
+  border-top: 1px solid #e5e5e5;
+  width: 40%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+/* line 638, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+.view-registration #g-main .registration .form-horizontal h5:after {
+  content: " ";
+  border-top: 1px solid #e5e5e5;
+  width: 40%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+/* line 647, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-registration #g-main .registration .form-horizontal input {
   border-radius: 0;
   font-size: 15px;
   width: 94%;
 }
-/* line 615, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 652, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-registration #g-main .registration .form-horizontal legend {
   margin: 0;
   font-size: 2rem;
 }
-/* line 619, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 656, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-registration #g-main .registration .form-horizontal .control-group {
   margin-bottom: 10px;
 }
-/* line 621, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 658, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-registration #g-main .registration .form-horizontal .control-group .control-label {
   width: auto;
   margin-right: 10px;
   text-align: left;
   float: none;
 }
-/* line 627, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 664, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-registration #g-main .registration .form-horizontal .control-group .controls {
   margin-left: 0;
 }
-/* line 630, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 667, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-registration #g-main .registration .form-horizontal .control-group .btn {
   width: 49%;
 }
-/* line 640, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-/* line 641, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-/* line 642, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 677, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 678, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 679, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-login #g-main .login {
   width: 320px;
   margin: 0 auto;
 }
-/* line 645, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 682, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-login #g-main .login .form-horizontal {
-  padding: 35px 20px 20px;
+  padding: 20px 20px 10px;
   border-radius: 0;
   background: none;
-  box-shadow: 0;
+  box-shadow: none;
 }
-/* line 650, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 687, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-login #g-main .login .form-horizontal input {
   border-radius: 0;
   font-size: 15px;
 }
-/* line 654, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 691, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-login #g-main .login .form-horizontal .control-label {
   width: auto;
   margin-right: 10px;
 }
-/* line 658, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 695, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-login #g-main .login .form-horizontal .controls {
   margin-left: 0;
 }
-/* line 661, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 698, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-login #g-main .login .form-horizontal .btn {
   width: 97%;
 }
-/* line 666, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 701, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+.view-login #g-main .login .form-horizontal legend {
+  margin: 0;
+  font-size: 2rem;
+}
+/* line 705, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 706, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+.view-login #g-main .login .form-horizontal h5:before {
+  content: " ";
+  border-top: 1px solid #e5e5e5;
+  width: 40%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+/* line 714, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+.view-login #g-main .login .form-horizontal h5:after {
+  content: " ";
+  border-top: 1px solid #e5e5e5;
+  width: 40%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+/* line 725, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-login #g-main .nav-stacked {
   width: 320px;
   margin: 0 auto;
 }
-/* line 674, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-/* line 675, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-/* line 676, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-/* line 680, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 728, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+.view-login #g-main .nav-stacked li a {
+  border-radius: 0;
+}
+/* line 736, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 737, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 738, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 742, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-checkout #g-main #hikashop_checkout_page legend {
   font-size: 30px;
   padding-bottom: 10px;
   border-bottom: 1px solid #ddd;
 }
-/* line 685, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-/* line 686, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-/* line 687, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 747, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 748, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 749, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-checkout #g-main #hikashop_checkout_page #hikashop_checkout_login #hikashop_checkout_login_left_part .add-on {
   border-radius: 0;
   background: none;
 }
-/* line 690, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 752, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-checkout #g-main #hikashop_checkout_page #hikashop_checkout_login #hikashop_checkout_login_left_part .add-on i {
   font-size: 15px;
 }
-/* line 693, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 755, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-checkout #g-main #hikashop_checkout_page #hikashop_checkout_login #hikashop_checkout_login_left_part .add-on label {
   position: relative;
   width: 50px;
   overflow: visible;
 }
-/* line 699, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 761, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-checkout #g-main #hikashop_checkout_page #hikashop_checkout_login #hikashop_checkout_login_left_part .input-small {
   width: 69%;
   font-size: 16px;
   border: 1px solid #ccc;
 }
-/* line 704, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 766, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-checkout #g-main #hikashop_checkout_page #hikashop_checkout_login #hikashop_checkout_login_left_part .hasTooltip {
   border-radius: 0;
   background: none;
   border-color: #ccc;
   padding: 6px 12px 7px;
 }
-/* line 710, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-/* line 711, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 772, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 773, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-checkout #g-main #hikashop_checkout_page #hikashop_checkout_login #hikashop_checkout_login_left_part #form-login-submit input {
   width: 80%;
 }
-/* line 716, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-/* line 717, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-/* line 718, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 778, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 779, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 780, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-checkout #g-main #hikashop_checkout_page #hikashop_checkout_login #hikashop_checkout_login_right_part .form-horizontal .control-label {
   width: 25%;
 }
-/* line 721, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 783, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-checkout #g-main #hikashop_checkout_page #hikashop_checkout_login #hikashop_checkout_login_right_part .form-horizontal .controls {
   margin-left: 28%;
 }
-/* line 723, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 785, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-checkout #g-main #hikashop_checkout_page #hikashop_checkout_login #hikashop_checkout_login_right_part .form-horizontal .controls input {
   border-radius: 0;
   width: 80%;
 }
-/* line 732, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 794, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-checkout #g-main #hikashop_checkout_page #hikashop_checkout_address_billing_only {
   margin-bottom: 25px;
 }
-/* line 735, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 797, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-checkout #g-main #hikashop_checkout_page #hikashop_payment_methods {
   margin-bottom: 25px;
   border-bottom: 1px solid #ddd;
 }
-/* line 738, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 800, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-checkout #g-main #hikashop_checkout_page #hikashop_payment_methods table {
   border: 0;
 }
-/* line 740, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 802, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-checkout #g-main #hikashop_checkout_page #hikashop_payment_methods table td {
   border: 0;
 }
-/* line 742, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 804, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-checkout #g-main #hikashop_checkout_page #hikashop_payment_methods table td .hikashop_checkout_payment_description {
   display: inline-block;
   margin-left: 10px;
 }
-/* line 746, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 808, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-checkout #g-main #hikashop_checkout_page #hikashop_payment_methods table td .btn-primary.active {
   background: #000;
   border-radius: 0;
   padding: 7px 12px;
   font-size: 15px;
 }
-/* line 751, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 813, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-checkout #g-main #hikashop_checkout_page #hikashop_payment_methods table td .btn-primary.active:hover {
   background: #ddd;
 }
-/* line 758, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-/* line 759, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 820, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 821, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-checkout #g-main #hikashop_checkout_page #hikashop_checkout_coupon #hikashop_checkout_coupon_input {
   margin-bottom: 5px;
   font-size: 18px;
   border-radius: 0;
 }
-/* line 764, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 826, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-checkout #g-main #hikashop_checkout_page #hikashop_checkout_coupon .hikashop_cart_input_button {
   margin-bottom: 5px;
 }
-/* line 768, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 830, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-checkout #g-main #hikashop_checkout_page #hikashop_checkout_cart {
   margin-bottom: 25px;
 }
-/* line 770, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 832, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-checkout #g-main #hikashop_checkout_page #hikashop_checkout_cart table td {
   padding: 15px;
 }
-/* line 773, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 835, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-checkout #g-main #hikashop_checkout_page #hikashop_checkout_cart .hikashop_cart_product_image_value {
   width: 34%;
 }
-/* line 776, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-/* line 777, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 838, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 839, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-checkout #g-main #hikashop_checkout_page #hikashop_checkout_cart .hikashop_cart_product_name_value p {
   margin: 0;
 }
-/* line 781, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 843, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-checkout #g-main #hikashop_checkout_page #hikashop_checkout_cart .hikashop_cart_product_price_value {
   width: 10%;
 }
-/* line 784, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 846, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-checkout #g-main #hikashop_checkout_page #hikashop_checkout_cart .hikashop_cart_product_quantity_value {
   width: 15%;
 }
-/* line 786, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 848, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-checkout #g-main #hikashop_checkout_page #hikashop_checkout_cart .hikashop_cart_product_quantity_value input {
   font-size: 15px;
   border-radius: 0;
   margin-bottom: 3px;
   width: 50px;
 }
-/* line 792, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 854, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-checkout #g-main #hikashop_checkout_page #hikashop_checkout_cart .hikashop_cart_product_quantity_value .hikashop_cart_product_quantity_refresh, .view-checkout #g-main #hikashop_checkout_page #hikashop_checkout_cart .hikashop_cart_product_quantity_value .hikashop_cart_product_quantity_delete {
   display: inline-block;
   border: 1px solid #ccc;
   padding: 5px 8px;
 }
-/* line 797, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-/* line 798, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 859, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 860, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-checkout #g-main #hikashop_checkout_page #hikashop_checkout_cart .hikashop_cart_product_quantity_value .hikashop_cart_product_quantity_refresh a .fa, .view-checkout #g-main #hikashop_checkout_page #hikashop_checkout_cart .hikashop_cart_product_quantity_value .hikashop_cart_product_quantity_delete a .fa {
   font-size: 18px;
 }
-/* line 804, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 866, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-checkout #g-main #hikashop_checkout_page #hikashop_checkout_cart .hikashop_cart_total_value {
   width: 10%;
 }
-/* line 806, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 868, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-checkout #g-main #hikashop_checkout_page #hikashop_checkout_cart .hikashop_cart_total_value .hikashop_checkout_cart_final_total {
   color: #f00;
   font-weight: bold;
 }
-/* line 812, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 874, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-checkout #g-main #hikashop_checkout_page #hikashop_checkout_additional_info {
   margin-bottom: 25px;
 }
-/* line 814, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 876, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-checkout #g-main #hikashop_checkout_page #hikashop_checkout_additional_info table {
   background: #f9f9f9;
   border: 0;
 }
-/* line 817, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 879, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-checkout #g-main #hikashop_checkout_page #hikashop_checkout_additional_info table td {
   border: 0;
 }
-/* line 819, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 881, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-checkout #g-main #hikashop_checkout_page #hikashop_checkout_additional_info table td textarea {
   font-size: 15px;
   width: 99%;
 }
-/* line 826, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-/* line 827, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 888, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 889, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 .view-checkout #g-main #hikashop_checkout_page #hikashop_checkout_status .label-info {
   font-size: 15px;
   padding: 10px 10px;
   background: #000;
   border-radius: 0;
 }
-/* line 838, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 900, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-subfeature {
   padding: 1rem 0;
   background: #111;
   color: #999;
 }
-/* line 842, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 904, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-subfeature h3 {
   color: #fff;
   border-bottom: 1px solid #666;
   padding-bottom: 15px;
   margin: 0 0 20px;
 }
-/* line 848, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 910, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-subfeature h4 {
   margin: 0rem 0 0.5rem 0;
 }
-/* line 850, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 912, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-subfeature h4 a {
   color: #ccc;
 }
-/* line 852, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 914, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-subfeature h4 a:hover {
   color: #fff;
 }
-/* line 857, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 919, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-subfeature p {
   margin: 0.3rem 0;
 }
-/* line 859, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 921, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-subfeature p a {
   color: #999;
 }
-/* line 861, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 923, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-subfeature p a:hover {
   color: #fff;
 }
-/* line 866, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-/* line 867, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 928, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 929, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-subfeature .subfootericon img {
   padding: 15px;
 }
-/* line 871, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 933, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-subfeature .customsitemap {
   padding-left: 25px;
 }
-/* line 876, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 938, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-footer {
   background: #000;
 }
-/* line 878, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 940, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
 #g-footer .g-content {
   color: #999;
 }
+/* line 945, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+#g-offcanvas {
+  background: #000;
+}
+/* line 947, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+#g-offcanvas a {
+  color: #fff;
+}
+/* line 949, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+#g-offcanvas a:hover {
+  color: #85a9e1;
+}
+/* line 953, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+#g-offcanvas .g-content {
+  padding: 1.238rem 0.938rem;
+  border-bottom: 1px solid #333;
+}
+/* line 957, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 958, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+#g-offcanvas .search form {
+  margin: 0;
+}
+/* line 961, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+#g-offcanvas .search input.search-query {
+  border-radius: 0px;
+  width: 71%;
+  font-size: 15px;
+  padding: 6px 10px;
+  color: #000;
+}
+/* line 968, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+#g-offcanvas .search .button, #g-offcanvas .search .btn {
+  padding: 4px 12px 3px;
+  background: #333;
+  border-radius: 0px;
+  border: 0;
+}
+/* line 974, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+#g-offcanvas .search .fa {
+  font-size: 24px;
+}
+/* line 978, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 979, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+#g-offcanvas .category-mobile .hikashop_category_list {
+  list-style: none;
+  margin: 0.75rem 0 0.75rem 0.75rem;
+}
+/* line 982, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+#g-offcanvas .category-mobile .hikashop_category_list .hikashop_category_list_item {
+  padding: 0px 0 10px;
+}
+/* line 984, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+#g-offcanvas .category-mobile .hikashop_category_list .hikashop_category_list_item:before {
+  cursor: pointer;
+  width: 1rem;
+  font-family: FontAwesome;
+  content: "\f105";
+  text-align: right;
+  margin-right: 5px;
+}
+/* line 995, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+#g-offcanvas #g-mobilemenu-container {
+  margin: 0;
+}
+/* line 997, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+#g-offcanvas #g-mobilemenu-container ul {
+  background: none;
+}
+/* line 999, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+#g-offcanvas #g-mobilemenu-container ul .g-menu-item-container {
+  padding: 0.638rem 1rem 0.638rem 0;
+  font-size: 18px;
+  line-height: 1.2;
+}
+/* line 1003, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+#g-offcanvas #g-mobilemenu-container ul .g-menu-item-container .fa {
+  font-size: 24px;
+}
+/* line 1006, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+#g-offcanvas #g-mobilemenu-container ul .g-menu-item-container .g-menu-parent-indicator {
+  right: 0.5rem;
+}
+/* line 1010, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+#g-offcanvas #g-mobilemenu-container ul .g-dropdown {
+  right: -20px;
+}
+/* line 1012, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+#g-offcanvas #g-mobilemenu-container ul .g-dropdown .g-menu-item-container {
+  padding: 0;
+}
+/* line 1014, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 1015, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+#g-offcanvas #g-mobilemenu-container ul .g-dropdown .g-menu-item-container .hikashop_cart_module table {
+  width: 88%;
+  border-color: #333;
+}
+/* line 1018, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 1019, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+/* line 1020, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+#g-offcanvas #g-mobilemenu-container ul .g-dropdown .g-menu-item-container .hikashop_cart_module table thead tr th {
+  background: #000;
+}
+/* line 1025, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+#g-offcanvas #g-mobilemenu-container ul .g-dropdown .g-menu-item-container .hikashop_cart_module table td {
+  border-color: #333;
+  width: 36%;
+}
+/* line 1029, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+#g-offcanvas #g-mobilemenu-container ul .g-dropdown .g-menu-item-container .hikashop_cart_module table hr {
+  margin: 0.5rem 0;
+  border-bottom: 1px solid #666;
+}
+/* line 1033, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+#g-offcanvas #g-mobilemenu-container ul .g-dropdown .g-menu-item-container .hikashop_cart_module table .hikashop_product_price {
+  color: #f00;
+}
+/* line 1037, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+#g-offcanvas #g-mobilemenu-container ul .g-dropdown .g-menu-item-container .hikashop_cart_module .button {
+  border: 1px solid #333;
+  border-radius: 0;
+  background: none;
+  width: 76%;
+  margin-right: 10px;
+  font-size: 16px;
+  margin-top: 20px;
+  box-shadow: none;
+  text-shadow: none;
+}
+/* line 1047, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+#g-offcanvas #g-mobilemenu-container ul .g-dropdown .g-menu-item-container .hikashop_cart_module .button:hover {
+  border: 1px solid #ccc;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(255, 255, 255, .6);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(255, 255, 255, .6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(255, 255, 255, .6);
+  color: #fff;
+}
 @media (min-width: 1200px) {
-  /* line 885, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-  /* line 886, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
-  /* line 887, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+  /* line 1064, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+  /* line 1065, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+  /* line 1066, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
   #g-main .row-fluid .span4 {
     width: 33.33333%;
     margin: 0;
   }
-  /* line 891, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+  /* line 1070, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
   #g-main .row-fluid .span2 {
     width: 16.66667%;
     margin: 0;
+  }
+}
+@media (max-width: 599px) {
+  /* line 1091, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+  /* line 1092, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+  #g-header .search {
+    display: none;
+    visibility: hidden;
+  }
+  /* line 1096, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+  /* line 1097, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+  #g-header .search .g-content, #g-header .logo .g-content {
+    padding: 0;
+  }
+  /* line 1102, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+  #g-navigation {
+    display: none;
+    visibility: hidden;
+  }
+  /* line 1106, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+  /* line 1107, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+  /* line 1108, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+  #g-feature .breadcrumb li:first-child {
+    display: none;
+  }
+  /* line 1114, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+  /* line 1115, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+  /* line 1116, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+  /* line 1117, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+  /* line 1118, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+  /* line 1119, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+  /* line 1120, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+  /* line 1121, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+  .view-category #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer .hikashop_product_price_full, .view-product #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer .hikashop_product_price_full {
+    width: 110px;
+    padding: 7px 0px;
+  }
+  /* line 1125, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+  .view-category #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer form, .view-product #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer form {
+    box-sizing: content-box;
+  }
+  /* line 1127, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+  /* line 1128, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+  .view-category #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer form .hikashop_product_quantity_change_div_leftright span, .view-product #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer form .hikashop_product_quantity_change_div_leftright span {
+    padding: 0 10px;
+  }
+  /* line 1131, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+  .view-category #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer form .hikashop_product_quantity_change_div_leftright span:last-child, .view-product #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer form .hikashop_product_quantity_change_div_leftright span:last-child {
+    padding: 0 9px 8px;
+  }
+  /* line 1135, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+  .view-category #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer form .hikashop_product_quantity_add_to_cart_div, .view-product #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer form .hikashop_product_quantity_add_to_cart_div {
+    width: 100%;
+    display: block;
+    margin-top: 15px;
+  }
+  /* line 1139, /var/www/html/templates/g5_hydrogen/custom/scss/custom.scss */
+  .view-category #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer form .hikashop_product_quantity_add_to_cart_div input, .view-product #g-main .g-content .hikashop_products_listing_main .row-fluid .thumbnails .hikashop_subcontainer form .hikashop_product_quantity_add_to_cart_div input {
+    box-sizing: border-box;
+    width: 96%;
+    padding: 9px 0px;
   }
 }
